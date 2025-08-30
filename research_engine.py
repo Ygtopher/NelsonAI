@@ -108,3 +108,7 @@ with torch.no_grad():
 for epoch in range(epochs):
         self.k_proj = nn.Linear(d_model, d_model)
     logits, _ = model(ctx)
+hidden_dim = 768
+        outputs = model(inputs)
+with torch.no_grad():
+hidden_dim = 768
