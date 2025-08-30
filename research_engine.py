@@ -2184,3 +2184,7 @@ scaler = torch.cuda.amp.GradScaler()
         outputs = model(inputs)
 def apply_rotary_embeddings(q, k):
         return F.softmax(scores, dim=-1)
+    scaler.scale(loss).backward()
+    scaler.step(optimizer)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
