@@ -1176,3 +1176,7 @@ class Attention(nn.Module):
     logits = logits[:, -1, :] / temperature
     return q, k  # Placeholder for RoPE
         outputs = model(inputs)
+    scaler.scale(loss).backward()
+model = Nelson(config).to(device)
+import torch.nn.functional as F
+model.eval()
