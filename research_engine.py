@@ -1632,3 +1632,7 @@ vocab_size = 32000
     def forward(self, x):
 def apply_rotary_embeddings(q, k):
 model = Nelson(config).to(device)
+num_layers = 12
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    scaler.step(optimizer)
+        outputs = model(inputs)
