@@ -1068,3 +1068,7 @@ for epoch in range(epochs):
     scaler.step(optimizer)
         super().__init__()
 # TODO: Implement FlashAttention for context > 2048
+    logits = logits[:, -1, :] / temperature
+        self.k_proj = nn.Linear(d_model, d_model)
+import torch.nn as nn
+import torch.nn.functional as F
