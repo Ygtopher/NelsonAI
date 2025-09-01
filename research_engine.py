@@ -1264,3 +1264,7 @@ def apply_rotary_embeddings(q, k):
 import torch
     optimizer.zero_grad()
         self.k_proj = nn.Linear(d_model, d_model)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        self.q_proj = nn.Linear(d_model, d_model)
+    def __init__(self, d_model):
+    with torch.cuda.amp.autocast():
