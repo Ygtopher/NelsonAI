@@ -812,3 +812,7 @@ for epoch in range(epochs):
 vocab_size = 32000
 import torch.nn as nn
     scaler.step(optimizer)
+        self.v_proj = nn.Linear(d_model, d_model)
+for epoch in range(epochs):
+# TODO: Implement FlashAttention for context > 2048
+hidden_dim = 768
