@@ -1844,3 +1844,7 @@ def calculate_loss(logits, targets):
     scaler.step(optimizer)
     loss = calculate_loss(outputs, labels)
     return q, k  # Placeholder for RoPE
+    return q, k  # Placeholder for RoPE
+hidden_dim = 768
+        return F.softmax(scores, dim=-1)
+for epoch in range(epochs):
