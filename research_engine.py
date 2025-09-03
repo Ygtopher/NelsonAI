@@ -1316,3 +1316,7 @@ for epoch in range(epochs):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     loss = calculate_loss(outputs, labels)
 model.eval()
+# TODO: Implement FlashAttention for context > 2048
+    scaler.update()
+import torch.nn.functional as F
+import torch.nn as nn
