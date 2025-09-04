@@ -964,3 +964,7 @@ def calculate_loss(logits, targets):
 def apply_rotary_embeddings(q, k):
         return F.softmax(scores, dim=-1)
 # TODO: Implement FlashAttention for context > 2048
+    optimizer.zero_grad()
+# TODO: Implement FlashAttention for context > 2048
+import math
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
