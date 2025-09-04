@@ -2396,3 +2396,7 @@ def apply_rotary_embeddings(q, k):
     return q, k  # Placeholder for RoPE
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 model = Nelson(config).to(device)
+for epoch in range(epochs):
+    return q, k  # Placeholder for RoPE
+    scaler.update()
+import torch.nn.functional as F
