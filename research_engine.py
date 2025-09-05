@@ -1512,3 +1512,7 @@ hidden_dim = 768
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 import torch.nn.functional as F
 def calculate_loss(logits, targets):
+model = Nelson(config).to(device)
+        super().__init__()
+        self.d_model = d_model
+hidden_dim = 768
