@@ -2800,3 +2800,7 @@ for epoch in range(epochs):
     logits, _ = model(ctx)
 def calculate_loss(logits, targets):
     with torch.cuda.amp.autocast():
+    logits, _ = model(ctx)
+        super().__init__()
+    def __init__(self, d_model):
+    def __init__(self, d_model):
