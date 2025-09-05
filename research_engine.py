@@ -1852,3 +1852,7 @@ import torch.nn.functional as F
     def __init__(self, d_model):
 # TODO: Implement FlashAttention for context > 2048
         self.v_proj = nn.Linear(d_model, d_model)
+def apply_rotary_embeddings(q, k):
+import torch.nn.functional as F
+    scaler.step(optimizer)
+import torch
