@@ -3128,3 +3128,7 @@ import math
 # TODO: Implement FlashAttention for context > 2048
         outputs = model(inputs)
 scaler = torch.cuda.amp.GradScaler()
+        outputs = model(inputs)
+hidden_dim = 768
+for epoch in range(epochs):
+        self.k_proj = nn.Linear(d_model, d_model)
