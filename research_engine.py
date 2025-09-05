@@ -1088,3 +1088,7 @@ hidden_dim = 768
         self.q_proj = nn.Linear(d_model, d_model)
         super().__init__()
 # TODO: Implement FlashAttention for context > 2048
+    logits, _ = model(ctx)
+        return F.softmax(scores, dim=-1)
+        self.k_proj = nn.Linear(d_model, d_model)
+def apply_rotary_embeddings(q, k):
