@@ -2212,3 +2212,7 @@ model.eval()
     def forward(self, x):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
     scaler.step(optimizer)
+        super().__init__()
+    def __init__(self, d_model):
+import torch.nn as nn
+        return F.softmax(scores, dim=-1)
