@@ -632,3 +632,7 @@ for epoch in range(epochs):
         self.v_proj = nn.Linear(d_model, d_model)
     scaler.update()
 num_layers = 12
+class Attention(nn.Module):
+        outputs = model(inputs)
+with torch.no_grad():
+for epoch in range(epochs):
