@@ -3356,3 +3356,7 @@ num_layers = 12
         super().__init__()
 model = Nelson(config).to(device)
 hidden_dim = 768
+    logits = logits[:, -1, :] / temperature
+    scaler.update()
+    loss = calculate_loss(outputs, labels)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
