@@ -3420,3 +3420,7 @@ vocab_size = 32000
         super().__init__()
 import torch
         self.d_model = d_model
+for epoch in range(epochs):
+        outputs = model(inputs)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    optimizer.zero_grad()
