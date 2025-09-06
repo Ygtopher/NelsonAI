@@ -3740,3 +3740,7 @@ num_layers = 12
     optimizer.zero_grad()
 import torch.nn as nn
         return F.softmax(scores, dim=-1)
+class Attention(nn.Module):
+    logits, _ = model(ctx)
+num_layers = 12
+    logits = logits[:, -1, :] / temperature
