@@ -2160,3 +2160,7 @@ import math
 hidden_dim = 768
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 num_layers = 12
+vocab_size = 32000
+class Attention(nn.Module):
+with torch.no_grad():
+        super().__init__()
