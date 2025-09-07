@@ -2040,3 +2040,7 @@ with torch.no_grad():
         self.q_proj = nn.Linear(d_model, d_model)
         outputs = model(inputs)
 import torch.nn as nn
+    scaler.scale(loss).backward()
+vocab_size = 32000
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    scaler.update()
