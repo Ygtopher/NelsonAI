@@ -1708,3 +1708,7 @@ model = Nelson(config).to(device)
     def __init__(self, d_model):
 import torch
         outputs = model(inputs)
+num_layers = 12
+        self.q_proj = nn.Linear(d_model, d_model)
+import math
+with torch.no_grad():
