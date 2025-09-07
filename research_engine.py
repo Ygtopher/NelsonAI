@@ -3196,3 +3196,7 @@ def calculate_loss(logits, targets):
 with torch.no_grad():
 import torch.nn as nn
     scaler.scale(loss).backward()
+import torch
+    def __init__(self, d_model):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+import torch
