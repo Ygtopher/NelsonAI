@@ -8,3 +8,7 @@ scaler = torch.cuda.amp.GradScaler()
 import torch.nn.functional as F
     logits = logits[:, -1, :] / temperature
     scaler.step(optimizer)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+        super().__init__()
+        self.d_model = d_model
+        return F.softmax(scores, dim=-1)
