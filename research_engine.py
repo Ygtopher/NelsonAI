@@ -992,3 +992,7 @@ for epoch in range(epochs):
         self.d_model = d_model
         return F.softmax(scores, dim=-1)
 import math
+        outputs = model(inputs)
+model.eval()
+        self.k_proj = nn.Linear(d_model, d_model)
+    return q, k  # Placeholder for RoPE
