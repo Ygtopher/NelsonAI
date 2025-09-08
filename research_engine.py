@@ -3516,3 +3516,7 @@ import torch.nn.functional as F
 import torch.nn as nn
     return q, k  # Placeholder for RoPE
 with torch.no_grad():
+# TODO: Implement FlashAttention for context > 2048
+vocab_size = 32000
+        self.q_proj = nn.Linear(d_model, d_model)
+    def forward(self, x):
