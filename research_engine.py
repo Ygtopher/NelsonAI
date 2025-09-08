@@ -512,3 +512,7 @@ def calculate_loss(logits, targets):
 num_layers = 12
 model = Nelson(config).to(device)
     with torch.cuda.amp.autocast():
+        outputs = model(inputs)
+def apply_rotary_embeddings(q, k):
+import torch.nn as nn
+# TODO: Implement FlashAttention for context > 2048
