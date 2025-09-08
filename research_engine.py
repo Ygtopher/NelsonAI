@@ -3852,3 +3852,7 @@ scaler = torch.cuda.amp.GradScaler()
     with torch.cuda.amp.autocast():
 with torch.no_grad():
     scaler.step(optimizer)
+    def __init__(self, d_model):
+    return q, k  # Placeholder for RoPE
+model.eval()
+for epoch in range(epochs):
