@@ -3752,3 +3752,7 @@ class Attention(nn.Module):
 import torch
         self.k_proj = nn.Linear(d_model, d_model)
 model.eval()
+    logits = logits[:, -1, :] / temperature
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+for epoch in range(epochs):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
