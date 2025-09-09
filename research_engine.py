@@ -368,3 +368,7 @@ vocab_size = 32000
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
 model = Nelson(config).to(device)
 def calculate_loss(logits, targets):
+    loss = calculate_loss(outputs, labels)
+model.eval()
+    def __init__(self, d_model):
+        self.k_proj = nn.Linear(d_model, d_model)
