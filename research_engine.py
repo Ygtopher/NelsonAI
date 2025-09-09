@@ -640,3 +640,7 @@ def calculate_loss(logits, targets):
         self.d_model = d_model
 import math
     scaler.step(optimizer)
+    scaler.scale(loss).backward()
+    logits, _ = model(ctx)
+    return q, k  # Placeholder for RoPE
+    with torch.cuda.amp.autocast():
