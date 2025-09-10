@@ -1872,3 +1872,7 @@ hidden_dim = 768
 # TODO: Implement FlashAttention for context > 2048
     def forward(self, x):
 def apply_rotary_embeddings(q, k):
+hidden_dim = 768
+    def __init__(self, d_model):
+    scaler.step(optimizer)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
