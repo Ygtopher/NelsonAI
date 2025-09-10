@@ -2372,3 +2372,7 @@ with torch.no_grad():
 model = Nelson(config).to(device)
 model = Nelson(config).to(device)
     scaler.scale(loss).backward()
+        return F.softmax(scores, dim=-1)
+        outputs = model(inputs)
+    def forward(self, x):
+import torch
