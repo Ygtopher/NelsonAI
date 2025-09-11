@@ -2464,3 +2464,7 @@ def apply_rotary_embeddings(q, k):
     scaler.scale(loss).backward()
 def apply_rotary_embeddings(q, k):
         return F.softmax(scores, dim=-1)
+    return q, k  # Placeholder for RoPE
+model.eval()
+import torch.nn as nn
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
