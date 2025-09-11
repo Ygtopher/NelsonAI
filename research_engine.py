@@ -2260,3 +2260,7 @@ class Attention(nn.Module):
 model.eval()
     logits, _ = model(ctx)
     def __init__(self, d_model):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    def __init__(self, d_model):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        super().__init__()
