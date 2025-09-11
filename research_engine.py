@@ -2156,3 +2156,7 @@ class Attention(nn.Module):
 class Attention(nn.Module):
     def __init__(self, d_model):
     return q, k  # Placeholder for RoPE
+import math
+hidden_dim = 768
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+num_layers = 12
