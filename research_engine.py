@@ -3824,3 +3824,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 vocab_size = 32000
+def apply_rotary_embeddings(q, k):
+        return F.softmax(scores, dim=-1)
+model = Nelson(config).to(device)
+def calculate_loss(logits, targets):
