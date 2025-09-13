@@ -1584,3 +1584,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 import torch
     optimizer.zero_grad()
     loss = calculate_loss(outputs, labels)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    loss = calculate_loss(outputs, labels)
+    logits = logits[:, -1, :] / temperature
+    return q, k  # Placeholder for RoPE
