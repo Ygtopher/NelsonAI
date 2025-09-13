@@ -2884,3 +2884,7 @@ import torch.nn.functional as F
         self.q_proj = nn.Linear(d_model, d_model)
         self.v_proj = nn.Linear(d_model, d_model)
         return F.softmax(scores, dim=-1)
+class Attention(nn.Module):
+model.eval()
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
