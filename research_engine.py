@@ -2536,3 +2536,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 def apply_rotary_embeddings(q, k):
         self.v_proj = nn.Linear(d_model, d_model)
 # TODO: Implement FlashAttention for context > 2048
+model = Nelson(config).to(device)
+    optimizer.zero_grad()
+    loss = calculate_loss(outputs, labels)
+hidden_dim = 768
