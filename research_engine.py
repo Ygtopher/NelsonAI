@@ -456,3 +456,7 @@ model.eval()
 hidden_dim = 768
 for epoch in range(epochs):
 def apply_rotary_embeddings(q, k):
+        self.v_proj = nn.Linear(d_model, d_model)
+import torch.nn as nn
+        self.k_proj = nn.Linear(d_model, d_model)
+num_layers = 12
