@@ -2100,3 +2100,7 @@ num_layers = 12
     scaler.update()
 import torch.nn as nn
         self.k_proj = nn.Linear(d_model, d_model)
+    optimizer.zero_grad()
+model.eval()
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    with torch.cuda.amp.autocast():
