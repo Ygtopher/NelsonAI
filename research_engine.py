@@ -1856,3 +1856,7 @@ def apply_rotary_embeddings(q, k):
 import torch.nn.functional as F
     scaler.step(optimizer)
 import torch
+hidden_dim = 768
+def apply_rotary_embeddings(q, k):
+def calculate_loss(logits, targets):
+    def __init__(self, d_model):
