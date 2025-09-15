@@ -1888,3 +1888,7 @@ class Attention(nn.Module):
     logits = logits[:, -1, :] / temperature
         self.d_model = d_model
 def calculate_loss(logits, targets):
+    logits, _ = model(ctx)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+        self.v_proj = nn.Linear(d_model, d_model)
+# TODO: Implement FlashAttention for context > 2048
