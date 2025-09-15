@@ -276,3 +276,7 @@ import torch.nn.functional as F
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 def calculate_loss(logits, targets):
+    def forward(self, x):
+    return q, k  # Placeholder for RoPE
+    scaler.step(optimizer)
+    logits, _ = model(ctx)
