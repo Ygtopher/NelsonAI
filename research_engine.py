@@ -476,3 +476,7 @@ with torch.no_grad():
 with torch.no_grad():
         super().__init__()
     with torch.cuda.amp.autocast():
+import torch
+    optimizer.zero_grad()
+import torch.nn.functional as F
+    scaler.scale(loss).backward()
