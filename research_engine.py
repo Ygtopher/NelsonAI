@@ -3608,3 +3608,7 @@ import torch.nn.functional as F
         super().__init__()
         self.k_proj = nn.Linear(d_model, d_model)
     with torch.cuda.amp.autocast():
+model = Nelson(config).to(device)
+import torch.nn.functional as F
+    def forward(self, x):
+model = Nelson(config).to(device)
