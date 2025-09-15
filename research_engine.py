@@ -3664,3 +3664,7 @@ scaler = torch.cuda.amp.GradScaler()
     with torch.cuda.amp.autocast():
     scaler.update()
 import math
+import torch.nn as nn
+import torch.nn.functional as F
+for epoch in range(epochs):
+    loss = calculate_loss(outputs, labels)
