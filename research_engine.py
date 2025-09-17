@@ -3944,3 +3944,7 @@ model = Nelson(config).to(device)
     scaler.step(optimizer)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+def apply_rotary_embeddings(q, k):
+    scaler.step(optimizer)
+model = Nelson(config).to(device)
+def apply_rotary_embeddings(q, k):
