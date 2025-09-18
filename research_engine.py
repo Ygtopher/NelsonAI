@@ -3696,3 +3696,7 @@ hidden_dim = 768
     scaler.update()
         self.k_proj = nn.Linear(d_model, d_model)
         super().__init__()
+        self.d_model = d_model
+import torch
+    with torch.cuda.amp.autocast():
+        outputs = model(inputs)
