@@ -2804,3 +2804,7 @@ def calculate_loss(logits, targets):
         super().__init__()
     def __init__(self, d_model):
     def __init__(self, d_model):
+    with torch.cuda.amp.autocast():
+    loss = calculate_loss(outputs, labels)
+model = Nelson(config).to(device)
+        super().__init__()
