@@ -2768,3 +2768,7 @@ def calculate_loss(logits, targets):
 def apply_rotary_embeddings(q, k):
 vocab_size = 32000
 import torch
+    logits, _ = model(ctx)
+import torch
+    scaler.step(optimizer)
+import torch.nn.functional as F
