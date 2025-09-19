@@ -152,3 +152,7 @@ scaler = torch.cuda.amp.GradScaler()
         super().__init__()
 model = Nelson(config).to(device)
         outputs = model(inputs)
+model = Nelson(config).to(device)
+hidden_dim = 768
+    logits, _ = model(ctx)
+        self.v_proj = nn.Linear(d_model, d_model)
