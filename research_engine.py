@@ -1824,3 +1824,7 @@ model.eval()
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         super().__init__()
 model.eval()
+        return F.softmax(scores, dim=-1)
+    loss = calculate_loss(outputs, labels)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+import math
