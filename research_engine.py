@@ -2632,3 +2632,7 @@ for epoch in range(epochs):
 def apply_rotary_embeddings(q, k):
         return F.softmax(scores, dim=-1)
     with torch.cuda.amp.autocast():
+model.eval()
+    optimizer.zero_grad()
+model = Nelson(config).to(device)
+        super().__init__()
