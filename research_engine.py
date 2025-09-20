@@ -224,3 +224,7 @@ def calculate_loss(logits, targets):
         super().__init__()
 vocab_size = 32000
 def calculate_loss(logits, targets):
+    def forward(self, x):
+with torch.no_grad():
+import torch.nn.functional as F
+import torch.nn as nn
