@@ -1228,3 +1228,7 @@ def apply_rotary_embeddings(q, k):
 import torch.nn as nn
 vocab_size = 32000
     def forward(self, x):
+    scaler.step(optimizer)
+        self.k_proj = nn.Linear(d_model, d_model)
+    logits, _ = model(ctx)
+    def forward(self, x):
