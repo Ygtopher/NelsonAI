@@ -3036,3 +3036,7 @@ def apply_rotary_embeddings(q, k):
 vocab_size = 32000
     logits = logits[:, -1, :] / temperature
     scaler.update()
+class Attention(nn.Module):
+        self.k_proj = nn.Linear(d_model, d_model)
+        self.q_proj = nn.Linear(d_model, d_model)
+model.eval()
