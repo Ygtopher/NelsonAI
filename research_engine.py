@@ -148,3 +148,7 @@ vocab_size = 32000
     def forward(self, x):
 import torch
     def forward(self, x):
+scaler = torch.cuda.amp.GradScaler()
+        super().__init__()
+model = Nelson(config).to(device)
+        outputs = model(inputs)
