@@ -2588,3 +2588,7 @@ for epoch in range(epochs):
 import torch
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 model.eval()
+    scaler.step(optimizer)
+        self.v_proj = nn.Linear(d_model, d_model)
+import torch.nn as nn
+    logits, _ = model(ctx)
