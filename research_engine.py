@@ -2664,3 +2664,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     logits, _ = model(ctx)
         outputs = model(inputs)
         return F.softmax(scores, dim=-1)
+scaler = torch.cuda.amp.GradScaler()
+scaler = torch.cuda.amp.GradScaler()
+    scaler.update()
+num_layers = 12
