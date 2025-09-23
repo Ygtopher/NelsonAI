@@ -2316,3 +2316,7 @@ import math
         outputs = model(inputs)
     scaler.scale(loss).backward()
         return F.softmax(scores, dim=-1)
+    return q, k  # Placeholder for RoPE
+model.eval()
+hidden_dim = 768
+num_layers = 12
