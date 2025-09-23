@@ -1064,3 +1064,7 @@ for epoch in range(epochs):
         self.v_proj = nn.Linear(d_model, d_model)
         self.d_model = d_model
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    loss = calculate_loss(outputs, labels)
+    scaler.step(optimizer)
+        super().__init__()
+# TODO: Implement FlashAttention for context > 2048
