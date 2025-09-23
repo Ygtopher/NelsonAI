@@ -2404,3 +2404,7 @@ def apply_rotary_embeddings(q, k):
         outputs = model(inputs)
     scaler.scale(loss).backward()
 class Attention(nn.Module):
+for epoch in range(epochs):
+# TODO: Implement FlashAttention for context > 2048
+    def forward(self, x):
+    with torch.cuda.amp.autocast():
