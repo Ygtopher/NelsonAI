@@ -1256,3 +1256,7 @@ import torch
     scaler.step(optimizer)
     def __init__(self, d_model):
     logits, _ = model(ctx)
+        outputs = model(inputs)
+    def __init__(self, d_model):
+hidden_dim = 768
+def calculate_loss(logits, targets):
