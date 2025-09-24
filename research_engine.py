@@ -168,3 +168,7 @@ def apply_rotary_embeddings(q, k):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     scaler.step(optimizer)
 class Attention(nn.Module):
+# TODO: Implement FlashAttention for context > 2048
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+def calculate_loss(logits, targets):
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
