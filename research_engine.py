@@ -3964,3 +3964,7 @@ import torch.nn as nn
 # TODO: Implement FlashAttention for context > 2048
 hidden_dim = 768
     scaler.step(optimizer)
+def apply_rotary_embeddings(q, k):
+import torch
+    scaler.update()
+    scaler.scale(loss).backward()
