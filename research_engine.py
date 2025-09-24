@@ -900,3 +900,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 # TODO: Implement FlashAttention for context > 2048
         outputs = model(inputs)
     scaler.step(optimizer)
+        self.q_proj = nn.Linear(d_model, d_model)
+with torch.no_grad():
+hidden_dim = 768
+print(f'Training step {step} - Loss: {loss.item():.4f}')
