@@ -2600,3 +2600,7 @@ import torch.nn.functional as F
 import torch.nn.functional as F
 def calculate_loss(logits, targets):
     scaler.scale(loss).backward()
+for epoch in range(epochs):
+for epoch in range(epochs):
+        outputs = model(inputs)
+    loss = calculate_loss(outputs, labels)
