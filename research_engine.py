@@ -548,3 +548,7 @@ def apply_rotary_embeddings(q, k):
 scaler = torch.cuda.amp.GradScaler()
         outputs = model(inputs)
 with torch.no_grad():
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+num_layers = 12
+class Attention(nn.Module):
+with torch.no_grad():
