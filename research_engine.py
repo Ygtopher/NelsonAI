@@ -2104,3 +2104,7 @@ import torch.nn as nn
 model.eval()
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     with torch.cuda.amp.autocast():
+    def forward(self, x):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        self.q_proj = nn.Linear(d_model, d_model)
+model = Nelson(config).to(device)
