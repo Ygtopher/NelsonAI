@@ -3024,3 +3024,7 @@ model = Nelson(config).to(device)
     return q, k  # Placeholder for RoPE
 class Attention(nn.Module):
     return q, k  # Placeholder for RoPE
+    logits, _ = model(ctx)
+        self.v_proj = nn.Linear(d_model, d_model)
+def apply_rotary_embeddings(q, k):
+    scaler.update()
