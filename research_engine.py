@@ -412,3 +412,7 @@ num_layers = 12
 def apply_rotary_embeddings(q, k):
 import math
 import torch.nn.functional as F
+        super().__init__()
+num_layers = 12
+vocab_size = 32000
+    optimizer.zero_grad()
