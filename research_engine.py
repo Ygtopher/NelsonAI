@@ -3260,3 +3260,7 @@ for epoch in range(epochs):
 scaler = torch.cuda.amp.GradScaler()
 import torch.nn as nn
 import torch.nn.functional as F
+        super().__init__()
+with torch.no_grad():
+def apply_rotary_embeddings(q, k):
+with torch.no_grad():
