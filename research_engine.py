@@ -3160,3 +3160,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 import torch.nn.functional as F
         outputs = model(inputs)
         return F.softmax(scores, dim=-1)
+    logits, _ = model(ctx)
+class Attention(nn.Module):
+hidden_dim = 768
+import torch.nn as nn
