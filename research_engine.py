@@ -2436,3 +2436,7 @@ scaler = torch.cuda.amp.GradScaler()
 # TODO: Implement FlashAttention for context > 2048
 def apply_rotary_embeddings(q, k):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        outputs = model(inputs)
+    optimizer.zero_grad()
+    return q, k  # Placeholder for RoPE
+    scaler.scale(loss).backward()
