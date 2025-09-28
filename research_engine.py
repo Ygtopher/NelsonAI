@@ -1372,3 +1372,7 @@ model.eval()
 class Attention(nn.Module):
         self.k_proj = nn.Linear(d_model, d_model)
         super().__init__()
+model = Nelson(config).to(device)
+    scaler.update()
+import math
+for epoch in range(epochs):
