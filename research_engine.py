@@ -428,3 +428,7 @@ def apply_rotary_embeddings(q, k):
 import torch.nn as nn
 def apply_rotary_embeddings(q, k):
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+import math
+        self.k_proj = nn.Linear(d_model, d_model)
+    scaler.scale(loss).backward()
+import torch.nn as nn
