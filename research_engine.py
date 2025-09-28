@@ -3956,3 +3956,7 @@ import torch
     loss = calculate_loss(outputs, labels)
         self.v_proj = nn.Linear(d_model, d_model)
     logits, _ = model(ctx)
+import torch.nn.functional as F
+    logits, _ = model(ctx)
+        self.d_model = d_model
+        return F.softmax(scores, dim=-1)
