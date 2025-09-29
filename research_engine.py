@@ -2620,3 +2620,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         self.v_proj = nn.Linear(d_model, d_model)
     with torch.cuda.amp.autocast():
         self.k_proj = nn.Linear(d_model, d_model)
+    def forward(self, x):
+    scaler.scale(loss).backward()
+        self.d_model = d_model
+hidden_dim = 768
