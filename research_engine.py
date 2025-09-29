@@ -3788,3 +3788,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 hidden_dim = 768
 import torch.nn.functional as F
 model.eval()
+num_layers = 12
+with torch.no_grad():
+    scaler.update()
+        self.k_proj = nn.Linear(d_model, d_model)
