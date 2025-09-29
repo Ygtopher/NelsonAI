@@ -3436,3 +3436,7 @@ import torch
         self.q_proj = nn.Linear(d_model, d_model)
 # TODO: Implement FlashAttention for context > 2048
         self.v_proj = nn.Linear(d_model, d_model)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    def forward(self, x):
+vocab_size = 32000
+    scaler.update()
