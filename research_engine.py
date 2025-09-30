@@ -2840,3 +2840,7 @@ num_layers = 12
     loss = calculate_loss(outputs, labels)
         self.k_proj = nn.Linear(d_model, d_model)
 scaler = torch.cuda.amp.GradScaler()
+class Attention(nn.Module):
+hidden_dim = 768
+        super().__init__()
+def apply_rotary_embeddings(q, k):
