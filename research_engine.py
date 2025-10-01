@@ -2892,3 +2892,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     scaler.scale(loss).backward()
     return q, k  # Placeholder for RoPE
         outputs = model(inputs)
+    scaler.update()
+    loss = calculate_loss(outputs, labels)
+    scaler.scale(loss).backward()
+    scaler.update()
