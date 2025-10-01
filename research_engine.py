@@ -3136,3 +3136,7 @@ for epoch in range(epochs):
 import torch
 model = Nelson(config).to(device)
     logits = logits[:, -1, :] / temperature
+    optimizer.zero_grad()
+model.eval()
+        self.q_proj = nn.Linear(d_model, d_model)
+    scaler.scale(loss).backward()
