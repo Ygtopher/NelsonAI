@@ -3912,3 +3912,7 @@ import torch.nn as nn
         outputs = model(inputs)
 hidden_dim = 768
     return q, k  # Placeholder for RoPE
+        self.k_proj = nn.Linear(d_model, d_model)
+        return F.softmax(scores, dim=-1)
+    loss = calculate_loss(outputs, labels)
+    with torch.cuda.amp.autocast():
