@@ -320,3 +320,7 @@ import torch.nn as nn
 import math
 print(f'Training step {step} - Loss: {loss.item():.4f}')
     scaler.step(optimizer)
+scaler = torch.cuda.amp.GradScaler()
+    scaler.update()
+import torch.nn.functional as F
+    logits = logits[:, -1, :] / temperature
