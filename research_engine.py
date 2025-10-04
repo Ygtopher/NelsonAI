@@ -1692,3 +1692,7 @@ import torch.nn.functional as F
 for epoch in range(epochs):
 for epoch in range(epochs):
         outputs = model(inputs)
+for epoch in range(epochs):
+def calculate_loss(logits, targets):
+model.eval()
+model = Nelson(config).to(device)
