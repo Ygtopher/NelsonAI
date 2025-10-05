@@ -1388,3 +1388,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     scaler.scale(loss).backward()
 print(f'Training step {step} - Loss: {loss.item():.4f}')
     return q, k  # Placeholder for RoPE
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        super().__init__()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        self.d_model = d_model
