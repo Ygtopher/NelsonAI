@@ -2572,3 +2572,7 @@ import math
     scaler.step(optimizer)
     def __init__(self, d_model):
     def forward(self, x):
+    scaler.step(optimizer)
+# TODO: Implement FlashAttention for context > 2048
+for epoch in range(epochs):
+def calculate_loss(logits, targets):
