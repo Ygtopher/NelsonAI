@@ -1072,3 +1072,7 @@ for epoch in range(epochs):
         self.k_proj = nn.Linear(d_model, d_model)
 import torch.nn as nn
 import torch.nn.functional as F
+    logits, _ = model(ctx)
+    loss = calculate_loss(outputs, labels)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    logits, _ = model(ctx)
