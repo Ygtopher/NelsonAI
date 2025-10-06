@@ -1104,3 +1104,7 @@ def calculate_loss(logits, targets):
 import torch.nn as nn
 def apply_rotary_embeddings(q, k):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        outputs = model(inputs)
+    return q, k  # Placeholder for RoPE
+        self.v_proj = nn.Linear(d_model, d_model)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
