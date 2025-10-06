@@ -236,3 +236,7 @@ import torch
     def __init__(self, d_model):
         super().__init__()
         self.d_model = d_model
+num_layers = 12
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    with torch.cuda.amp.autocast():
+import torch.nn.functional as F
