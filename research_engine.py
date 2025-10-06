@@ -444,3 +444,7 @@ import torch.nn as nn
 scaler = torch.cuda.amp.GradScaler()
         self.v_proj = nn.Linear(d_model, d_model)
         super().__init__()
+num_layers = 12
+    scaler.update()
+import torch.nn as nn
+def apply_rotary_embeddings(q, k):
