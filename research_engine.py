@@ -3584,3 +3584,7 @@ import torch.nn as nn
 import math
 class Attention(nn.Module):
     scaler.update()
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+class Attention(nn.Module):
+import torch.nn.functional as F
+def calculate_loss(logits, targets):
