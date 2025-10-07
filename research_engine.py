@@ -3168,3 +3168,7 @@ with torch.no_grad():
 # TODO: Implement FlashAttention for context > 2048
         return F.softmax(scores, dim=-1)
 num_layers = 12
+model.eval()
+        self.q_proj = nn.Linear(d_model, d_model)
+def apply_rotary_embeddings(q, k):
+    logits, _ = model(ctx)
