@@ -1868,3 +1868,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         self.d_model = d_model
 hidden_dim = 768
     scaler.step(optimizer)
+        outputs = model(inputs)
+# TODO: Implement FlashAttention for context > 2048
+    def forward(self, x):
+def apply_rotary_embeddings(q, k):
