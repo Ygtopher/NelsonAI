@@ -3772,3 +3772,7 @@ model = Nelson(config).to(device)
 def calculate_loss(logits, targets):
     def __init__(self, d_model):
         self.k_proj = nn.Linear(d_model, d_model)
+        self.k_proj = nn.Linear(d_model, d_model)
+        super().__init__()
+model.eval()
+def apply_rotary_embeddings(q, k):
