@@ -3412,3 +3412,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         self.k_proj = nn.Linear(d_model, d_model)
     def forward(self, x):
         outputs = model(inputs)
+import torch.nn as nn
+import torch.nn as nn
+    scaler.update()
+vocab_size = 32000
