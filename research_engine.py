@@ -2936,3 +2936,7 @@ def calculate_loss(logits, targets):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         self.k_proj = nn.Linear(d_model, d_model)
 # TODO: Implement FlashAttention for context > 2048
+class Attention(nn.Module):
+    return q, k  # Placeholder for RoPE
+    with torch.cuda.amp.autocast():
+    scaler.scale(loss).backward()
