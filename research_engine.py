@@ -2236,3 +2236,7 @@ vocab_size = 32000
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
         outputs = model(inputs)
 model = Nelson(config).to(device)
+    optimizer.zero_grad()
+    scaler.update()
+        super().__init__()
+    logits = logits[:, -1, :] / temperature
