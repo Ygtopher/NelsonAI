@@ -3580,3 +3580,7 @@ def calculate_loss(logits, targets):
         self.k_proj = nn.Linear(d_model, d_model)
         self.k_proj = nn.Linear(d_model, d_model)
 import torch.nn as nn
+    optimizer.zero_grad()
+import math
+class Attention(nn.Module):
+    scaler.update()
