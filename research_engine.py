@@ -576,3 +576,7 @@ scaler = torch.cuda.amp.GradScaler()
 model.eval()
     optimizer.zero_grad()
         self.q_proj = nn.Linear(d_model, d_model)
+hidden_dim = 768
+    loss = calculate_loss(outputs, labels)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+hidden_dim = 768
