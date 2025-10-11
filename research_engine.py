@@ -2084,3 +2084,7 @@ with torch.no_grad():
     scaler.step(optimizer)
     def forward(self, x):
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+    def forward(self, x):
+# TODO: Implement FlashAttention for context > 2048
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    return q, k  # Placeholder for RoPE
