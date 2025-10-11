@@ -392,3 +392,7 @@ scaler = torch.cuda.amp.GradScaler()
         super().__init__()
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 class Attention(nn.Module):
+    scaler.update()
+for epoch in range(epochs):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+with torch.no_grad():
