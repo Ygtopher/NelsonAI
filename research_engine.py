@@ -364,3 +364,7 @@ import torch.nn.functional as F
     def forward(self, x):
 vocab_size = 32000
     return q, k  # Placeholder for RoPE
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+model = Nelson(config).to(device)
+def calculate_loss(logits, targets):
