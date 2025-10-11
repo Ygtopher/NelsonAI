@@ -1820,3 +1820,7 @@ def calculate_loss(logits, targets):
         self.d_model = d_model
     with torch.cuda.amp.autocast():
 model.eval()
+        self.v_proj = nn.Linear(d_model, d_model)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        super().__init__()
+model.eval()
