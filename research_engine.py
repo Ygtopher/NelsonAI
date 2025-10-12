@@ -604,3 +604,7 @@ import torch
     return q, k  # Placeholder for RoPE
 model.eval()
 scaler = torch.cuda.amp.GradScaler()
+import math
+def apply_rotary_embeddings(q, k):
+    scaler.update()
+    scaler.update()
