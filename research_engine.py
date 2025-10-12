@@ -2360,3 +2360,7 @@ model = Nelson(config).to(device)
 # TODO: Implement FlashAttention for context > 2048
         self.k_proj = nn.Linear(d_model, d_model)
 def apply_rotary_embeddings(q, k):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+scaler = torch.cuda.amp.GradScaler()
+    return q, k  # Placeholder for RoPE
+    with torch.cuda.amp.autocast():
