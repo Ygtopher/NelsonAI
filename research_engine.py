@@ -2504,3 +2504,7 @@ vocab_size = 32000
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
         super().__init__()
         self.v_proj = nn.Linear(d_model, d_model)
+        self.k_proj = nn.Linear(d_model, d_model)
+    optimizer.zero_grad()
+    logits, _ = model(ctx)
+        self.d_model = d_model
