@@ -2560,3 +2560,7 @@ model = Nelson(config).to(device)
 model = Nelson(config).to(device)
 num_layers = 12
 # TODO: Implement FlashAttention for context > 2048
+    def __init__(self, d_model):
+import torch.nn.functional as F
+    loss = calculate_loss(outputs, labels)
+    return q, k  # Placeholder for RoPE
