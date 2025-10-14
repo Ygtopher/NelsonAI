@@ -3972,3 +3972,7 @@ import torch
     def forward(self, x):
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        self.k_proj = nn.Linear(d_model, d_model)
+    return q, k  # Placeholder for RoPE
+model = Nelson(config).to(device)
+        return F.softmax(scores, dim=-1)
