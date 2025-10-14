@@ -2880,3 +2880,7 @@ import torch.nn.functional as F
     def __init__(self, d_model):
     scaler.scale(loss).backward()
         outputs = model(inputs)
+    optimizer.zero_grad()
+        self.q_proj = nn.Linear(d_model, d_model)
+        self.v_proj = nn.Linear(d_model, d_model)
+        return F.softmax(scores, dim=-1)
