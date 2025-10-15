@@ -3364,3 +3364,7 @@ hidden_dim = 768
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 for epoch in range(epochs):
 model.eval()
+        self.d_model = d_model
+        self.k_proj = nn.Linear(d_model, d_model)
+    scaler.step(optimizer)
+        outputs = model(inputs)
