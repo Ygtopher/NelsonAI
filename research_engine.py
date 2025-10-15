@@ -3708,3 +3708,7 @@ import torch
 scaler = torch.cuda.amp.GradScaler()
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+    def forward(self, x):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    def __init__(self, d_model):
+    scaler.update()
