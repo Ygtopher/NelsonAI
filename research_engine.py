@@ -304,3 +304,7 @@ vocab_size = 32000
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 import torch
         super().__init__()
+    logits = logits[:, -1, :] / temperature
+        return F.softmax(scores, dim=-1)
+    scaler.step(optimizer)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
