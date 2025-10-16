@@ -3960,3 +3960,7 @@ import torch.nn.functional as F
     logits, _ = model(ctx)
         self.d_model = d_model
         return F.softmax(scores, dim=-1)
+import torch.nn as nn
+# TODO: Implement FlashAttention for context > 2048
+hidden_dim = 768
+    scaler.step(optimizer)
