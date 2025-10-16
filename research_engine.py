@@ -2596,3 +2596,7 @@ import torch.nn as nn
 scaler = torch.cuda.amp.GradScaler()
         return F.softmax(scores, dim=-1)
 num_layers = 12
+import torch.nn.functional as F
+import torch.nn.functional as F
+def calculate_loss(logits, targets):
+    scaler.scale(loss).backward()
