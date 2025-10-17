@@ -1696,3 +1696,7 @@ for epoch in range(epochs):
 def calculate_loss(logits, targets):
 model.eval()
 model = Nelson(config).to(device)
+    with torch.cuda.amp.autocast():
+        return F.softmax(scores, dim=-1)
+def apply_rotary_embeddings(q, k):
+    scaler.scale(loss).backward()
