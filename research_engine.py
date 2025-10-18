@@ -3748,3 +3748,7 @@ num_layers = 12
         self.k_proj = nn.Linear(d_model, d_model)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+class Attention(nn.Module):
+import torch
+        self.k_proj = nn.Linear(d_model, d_model)
+model.eval()
