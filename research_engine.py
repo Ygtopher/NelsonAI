@@ -2264,3 +2264,7 @@ model.eval()
     def __init__(self, d_model):
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
         super().__init__()
+    scaler.step(optimizer)
+    logits = logits[:, -1, :] / temperature
+        self.k_proj = nn.Linear(d_model, d_model)
+        self.k_proj = nn.Linear(d_model, d_model)
