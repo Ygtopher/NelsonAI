@@ -2988,3 +2988,7 @@ class Attention(nn.Module):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 vocab_size = 32000
 class Attention(nn.Module):
+num_layers = 12
+import torch.nn as nn
+import torch.nn.functional as F
+hidden_dim = 768
