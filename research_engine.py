@@ -2356,3 +2356,7 @@ model.eval()
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 model = Nelson(config).to(device)
 # TODO: Implement FlashAttention for context > 2048
+    def forward(self, x):
+# TODO: Implement FlashAttention for context > 2048
+        self.k_proj = nn.Linear(d_model, d_model)
+def apply_rotary_embeddings(q, k):
