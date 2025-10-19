@@ -1588,3 +1588,7 @@ import torch
     loss = calculate_loss(outputs, labels)
     logits = logits[:, -1, :] / temperature
     return q, k  # Placeholder for RoPE
+        self.v_proj = nn.Linear(d_model, d_model)
+with torch.no_grad():
+model = Nelson(config).to(device)
+        self.q_proj = nn.Linear(d_model, d_model)
