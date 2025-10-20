@@ -2956,3 +2956,7 @@ def calculate_loss(logits, targets):
 print(f'Training step {step} - Loss: {loss.item():.4f}')
     scaler.step(optimizer)
 import torch.nn as nn
+    return q, k  # Placeholder for RoPE
+def calculate_loss(logits, targets):
+# TODO: Implement FlashAttention for context > 2048
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
