@@ -2008,3 +2008,7 @@ import torch.nn as nn
         self.q_proj = nn.Linear(d_model, d_model)
 def apply_rotary_embeddings(q, k):
 import torch.nn.functional as F
+class Attention(nn.Module):
+    scaler.update()
+    logits = logits[:, -1, :] / temperature
+model.eval()
