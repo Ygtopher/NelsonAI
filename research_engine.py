@@ -1360,3 +1360,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 import torch
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
 model = Nelson(config).to(device)
+        self.q_proj = nn.Linear(d_model, d_model)
+model.eval()
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+import math
