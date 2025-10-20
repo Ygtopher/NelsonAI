@@ -2508,3 +2508,7 @@ vocab_size = 32000
     optimizer.zero_grad()
     logits, _ = model(ctx)
         self.d_model = d_model
+    logits, _ = model(ctx)
+    logits = logits[:, -1, :] / temperature
+    loss = calculate_loss(outputs, labels)
+    return q, k  # Placeholder for RoPE
