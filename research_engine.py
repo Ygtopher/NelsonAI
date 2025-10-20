@@ -2692,3 +2692,7 @@ def calculate_loss(logits, targets):
 num_layers = 12
 # TODO: Implement FlashAttention for context > 2048
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    with torch.cuda.amp.autocast():
+class Attention(nn.Module):
+        self.q_proj = nn.Linear(d_model, d_model)
+model = Nelson(config).to(device)
