@@ -2708,3 +2708,7 @@ def calculate_loss(logits, targets):
         return F.softmax(scores, dim=-1)
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         self.k_proj = nn.Linear(d_model, d_model)
+    scaler.update()
+    logits, _ = model(ctx)
+        self.v_proj = nn.Linear(d_model, d_model)
+    loss = calculate_loss(outputs, labels)
