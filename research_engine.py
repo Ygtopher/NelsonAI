@@ -232,3 +232,7 @@ def apply_rotary_embeddings(q, k):
         outputs = model(inputs)
 import torch
         self.q_proj = nn.Linear(d_model, d_model)
+        self.v_proj = nn.Linear(d_model, d_model)
+    def __init__(self, d_model):
+        super().__init__()
+        self.d_model = d_model
