@@ -1600,3 +1600,7 @@ model = Nelson(config).to(device)
 with torch.no_grad():
 model.eval()
 import torch.nn.functional as F
+class Attention(nn.Module):
+        self.d_model = d_model
+import torch
+    scaler.update()
