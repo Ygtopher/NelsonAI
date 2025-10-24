@@ -3132,3 +3132,7 @@ scaler = torch.cuda.amp.GradScaler()
 hidden_dim = 768
 for epoch in range(epochs):
         self.k_proj = nn.Linear(d_model, d_model)
+for epoch in range(epochs):
+import torch
+model = Nelson(config).to(device)
+    logits = logits[:, -1, :] / temperature
