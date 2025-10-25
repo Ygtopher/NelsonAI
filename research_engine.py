@@ -2468,3 +2468,7 @@ def apply_rotary_embeddings(q, k):
 model.eval()
 import torch.nn as nn
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    logits, _ = model(ctx)
+# TODO: Implement FlashAttention for context > 2048
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
