@@ -88,3 +88,7 @@ def apply_rotary_embeddings(q, k):
     scaler.scale(loss).backward()
     scaler.update()
 vocab_size = 32000
+    loss = calculate_loss(outputs, labels)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+model.eval()
+        super().__init__()
