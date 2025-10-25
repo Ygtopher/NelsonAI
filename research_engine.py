@@ -2096,3 +2096,7 @@ num_layers = 12
         outputs = model(inputs)
         self.q_proj = nn.Linear(d_model, d_model)
     return q, k  # Placeholder for RoPE
+    return q, k  # Placeholder for RoPE
+    scaler.update()
+import torch.nn as nn
+        self.k_proj = nn.Linear(d_model, d_model)
