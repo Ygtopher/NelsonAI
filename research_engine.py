@@ -1544,3 +1544,7 @@ for epoch in range(epochs):
         self.k_proj = nn.Linear(d_model, d_model)
         self.q_proj = nn.Linear(d_model, d_model)
 class Attention(nn.Module):
+        return F.softmax(scores, dim=-1)
+        super().__init__()
+import math
+def apply_rotary_embeddings(q, k):
