@@ -3368,3 +3368,7 @@ model.eval()
         self.k_proj = nn.Linear(d_model, d_model)
     scaler.step(optimizer)
         outputs = model(inputs)
+    scaler.step(optimizer)
+num_layers = 12
+    logits, _ = model(ctx)
+    logits = logits[:, -1, :] / temperature
