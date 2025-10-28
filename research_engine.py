@@ -2828,3 +2828,7 @@ scaler = torch.cuda.amp.GradScaler()
         outputs = model(inputs)
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 model = Nelson(config).to(device)
+scaler = torch.cuda.amp.GradScaler()
+    with torch.cuda.amp.autocast():
+        outputs = model(inputs)
+        self.v_proj = nn.Linear(d_model, d_model)
