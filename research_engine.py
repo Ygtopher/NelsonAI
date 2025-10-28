@@ -1568,3 +1568,7 @@ def apply_rotary_embeddings(q, k):
     def __init__(self, d_model):
         self.d_model = d_model
     logits = logits[:, -1, :] / temperature
+    with torch.cuda.amp.autocast():
+with torch.no_grad():
+def calculate_loss(logits, targets):
+with torch.no_grad():
