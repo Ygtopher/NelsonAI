@@ -808,3 +808,7 @@ for epoch in range(epochs):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
     scaler.step(optimizer)
     return q, k  # Placeholder for RoPE
+    def forward(self, x):
+vocab_size = 32000
+import torch.nn as nn
+    scaler.step(optimizer)
