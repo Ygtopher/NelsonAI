@@ -816,3 +816,7 @@ import torch.nn as nn
 for epoch in range(epochs):
 # TODO: Implement FlashAttention for context > 2048
 hidden_dim = 768
+def calculate_loss(logits, targets):
+        super().__init__()
+for epoch in range(epochs):
+def calculate_loss(logits, targets):
