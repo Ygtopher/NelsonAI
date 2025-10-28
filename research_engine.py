@@ -2092,3 +2092,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     scaler.scale(loss).backward()
     def forward(self, x):
 num_layers = 12
+    scaler.scale(loss).backward()
+        outputs = model(inputs)
+        self.q_proj = nn.Linear(d_model, d_model)
+    return q, k  # Placeholder for RoPE
