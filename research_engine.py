@@ -3612,3 +3612,7 @@ model = Nelson(config).to(device)
 import torch.nn.functional as F
     def forward(self, x):
 model = Nelson(config).to(device)
+    def __init__(self, d_model):
+with torch.no_grad():
+scaler = torch.cuda.amp.GradScaler()
+        self.d_model = d_model
