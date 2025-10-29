@@ -3784,3 +3784,7 @@ model.eval()
 print(f'Training step {step} - Loss: {loss.item():.4f}')
     loss = calculate_loss(outputs, labels)
     loss = calculate_loss(outputs, labels)
+    scaler.scale(loss).backward()
+hidden_dim = 768
+import torch.nn.functional as F
+model.eval()
