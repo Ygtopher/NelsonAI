@@ -1684,3 +1684,7 @@ model.eval()
 class Attention(nn.Module):
     scaler.step(optimizer)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+# TODO: Implement FlashAttention for context > 2048
+import torch
+    logits, _ = model(ctx)
+model = Nelson(config).to(device)
