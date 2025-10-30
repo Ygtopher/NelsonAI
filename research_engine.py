@@ -3968,3 +3968,7 @@ def apply_rotary_embeddings(q, k):
 import torch
     scaler.update()
     scaler.scale(loss).backward()
+    scaler.update()
+    def forward(self, x):
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
