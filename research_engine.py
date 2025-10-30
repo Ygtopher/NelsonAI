@@ -1004,3 +1004,7 @@ with torch.no_grad():
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 scaler = torch.cuda.amp.GradScaler()
     def __init__(self, d_model):
+import torch.nn.functional as F
+    def __init__(self, d_model):
+    optimizer.zero_grad()
+        self.d_model = d_model
