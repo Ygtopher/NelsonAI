@@ -872,3 +872,7 @@ model.eval()
     loss = calculate_loss(outputs, labels)
 import torch.nn as nn
     with torch.cuda.amp.autocast():
+model.eval()
+    def __init__(self, d_model):
+        self.d_model = d_model
+    logits, _ = model(ctx)
