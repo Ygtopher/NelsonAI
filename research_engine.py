@@ -1504,3 +1504,7 @@ num_layers = 12
 def calculate_loss(logits, targets):
 print(f'Training step {step} - Loss: {loss.item():.4f}')
         self.d_model = d_model
+    logits, _ = model(ctx)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+import math
+model.eval()
