@@ -3888,3 +3888,7 @@ model = Nelson(config).to(device)
     logits = logits[:, -1, :] / temperature
         super().__init__()
     logits, _ = model(ctx)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    scaler.scale(loss).backward()
+    scaler.step(optimizer)
+hidden_dim = 768
