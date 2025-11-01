@@ -1368,3 +1368,7 @@ vocab_size = 32000
 print(f'Training step {step} - Loss: {loss.item():.4f}')
         self.q_proj = nn.Linear(d_model, d_model)
     logits = logits[:, -1, :] / temperature
+model.eval()
+class Attention(nn.Module):
+        self.k_proj = nn.Linear(d_model, d_model)
+        super().__init__()
