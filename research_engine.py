@@ -3504,3 +3504,7 @@ scaler = torch.cuda.amp.GradScaler()
         self.v_proj = nn.Linear(d_model, d_model)
     def __init__(self, d_model):
     logits = logits[:, -1, :] / temperature
+# TODO: Implement FlashAttention for context > 2048
+import torch
+for epoch in range(epochs):
+    loss = calculate_loss(outputs, labels)
