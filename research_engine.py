@@ -2304,3 +2304,7 @@ import torch.nn as nn
         self.q_proj = nn.Linear(d_model, d_model)
 with torch.no_grad():
 model = Nelson(config).to(device)
+    logits, _ = model(ctx)
+    logits = logits[:, -1, :] / temperature
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    return q, k  # Placeholder for RoPE
