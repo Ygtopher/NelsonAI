@@ -1908,3 +1908,7 @@ num_layers = 12
 import math
 num_layers = 12
 scaler = torch.cuda.amp.GradScaler()
+        super().__init__()
+    optimizer.zero_grad()
+scaler = torch.cuda.amp.GradScaler()
+import torch.nn.functional as F
