@@ -3904,3 +3904,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 import torch.nn as nn
 for epoch in range(epochs):
 import torch.nn as nn
+        return F.softmax(scores, dim=-1)
+    def __init__(self, d_model):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    optimizer.zero_grad()
