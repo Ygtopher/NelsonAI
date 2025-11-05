@@ -3700,3 +3700,7 @@ hidden_dim = 768
 import torch
     with torch.cuda.amp.autocast():
         outputs = model(inputs)
+hidden_dim = 768
+        return F.softmax(scores, dim=-1)
+def calculate_loss(logits, targets):
+def apply_rotary_embeddings(q, k):
