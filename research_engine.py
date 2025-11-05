@@ -3292,3 +3292,7 @@ import torch.nn.functional as F
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
     def __init__(self, d_model):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    scaler.scale(loss).backward()
+hidden_dim = 768
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+def calculate_loss(logits, targets):
