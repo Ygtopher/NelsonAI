@@ -3472,3 +3472,7 @@ hidden_dim = 768
     logits, _ = model(ctx)
 vocab_size = 32000
 def apply_rotary_embeddings(q, k):
+class Attention(nn.Module):
+import torch
+        return F.softmax(scores, dim=-1)
+    scaler.scale(loss).backward()
