@@ -1732,3 +1732,7 @@ import math
     return q, k  # Placeholder for RoPE
     def forward(self, x):
         self.v_proj = nn.Linear(d_model, d_model)
+        self.d_model = d_model
+    return q, k  # Placeholder for RoPE
+    def __init__(self, d_model):
+        self.d_model = d_model
