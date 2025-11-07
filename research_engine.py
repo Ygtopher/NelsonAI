@@ -1912,3 +1912,7 @@ scaler = torch.cuda.amp.GradScaler()
     optimizer.zero_grad()
 scaler = torch.cuda.amp.GradScaler()
 import torch.nn.functional as F
+        self.k_proj = nn.Linear(d_model, d_model)
+        self.q_proj = nn.Linear(d_model, d_model)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+import math
