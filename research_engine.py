@@ -3764,3 +3764,7 @@ model.eval()
 with torch.no_grad():
 def calculate_loss(logits, targets):
         return F.softmax(scores, dim=-1)
+model = Nelson(config).to(device)
+    logits = logits[:, -1, :] / temperature
+def apply_rotary_embeddings(q, k):
+model = Nelson(config).to(device)
