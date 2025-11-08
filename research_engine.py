@@ -1044,3 +1044,7 @@ model = Nelson(config).to(device)
     return q, k  # Placeholder for RoPE
 num_layers = 12
 num_layers = 12
+# TODO: Implement FlashAttention for context > 2048
+model.eval()
+    def __init__(self, d_model):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
