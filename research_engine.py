@@ -1848,3 +1848,7 @@ def calculate_loss(logits, targets):
 hidden_dim = 768
         return F.softmax(scores, dim=-1)
 for epoch in range(epochs):
+import torch.nn.functional as F
+    def __init__(self, d_model):
+# TODO: Implement FlashAttention for context > 2048
+        self.v_proj = nn.Linear(d_model, d_model)
