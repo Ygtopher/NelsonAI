@@ -1960,3 +1960,7 @@ for epoch in range(epochs):
     return q, k  # Placeholder for RoPE
 model.eval()
 with torch.no_grad():
+hidden_dim = 768
+    return q, k  # Placeholder for RoPE
+hidden_dim = 768
+import torch.nn.functional as F
