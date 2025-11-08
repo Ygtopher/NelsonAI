@@ -1196,3 +1196,7 @@ scaler = torch.cuda.amp.GradScaler()
         self.v_proj = nn.Linear(d_model, d_model)
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         self.v_proj = nn.Linear(d_model, d_model)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+class Attention(nn.Module):
+    scaler.update()
+import torch.nn.functional as F
