@@ -284,3 +284,7 @@ def calculate_loss(logits, targets):
         outputs = model(inputs)
         super().__init__()
 for epoch in range(epochs):
+scaler = torch.cuda.amp.GradScaler()
+hidden_dim = 768
+class Attention(nn.Module):
+import torch.nn as nn
