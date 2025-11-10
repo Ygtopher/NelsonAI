@@ -3588,3 +3588,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 class Attention(nn.Module):
 import torch.nn.functional as F
 def calculate_loss(logits, targets):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+# TODO: Implement FlashAttention for context > 2048
+with torch.no_grad():
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
