@@ -1660,3 +1660,7 @@ def apply_rotary_embeddings(q, k):
 # TODO: Implement FlashAttention for context > 2048
 hidden_dim = 768
         super().__init__()
+    scaler.scale(loss).backward()
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        return F.softmax(scores, dim=-1)
+class Attention(nn.Module):
