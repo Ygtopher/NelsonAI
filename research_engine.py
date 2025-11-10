@@ -2240,3 +2240,7 @@ model = Nelson(config).to(device)
     scaler.update()
         super().__init__()
     logits = logits[:, -1, :] / temperature
+        super().__init__()
+        super().__init__()
+    logits, _ = model(ctx)
+    def __init__(self, d_model):
