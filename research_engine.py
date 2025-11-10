@@ -1572,3 +1572,7 @@ def apply_rotary_embeddings(q, k):
 with torch.no_grad():
 def calculate_loss(logits, targets):
 with torch.no_grad():
+        outputs = model(inputs)
+    def __init__(self, d_model):
+    logits = logits[:, -1, :] / temperature
+    optimizer.zero_grad()
