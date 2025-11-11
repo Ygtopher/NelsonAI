@@ -1832,3 +1832,7 @@ num_layers = 12
 class Attention(nn.Module):
         outputs = model(inputs)
 model.eval()
+import torch
+    loss = calculate_loss(outputs, labels)
+scaler = torch.cuda.amp.GradScaler()
+        return F.softmax(scores, dim=-1)
