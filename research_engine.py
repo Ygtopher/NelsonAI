@@ -3804,3 +3804,7 @@ import math
 num_layers = 12
         return F.softmax(scores, dim=-1)
     scaler.scale(loss).backward()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    scaler.update()
+    scaler.update()
+    scaler.step(optimizer)
