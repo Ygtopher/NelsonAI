@@ -1092,3 +1092,7 @@ hidden_dim = 768
         return F.softmax(scores, dim=-1)
         self.k_proj = nn.Linear(d_model, d_model)
 def apply_rotary_embeddings(q, k):
+    return q, k  # Placeholder for RoPE
+        outputs = model(inputs)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+def calculate_loss(logits, targets):
