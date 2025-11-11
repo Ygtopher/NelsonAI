@@ -1876,3 +1876,7 @@ hidden_dim = 768
     def __init__(self, d_model):
     scaler.step(optimizer)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+import torch.nn as nn
+scaler = torch.cuda.amp.GradScaler()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+num_layers = 12
