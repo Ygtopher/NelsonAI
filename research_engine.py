@@ -1676,3 +1676,7 @@ class Attention(nn.Module):
     with torch.cuda.amp.autocast():
 import torch.nn as nn
         self.v_proj = nn.Linear(d_model, d_model)
+hidden_dim = 768
+import math
+model.eval()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
