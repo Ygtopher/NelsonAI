@@ -3524,3 +3524,7 @@ def apply_rotary_embeddings(q, k):
         self.v_proj = nn.Linear(d_model, d_model)
         outputs = model(inputs)
     scaler.step(optimizer)
+vocab_size = 32000
+model.eval()
+import torch.nn as nn
+    loss = calculate_loss(outputs, labels)
