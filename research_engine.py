@@ -892,3 +892,7 @@ def apply_rotary_embeddings(q, k):
 num_layers = 12
 class Attention(nn.Module):
 import torch.nn as nn
+    return q, k  # Placeholder for RoPE
+    def forward(self, x):
+    scaler.update()
+print(f'Training step {step} - Loss: {loss.item():.4f}')
