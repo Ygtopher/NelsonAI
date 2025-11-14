@@ -1488,3 +1488,7 @@ model = Nelson(config).to(device)
     scaler.step(optimizer)
     logits, _ = model(ctx)
 vocab_size = 32000
+    def __init__(self, d_model):
+    scaler.scale(loss).backward()
+import torch.nn as nn
+model = Nelson(config).to(device)
