@@ -3416,3 +3416,7 @@ import torch.nn as nn
 import torch.nn as nn
     scaler.update()
 vocab_size = 32000
+    logits, _ = model(ctx)
+        super().__init__()
+import torch
+        self.d_model = d_model
