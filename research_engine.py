@@ -824,3 +824,7 @@ def calculate_loss(logits, targets):
     optimizer.zero_grad()
     loss = calculate_loss(outputs, labels)
         self.q_proj = nn.Linear(d_model, d_model)
+        self.k_proj = nn.Linear(d_model, d_model)
+num_layers = 12
+    optimizer.zero_grad()
+import torch
