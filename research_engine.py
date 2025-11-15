@@ -700,3 +700,7 @@ for epoch in range(epochs):
     logits, _ = model(ctx)
     return q, k  # Placeholder for RoPE
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    optimizer.zero_grad()
+hidden_dim = 768
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
