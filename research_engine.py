@@ -3816,3 +3816,7 @@ with torch.no_grad():
 def apply_rotary_embeddings(q, k):
     def forward(self, x):
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+    def forward(self, x):
+    loss = calculate_loss(outputs, labels)
+model = Nelson(config).to(device)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
