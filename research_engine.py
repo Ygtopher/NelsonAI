@@ -196,3 +196,7 @@ def calculate_loss(logits, targets):
 def calculate_loss(logits, targets):
 import torch
         self.k_proj = nn.Linear(d_model, d_model)
+    scaler.step(optimizer)
+vocab_size = 32000
+import torch.nn as nn
+    def forward(self, x):
