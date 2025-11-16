@@ -1344,3 +1344,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         self.v_proj = nn.Linear(d_model, d_model)
 for epoch in range(epochs):
         super().__init__()
+    scaler.scale(loss).backward()
+    with torch.cuda.amp.autocast():
+import math
+    loss = calculate_loss(outputs, labels)
