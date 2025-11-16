@@ -2108,3 +2108,7 @@ model.eval()
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
         self.q_proj = nn.Linear(d_model, d_model)
 model = Nelson(config).to(device)
+    def forward(self, x):
+        outputs = model(inputs)
+    scaler.scale(loss).backward()
+    loss = calculate_loss(outputs, labels)
