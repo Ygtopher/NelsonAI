@@ -852,3 +852,7 @@ def apply_rotary_embeddings(q, k):
         self.q_proj = nn.Linear(d_model, d_model)
 import torch.nn.functional as F
 model.eval()
+    def forward(self, x):
+        outputs = model(inputs)
+# TODO: Implement FlashAttention for context > 2048
+    def forward(self, x):
