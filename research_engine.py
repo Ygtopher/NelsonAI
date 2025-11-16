@@ -256,3 +256,7 @@ import math
     scaler.step(optimizer)
     loss = calculate_loss(outputs, labels)
     return q, k  # Placeholder for RoPE
+hidden_dim = 768
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+import torch.nn.functional as F
+        super().__init__()
