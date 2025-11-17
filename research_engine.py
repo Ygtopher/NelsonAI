@@ -2924,3 +2924,7 @@ import torch.nn as nn
 with torch.no_grad():
     logits, _ = model(ctx)
 model = Nelson(config).to(device)
+model = Nelson(config).to(device)
+    logits, _ = model(ctx)
+def apply_rotary_embeddings(q, k):
+    loss = calculate_loss(outputs, labels)
