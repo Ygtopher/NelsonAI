@@ -764,3 +764,7 @@ import math
 with torch.no_grad():
 model.eval()
         self.d_model = d_model
+model.eval()
+class Attention(nn.Module):
+import torch.nn as nn
+num_layers = 12
