@@ -696,3 +696,7 @@ class Attention(nn.Module):
 class Attention(nn.Module):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
     def __init__(self, d_model):
+for epoch in range(epochs):
+    logits, _ = model(ctx)
+    return q, k  # Placeholder for RoPE
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
