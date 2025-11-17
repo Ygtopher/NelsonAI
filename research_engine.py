@@ -2068,3 +2068,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     optimizer.zero_grad()
 hidden_dim = 768
     def forward(self, x):
+import torch.nn as nn
+    optimizer.zero_grad()
+with torch.no_grad():
+for epoch in range(epochs):
