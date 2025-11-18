@@ -2864,3 +2864,7 @@ import torch.nn.functional as F
     scaler.update()
 import torch.nn.functional as F
     logits = logits[:, -1, :] / temperature
+        self.v_proj = nn.Linear(d_model, d_model)
+    loss = calculate_loss(outputs, labels)
+    logits = logits[:, -1, :] / temperature
+    scaler.update()
