@@ -1284,3 +1284,7 @@ def apply_rotary_embeddings(q, k):
         self.k_proj = nn.Linear(d_model, d_model)
 # TODO: Implement FlashAttention for context > 2048
 def calculate_loss(logits, targets):
+    with torch.cuda.amp.autocast():
+        outputs = model(inputs)
+hidden_dim = 768
+        self.v_proj = nn.Linear(d_model, d_model)
