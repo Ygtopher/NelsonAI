@@ -2144,3 +2144,7 @@ import torch.nn.functional as F
 def apply_rotary_embeddings(q, k):
 scaler = torch.cuda.amp.GradScaler()
     scaler.step(optimizer)
+        self.q_proj = nn.Linear(d_model, d_model)
+    optimizer.zero_grad()
+class Attention(nn.Module):
+vocab_size = 32000
