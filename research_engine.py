@@ -1312,3 +1312,7 @@ def calculate_loss(logits, targets):
 class Attention(nn.Module):
         outputs = model(inputs)
     scaler.scale(loss).backward()
+for epoch in range(epochs):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    loss = calculate_loss(outputs, labels)
+model.eval()
