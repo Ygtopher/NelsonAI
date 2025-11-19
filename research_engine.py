@@ -672,3 +672,7 @@ hidden_dim = 768
         self.q_proj = nn.Linear(d_model, d_model)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
         outputs = model(inputs)
+hidden_dim = 768
+        return F.softmax(scores, dim=-1)
+        self.d_model = d_model
+        self.d_model = d_model
