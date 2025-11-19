@@ -1656,3 +1656,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         outputs = model(inputs)
 import torch.nn as nn
         outputs = model(inputs)
+def apply_rotary_embeddings(q, k):
+# TODO: Implement FlashAttention for context > 2048
+hidden_dim = 768
+        super().__init__()
