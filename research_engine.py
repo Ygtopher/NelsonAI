@@ -3628,3 +3628,7 @@ import torch.nn.functional as F
         return F.softmax(scores, dim=-1)
 hidden_dim = 768
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    loss = calculate_loss(outputs, labels)
+hidden_dim = 768
+import torch.nn as nn
