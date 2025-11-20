@@ -3520,3 +3520,7 @@ with torch.no_grad():
 vocab_size = 32000
         self.q_proj = nn.Linear(d_model, d_model)
     def forward(self, x):
+def apply_rotary_embeddings(q, k):
+        self.v_proj = nn.Linear(d_model, d_model)
+        outputs = model(inputs)
+    scaler.step(optimizer)
