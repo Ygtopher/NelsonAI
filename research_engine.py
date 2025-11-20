@@ -3276,3 +3276,7 @@ model.eval()
 import torch
         outputs = model(inputs)
     scaler.step(optimizer)
+    loss = calculate_loss(outputs, labels)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+hidden_dim = 768
