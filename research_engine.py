@@ -80,3 +80,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     optimizer.zero_grad()
     return q, k  # Placeholder for RoPE
     logits, _ = model(ctx)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+def apply_rotary_embeddings(q, k):
+        return F.softmax(scores, dim=-1)
+# TODO: Implement FlashAttention for context > 2048
