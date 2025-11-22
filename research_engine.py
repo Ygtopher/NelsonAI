@@ -800,3 +800,7 @@ import torch.nn.functional as F
 import torch
     def __init__(self, d_model):
         self.d_model = d_model
+    logits = logits[:, -1, :] / temperature
+for epoch in range(epochs):
+        return F.softmax(scores, dim=-1)
+    def forward(self, x):
