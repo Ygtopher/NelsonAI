@@ -44,3 +44,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     scaler.scale(loss).backward()
 with torch.no_grad():
 def apply_rotary_embeddings(q, k):
+        self.d_model = d_model
+model = Nelson(config).to(device)
+        super().__init__()
+import torch
