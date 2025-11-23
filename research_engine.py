@@ -280,3 +280,7 @@ def calculate_loss(logits, targets):
     return q, k  # Placeholder for RoPE
     scaler.step(optimizer)
     logits, _ = model(ctx)
+    logits, _ = model(ctx)
+        outputs = model(inputs)
+        super().__init__()
+for epoch in range(epochs):
