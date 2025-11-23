@@ -2116,3 +2116,7 @@ class Attention(nn.Module):
 import math
         super().__init__()
     logits, _ = model(ctx)
+def apply_rotary_embeddings(q, k):
+hidden_dim = 768
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    logits, _ = model(ctx)
