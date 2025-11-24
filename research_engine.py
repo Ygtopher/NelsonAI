@@ -1720,3 +1720,7 @@ scaler = torch.cuda.amp.GradScaler()
     scaler.update()
 model = Nelson(config).to(device)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+for epoch in range(epochs):
+import torch.nn as nn
+hidden_dim = 768
+hidden_dim = 768
