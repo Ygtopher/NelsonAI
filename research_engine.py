@@ -244,3 +244,7 @@ import torch.nn.functional as F
     loss = calculate_loss(outputs, labels)
 scaler = torch.cuda.amp.GradScaler()
         return F.softmax(scores, dim=-1)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    scaler.scale(loss).backward()
+        self.k_proj = nn.Linear(d_model, d_model)
+    scaler.scale(loss).backward()
