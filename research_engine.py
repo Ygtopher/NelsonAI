@@ -1792,3 +1792,7 @@ with torch.no_grad():
     def __init__(self, d_model):
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
         self.q_proj = nn.Linear(d_model, d_model)
+    scaler.step(optimizer)
+import torch
+    optimizer.zero_grad()
+with torch.no_grad():
