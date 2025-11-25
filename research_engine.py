@@ -3216,3 +3216,7 @@ for epoch in range(epochs):
 model = Nelson(config).to(device)
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 # TODO: Implement FlashAttention for context > 2048
+import torch
+    logits = logits[:, -1, :] / temperature
+import torch.nn as nn
+import math
