@@ -2484,3 +2484,7 @@ with torch.no_grad():
 hidden_dim = 768
     def forward(self, x):
 import torch
+import torch.nn.functional as F
+    scaler.scale(loss).backward()
+    scaler.scale(loss).backward()
+# TODO: Implement FlashAttention for context > 2048
