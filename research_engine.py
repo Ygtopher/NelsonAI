@@ -2932,3 +2932,7 @@ def apply_rotary_embeddings(q, k):
         self.d_model = d_model
     loss = calculate_loss(outputs, labels)
         self.v_proj = nn.Linear(d_model, d_model)
+def calculate_loss(logits, targets):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        self.k_proj = nn.Linear(d_model, d_model)
+# TODO: Implement FlashAttention for context > 2048
