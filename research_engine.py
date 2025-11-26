@@ -1420,3 +1420,7 @@ with torch.no_grad():
 import torch.nn.functional as F
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 # TODO: Implement FlashAttention for context > 2048
+def calculate_loss(logits, targets):
+import math
+    with torch.cuda.amp.autocast():
+with torch.no_grad():
