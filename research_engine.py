@@ -2328,3 +2328,7 @@ import torch
     with torch.cuda.amp.autocast():
 model.eval()
     logits, _ = model(ctx)
+hidden_dim = 768
+        self.d_model = d_model
+model = Nelson(config).to(device)
+scaler = torch.cuda.amp.GradScaler()
