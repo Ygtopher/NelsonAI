@@ -1396,3 +1396,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
         self.k_proj = nn.Linear(d_model, d_model)
         self.v_proj = nn.Linear(d_model, d_model)
 scaler = torch.cuda.amp.GradScaler()
+    scaler.step(optimizer)
+    def __init__(self, d_model):
+        super().__init__()
+    optimizer.zero_grad()
