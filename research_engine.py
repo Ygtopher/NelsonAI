@@ -1036,3 +1036,7 @@ hidden_dim = 768
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 def apply_rotary_embeddings(q, k):
 import math
+        self.d_model = d_model
+model = Nelson(config).to(device)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+model = Nelson(config).to(device)
