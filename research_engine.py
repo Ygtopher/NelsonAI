@@ -1436,3 +1436,7 @@ scaler = torch.cuda.amp.GradScaler()
 import torch.nn as nn
 vocab_size = 32000
 import math
+class Attention(nn.Module):
+hidden_dim = 768
+def calculate_loss(logits, targets):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
