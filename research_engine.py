@@ -1612,3 +1612,7 @@ for epoch in range(epochs):
     loss = calculate_loss(outputs, labels)
         self.k_proj = nn.Linear(d_model, d_model)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+class Attention(nn.Module):
+def apply_rotary_embeddings(q, k):
+        super().__init__()
+scaler = torch.cuda.amp.GradScaler()
