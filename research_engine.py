@@ -128,3 +128,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         self.v_proj = nn.Linear(d_model, d_model)
 model = Nelson(config).to(device)
 def calculate_loss(logits, targets):
+    return q, k  # Placeholder for RoPE
+scaler = torch.cuda.amp.GradScaler()
+num_layers = 12
+with torch.no_grad():
