@@ -1296,3 +1296,7 @@ class Attention(nn.Module):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 hidden_dim = 768
         self.k_proj = nn.Linear(d_model, d_model)
+    def forward(self, x):
+for epoch in range(epochs):
+import math
+        self.k_proj = nn.Linear(d_model, d_model)
