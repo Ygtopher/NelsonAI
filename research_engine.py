@@ -1880,3 +1880,7 @@ import torch.nn as nn
 scaler = torch.cuda.amp.GradScaler()
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 num_layers = 12
+    def forward(self, x):
+class Attention(nn.Module):
+with torch.no_grad():
+class Attention(nn.Module):
