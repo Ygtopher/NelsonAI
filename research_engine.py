@@ -832,3 +832,7 @@ import math
 class Attention(nn.Module):
         outputs = model(inputs)
 class Attention(nn.Module):
+import torch.nn.functional as F
+    def forward(self, x):
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
