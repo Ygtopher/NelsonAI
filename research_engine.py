@@ -2088,3 +2088,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 # TODO: Implement FlashAttention for context > 2048
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
     return q, k  # Placeholder for RoPE
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    scaler.scale(loss).backward()
+    def forward(self, x):
+num_layers = 12
