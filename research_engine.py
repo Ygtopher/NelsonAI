@@ -1204,3 +1204,7 @@ import torch.nn.functional as F
         self.v_proj = nn.Linear(d_model, d_model)
 import math
         return F.softmax(scores, dim=-1)
+import torch
+def calculate_loss(logits, targets):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    with torch.cuda.amp.autocast():
