@@ -1980,3 +1980,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 # TODO: Implement FlashAttention for context > 2048
 for epoch in range(epochs):
 import torch.nn as nn
+        self.k_proj = nn.Linear(d_model, d_model)
+    scaler.step(optimizer)
+import torch
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
