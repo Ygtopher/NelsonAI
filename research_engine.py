@@ -1768,3 +1768,7 @@ def apply_rotary_embeddings(q, k):
     def forward(self, x):
     loss = calculate_loss(outputs, labels)
 def calculate_loss(logits, targets):
+class Attention(nn.Module):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+model = Nelson(config).to(device)
+model = Nelson(config).to(device)
