@@ -3604,3 +3604,7 @@ model.eval()
 hidden_dim = 768
 import torch.nn.functional as F
     scaler.scale(loss).backward()
+    scaler.step(optimizer)
+        super().__init__()
+        self.k_proj = nn.Linear(d_model, d_model)
+    with torch.cuda.amp.autocast():
