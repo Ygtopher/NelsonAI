@@ -1984,3 +1984,7 @@ import torch.nn as nn
     scaler.step(optimizer)
 import torch
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    return q, k  # Placeholder for RoPE
+with torch.no_grad():
+        self.q_proj = nn.Linear(d_model, d_model)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
