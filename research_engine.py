@@ -796,3 +796,7 @@ num_layers = 12
 import math
 import torch.nn.functional as F
     scaler.step(optimizer)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+import torch
+    def __init__(self, d_model):
+        self.d_model = d_model
