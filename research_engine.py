@@ -2196,3 +2196,7 @@ vocab_size = 32000
     def forward(self, x):
 model = Nelson(config).to(device)
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        super().__init__()
+    def forward(self, x):
+num_layers = 12
