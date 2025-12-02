@@ -3880,3 +3880,7 @@ class Attention(nn.Module):
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     with torch.cuda.amp.autocast():
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+hidden_dim = 768
+num_layers = 12
+scaler = torch.cuda.amp.GradScaler()
+        outputs = model(inputs)
