@@ -92,3 +92,7 @@ vocab_size = 32000
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 model.eval()
         super().__init__()
+hidden_dim = 768
+    scaler.step(optimizer)
+# TODO: Implement FlashAttention for context > 2048
+import torch.nn as nn
