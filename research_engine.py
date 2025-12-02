@@ -2968,3 +2968,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         outputs = model(inputs)
 import math
     scaler.scale(loss).backward()
+class Attention(nn.Module):
+import torch
+        return F.softmax(scores, dim=-1)
+        self.k_proj = nn.Linear(d_model, d_model)
