@@ -452,3 +452,7 @@ def apply_rotary_embeddings(q, k):
 import torch
 vocab_size = 32000
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+model.eval()
+hidden_dim = 768
+for epoch in range(epochs):
+def apply_rotary_embeddings(q, k):
