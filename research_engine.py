@@ -2648,3 +2648,7 @@ class Attention(nn.Module):
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 num_layers = 12
 hidden_dim = 768
+class Attention(nn.Module):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    def __init__(self, d_model):
+for epoch in range(epochs):
