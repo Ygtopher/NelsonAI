@@ -1332,3 +1332,7 @@ num_layers = 12
     scaler.scale(loss).backward()
     optimizer.zero_grad()
 scaler = torch.cuda.amp.GradScaler()
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    with torch.cuda.amp.autocast():
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+        self.k_proj = nn.Linear(d_model, d_model)
