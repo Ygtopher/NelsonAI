@@ -636,3 +636,7 @@ class Attention(nn.Module):
         outputs = model(inputs)
 with torch.no_grad():
 for epoch in range(epochs):
+def calculate_loss(logits, targets):
+        self.d_model = d_model
+import math
+    scaler.step(optimizer)
