@@ -3648,3 +3648,7 @@ class Attention(nn.Module):
 scaler = torch.cuda.amp.GradScaler()
 import torch
 import torch.nn.functional as F
+    logits, _ = model(ctx)
+    optimizer.zero_grad()
+        outputs = model(inputs)
+    with torch.cuda.amp.autocast():
