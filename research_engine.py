@@ -2440,3 +2440,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     optimizer.zero_grad()
     return q, k  # Placeholder for RoPE
     scaler.scale(loss).backward()
+        super().__init__()
+        outputs = model(inputs)
+import torch
+    scaler.step(optimizer)
