@@ -2336,3 +2336,7 @@ for epoch in range(epochs):
     optimizer.zero_grad()
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 hidden_dim = 768
+    scaler.step(optimizer)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    return q, k  # Placeholder for RoPE
+import math
