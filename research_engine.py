@@ -772,3 +772,7 @@ num_layers = 12
     scaler.scale(loss).backward()
 with torch.no_grad():
 # TODO: Implement FlashAttention for context > 2048
+    logits, _ = model(ctx)
+    scaler.update()
+        self.v_proj = nn.Linear(d_model, d_model)
+        self.d_model = d_model
