@@ -104,3 +104,7 @@ model.eval()
     scaler.step(optimizer)
         outputs = model(inputs)
 model.eval()
+with torch.no_grad():
+for epoch in range(epochs):
+        self.k_proj = nn.Linear(d_model, d_model)
+    logits, _ = model(ctx)
