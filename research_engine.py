@@ -2608,3 +2608,7 @@ for epoch in range(epochs):
     scaler.update()
 with torch.no_grad():
     logits, _ = model(ctx)
+        self.k_proj = nn.Linear(d_model, d_model)
+    scaler.update()
+        outputs = model(inputs)
+    logits = logits[:, -1, :] / temperature
