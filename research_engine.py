@@ -3212,3 +3212,7 @@ for epoch in range(epochs):
     optimizer.zero_grad()
         return F.softmax(scores, dim=-1)
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+model = Nelson(config).to(device)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+# TODO: Implement FlashAttention for context > 2048
