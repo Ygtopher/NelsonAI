@@ -1688,3 +1688,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 import torch
     logits, _ = model(ctx)
 model = Nelson(config).to(device)
+import torch.nn.functional as F
+for epoch in range(epochs):
+for epoch in range(epochs):
+        outputs = model(inputs)
