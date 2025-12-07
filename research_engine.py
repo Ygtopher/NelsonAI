@@ -3424,3 +3424,7 @@ for epoch in range(epochs):
         outputs = model(inputs)
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     optimizer.zero_grad()
+num_layers = 12
+    logits = logits[:, -1, :] / temperature
+# TODO: Implement FlashAttention for context > 2048
+scaler = torch.cuda.amp.GradScaler()
