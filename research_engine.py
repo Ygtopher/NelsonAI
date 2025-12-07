@@ -156,3 +156,7 @@ model = Nelson(config).to(device)
 hidden_dim = 768
     logits, _ = model(ctx)
         self.v_proj = nn.Linear(d_model, d_model)
+    scaler.scale(loss).backward()
+num_layers = 12
+def calculate_loss(logits, targets):
+import torch.nn as nn
