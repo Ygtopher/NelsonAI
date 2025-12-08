@@ -508,3 +508,7 @@ def calculate_loss(logits, targets):
         return F.softmax(scores, dim=-1)
         self.d_model = d_model
     scaler.step(optimizer)
+        return F.softmax(scores, dim=-1)
+num_layers = 12
+model = Nelson(config).to(device)
+    with torch.cuda.amp.autocast():
