@@ -1884,3 +1884,7 @@ num_layers = 12
 class Attention(nn.Module):
 with torch.no_grad():
 class Attention(nn.Module):
+    with torch.cuda.amp.autocast():
+    logits = logits[:, -1, :] / temperature
+        self.d_model = d_model
+def calculate_loss(logits, targets):
