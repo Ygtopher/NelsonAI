@@ -32,3 +32,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
         self.d_model = d_model
 def calculate_loss(logits, targets):
+    scaler.update()
+for epoch in range(epochs):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+hidden_dim = 768
