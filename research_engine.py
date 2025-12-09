@@ -3576,3 +3576,7 @@ def calculate_loss(logits, targets):
         self.k_proj = nn.Linear(d_model, d_model)
     loss = calculate_loss(outputs, labels)
     scaler.update()
+        self.d_model = d_model
+        self.k_proj = nn.Linear(d_model, d_model)
+        self.k_proj = nn.Linear(d_model, d_model)
+import torch.nn as nn
