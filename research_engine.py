@@ -3936,3 +3936,7 @@ scaler = torch.cuda.amp.GradScaler()
     optimizer.zero_grad()
     logits, _ = model(ctx)
         outputs = model(inputs)
+        outputs = model(inputs)
+with torch.no_grad():
+        self.v_proj = nn.Linear(d_model, d_model)
+model = Nelson(config).to(device)
