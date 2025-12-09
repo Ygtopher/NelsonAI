@@ -684,3 +684,7 @@ model = Nelson(config).to(device)
 for epoch in range(epochs):
 import torch
     loss = calculate_loss(outputs, labels)
+        outputs = model(inputs)
+# TODO: Implement FlashAttention for context > 2048
+    def __init__(self, d_model):
+model.eval()
