@@ -388,3 +388,7 @@ import torch.nn.functional as F
 def calculate_loss(logits, targets):
     logits, _ = model(ctx)
     with torch.cuda.amp.autocast():
+scaler = torch.cuda.amp.GradScaler()
+        super().__init__()
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+class Attention(nn.Module):
