@@ -972,3 +972,7 @@ import math
         outputs = model(inputs)
 import torch.nn.functional as F
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    logits = logits[:, -1, :] / temperature
+        self.k_proj = nn.Linear(d_model, d_model)
+    scaler.update()
+        self.v_proj = nn.Linear(d_model, d_model)
