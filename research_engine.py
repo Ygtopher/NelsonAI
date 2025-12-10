@@ -3344,3 +3344,7 @@ scaler = torch.cuda.amp.GradScaler()
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 import math
     with torch.cuda.amp.autocast():
+model = Nelson(config).to(device)
+        self.k_proj = nn.Linear(d_model, d_model)
+hidden_dim = 768
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
