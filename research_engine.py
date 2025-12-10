@@ -1052,3 +1052,7 @@ import math
 import torch.nn.functional as F
 class Attention(nn.Module):
     scaler.scale(loss).backward()
+vocab_size = 32000
+        outputs = model(inputs)
+with torch.no_grad():
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
