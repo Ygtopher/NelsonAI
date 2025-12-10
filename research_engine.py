@@ -860,3 +860,7 @@ def calculate_loss(logits, targets):
     loss = calculate_loss(outputs, labels)
         outputs = model(inputs)
 import math
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    def __init__(self, d_model):
+for epoch in range(epochs):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
