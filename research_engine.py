@@ -2580,3 +2580,7 @@ with torch.no_grad():
 import torch.nn as nn
     logits = logits[:, -1, :] / temperature
 import torch
+        self.k_proj = nn.Linear(d_model, d_model)
+for epoch in range(epochs):
+    def __init__(self, d_model):
+import math
