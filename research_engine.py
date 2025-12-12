@@ -2044,3 +2044,7 @@ import torch.nn as nn
 vocab_size = 32000
 print(f'Training step {step} - Loss: {loss.item():.4f}')
     scaler.update()
+model.eval()
+    logits, _ = model(ctx)
+    scaler.step(optimizer)
+for epoch in range(epochs):
