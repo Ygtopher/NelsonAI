@@ -160,3 +160,7 @@ hidden_dim = 768
 num_layers = 12
 def calculate_loss(logits, targets):
 import torch.nn as nn
+import torch
+vocab_size = 32000
+    optimizer.zero_grad()
+def apply_rotary_embeddings(q, k):
