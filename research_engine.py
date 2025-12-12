@@ -2348,3 +2348,7 @@ def calculate_loss(logits, targets):
     with torch.cuda.amp.autocast():
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 num_layers = 12
+    scaler.step(optimizer)
+hidden_dim = 768
+for epoch in range(epochs):
+model.eval()
