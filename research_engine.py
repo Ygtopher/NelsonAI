@@ -3184,3 +3184,7 @@ with torch.no_grad():
 num_layers = 12
 # TODO: Implement FlashAttention for context > 2048
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+# TODO: Implement FlashAttention for context > 2048
+    logits, _ = model(ctx)
+    def forward(self, x):
+scaler = torch.cuda.amp.GradScaler()
