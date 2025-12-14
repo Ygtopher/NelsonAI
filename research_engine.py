@@ -3152,3 +3152,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     def forward(self, x):
     logits = logits[:, -1, :] / temperature
 for epoch in range(epochs):
+    logits, _ = model(ctx)
+import torch.nn as nn
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    logits = logits[:, -1, :] / temperature
