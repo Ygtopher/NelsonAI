@@ -884,3 +884,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
         return F.softmax(scores, dim=-1)
     scaler.update()
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    def __init__(self, d_model):
+def apply_rotary_embeddings(q, k):
+model.eval()
+def apply_rotary_embeddings(q, k):
