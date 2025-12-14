@@ -2940,3 +2940,7 @@ class Attention(nn.Module):
     return q, k  # Placeholder for RoPE
     with torch.cuda.amp.autocast():
     scaler.scale(loss).backward()
+model.eval()
+import torch.nn.functional as F
+    scaler.update()
+    scaler.update()
