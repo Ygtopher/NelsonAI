@@ -2128,3 +2128,7 @@ model.eval()
 hidden_dim = 768
         super().__init__()
 import torch
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    scaler.update()
+    return q, k  # Placeholder for RoPE
