@@ -3392,3 +3392,7 @@ scaler = torch.cuda.amp.GradScaler()
     scaler.step(optimizer)
 num_layers = 12
     def __init__(self, d_model):
+hidden_dim = 768
+class Attention(nn.Module):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    loss = calculate_loss(outputs, labels)
