@@ -516,3 +516,7 @@ model = Nelson(config).to(device)
 def apply_rotary_embeddings(q, k):
 import torch.nn as nn
 # TODO: Implement FlashAttention for context > 2048
+    optimizer.zero_grad()
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    with torch.cuda.amp.autocast():
+        self.q_proj = nn.Linear(d_model, d_model)
