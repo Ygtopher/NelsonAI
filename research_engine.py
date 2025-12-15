@@ -472,3 +472,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     optimizer.zero_grad()
 with torch.no_grad():
+    optimizer.zero_grad()
+with torch.no_grad():
+        super().__init__()
+    with torch.cuda.amp.autocast():
