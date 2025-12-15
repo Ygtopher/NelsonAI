@@ -1328,3 +1328,7 @@ hidden_dim = 768
         self.d_model = d_model
 num_layers = 12
         super().__init__()
+        super().__init__()
+    scaler.scale(loss).backward()
+    optimizer.zero_grad()
+scaler = torch.cuda.amp.GradScaler()
