@@ -1952,3 +1952,7 @@ for epoch in range(epochs):
     scaler.update()
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 scaler = torch.cuda.amp.GradScaler()
+    optimizer.zero_grad()
+    logits = logits[:, -1, :] / temperature
+import torch.nn.functional as F
+for epoch in range(epochs):
