@@ -2780,3 +2780,7 @@ model = Nelson(config).to(device)
 scaler = torch.cuda.amp.GradScaler()
     logits, _ = model(ctx)
 def calculate_loss(logits, targets):
+    return q, k  # Placeholder for RoPE
+hidden_dim = 768
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+# TODO: Implement FlashAttention for context > 2048
