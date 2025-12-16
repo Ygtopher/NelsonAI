@@ -2228,3 +2228,7 @@ hidden_dim = 768
 import torch
 vocab_size = 32000
         return F.softmax(scores, dim=-1)
+    with torch.cuda.amp.autocast():
+    optimizer.zero_grad()
+# TODO: Implement FlashAttention for context > 2048
+    def forward(self, x):
