@@ -1288,3 +1288,7 @@ def calculate_loss(logits, targets):
         outputs = model(inputs)
 hidden_dim = 768
         self.v_proj = nn.Linear(d_model, d_model)
+        return F.softmax(scores, dim=-1)
+num_layers = 12
+        self.q_proj = nn.Linear(d_model, d_model)
+class Attention(nn.Module):
