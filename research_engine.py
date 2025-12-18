@@ -96,3 +96,7 @@ hidden_dim = 768
     scaler.step(optimizer)
 # TODO: Implement FlashAttention for context > 2048
 import torch.nn as nn
+model = Nelson(config).to(device)
+model = Nelson(config).to(device)
+hidden_dim = 768
+model.eval()
