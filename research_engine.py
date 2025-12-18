@@ -3104,3 +3104,7 @@ model = Nelson(config).to(device)
 num_layers = 12
     scaler.step(optimizer)
 def calculate_loss(logits, targets):
+        self.q_proj = nn.Linear(d_model, d_model)
+    scaler.update()
+class Attention(nn.Module):
+import torch
