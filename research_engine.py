@@ -2928,3 +2928,7 @@ model = Nelson(config).to(device)
     logits, _ = model(ctx)
 def apply_rotary_embeddings(q, k):
     loss = calculate_loss(outputs, labels)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        self.d_model = d_model
+    loss = calculate_loss(outputs, labels)
+        self.v_proj = nn.Linear(d_model, d_model)
