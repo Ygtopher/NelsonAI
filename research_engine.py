@@ -2784,3 +2784,7 @@ def calculate_loss(logits, targets):
 hidden_dim = 768
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 # TODO: Implement FlashAttention for context > 2048
+    optimizer.zero_grad()
+    logits, _ = model(ctx)
+    return q, k  # Placeholder for RoPE
+with torch.no_grad():
