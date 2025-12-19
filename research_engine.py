@@ -1728,3 +1728,7 @@ vocab_size = 32000
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 import torch
 import math
+    def forward(self, x):
+    return q, k  # Placeholder for RoPE
+    def forward(self, x):
+        self.v_proj = nn.Linear(d_model, d_model)
