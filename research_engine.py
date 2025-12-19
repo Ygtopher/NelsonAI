@@ -84,3 +84,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 def apply_rotary_embeddings(q, k):
         return F.softmax(scores, dim=-1)
 # TODO: Implement FlashAttention for context > 2048
+        return F.softmax(scores, dim=-1)
+    scaler.scale(loss).backward()
+    scaler.update()
+vocab_size = 32000
