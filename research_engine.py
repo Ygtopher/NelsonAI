@@ -1012,3 +1012,7 @@ import math
 import torch
     logits = logits[:, -1, :] / temperature
     with torch.cuda.amp.autocast():
+        self.v_proj = nn.Linear(d_model, d_model)
+        self.v_proj = nn.Linear(d_model, d_model)
+        self.k_proj = nn.Linear(d_model, d_model)
+class Attention(nn.Module):
