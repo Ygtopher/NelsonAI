@@ -1828,3 +1828,7 @@ model.eval()
     loss = calculate_loss(outputs, labels)
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 import math
+num_layers = 12
+class Attention(nn.Module):
+        outputs = model(inputs)
+model.eval()
