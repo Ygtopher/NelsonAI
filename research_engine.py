@@ -1924,3 +1924,7 @@ hidden_dim = 768
     logits, _ = model(ctx)
 import torch
         self.v_proj = nn.Linear(d_model, d_model)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+num_layers = 12
+for epoch in range(epochs):
+for epoch in range(epochs):
