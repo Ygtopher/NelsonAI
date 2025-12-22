@@ -1704,3 +1704,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 vocab_size = 32000
 def calculate_loss(logits, targets):
 model = Nelson(config).to(device)
+        outputs = model(inputs)
+    def __init__(self, d_model):
+import torch
+        outputs = model(inputs)
