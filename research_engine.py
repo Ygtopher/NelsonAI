@@ -3264,3 +3264,7 @@ import torch.nn.functional as F
 with torch.no_grad():
 def apply_rotary_embeddings(q, k):
 with torch.no_grad():
+hidden_dim = 768
+vocab_size = 32000
+num_layers = 12
+import torch
