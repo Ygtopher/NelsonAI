@@ -1540,3 +1540,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 import torch
     logits, _ = model(ctx)
 for epoch in range(epochs):
+    loss = calculate_loss(outputs, labels)
+        self.k_proj = nn.Linear(d_model, d_model)
+        self.q_proj = nn.Linear(d_model, d_model)
+class Attention(nn.Module):
