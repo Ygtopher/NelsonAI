@@ -2576,3 +2576,7 @@ import math
 # TODO: Implement FlashAttention for context > 2048
 for epoch in range(epochs):
 def calculate_loss(logits, targets):
+with torch.no_grad():
+import torch.nn as nn
+    logits = logits[:, -1, :] / temperature
+import torch
