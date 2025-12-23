@@ -1812,3 +1812,7 @@ for epoch in range(epochs):
 import torch.nn as nn
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 import torch.nn as nn
+    def __init__(self, d_model):
+# TODO: Implement FlashAttention for context > 2048
+    scaler.scale(loss).backward()
+    loss = calculate_loss(outputs, labels)
