@@ -1816,3 +1816,7 @@ import torch.nn as nn
 # TODO: Implement FlashAttention for context > 2048
     scaler.scale(loss).backward()
     loss = calculate_loss(outputs, labels)
+def calculate_loss(logits, targets):
+        self.d_model = d_model
+    with torch.cuda.amp.autocast():
+model.eval()
