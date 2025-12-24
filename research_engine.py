@@ -2520,3 +2520,7 @@ model.eval()
 import torch.nn as nn
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 import torch
+    logits, _ = model(ctx)
+vocab_size = 32000
+        self.d_model = d_model
+    scaler.step(optimizer)
