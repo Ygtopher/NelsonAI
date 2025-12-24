@@ -2004,3 +2004,7 @@ model = Nelson(config).to(device)
 model.eval()
 import torch
 import torch.nn as nn
+    logits, _ = model(ctx)
+        self.q_proj = nn.Linear(d_model, d_model)
+def apply_rotary_embeddings(q, k):
+import torch.nn.functional as F
