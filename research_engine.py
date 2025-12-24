@@ -72,3 +72,7 @@ for epoch in range(epochs):
 import math
         self.k_proj = nn.Linear(d_model, d_model)
 import torch
+def calculate_loss(logits, targets):
+scaler = torch.cuda.amp.GradScaler()
+class Attention(nn.Module):
+    scaler.scale(loss).backward()
