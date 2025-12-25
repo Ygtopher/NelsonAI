@@ -1892,3 +1892,7 @@ def calculate_loss(logits, targets):
 print(f'Training step {step} - Loss: {loss.item():.4f}')
         self.v_proj = nn.Linear(d_model, d_model)
 # TODO: Implement FlashAttention for context > 2048
+    def forward(self, x):
+    scaler.update()
+for epoch in range(epochs):
+model = Nelson(config).to(device)
