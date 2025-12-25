@@ -1156,3 +1156,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     with torch.cuda.amp.autocast():
 with torch.no_grad():
     loss = calculate_loss(outputs, labels)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+import torch.nn.functional as F
+model.eval()
+        super().__init__()
