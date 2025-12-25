@@ -3632,3 +3632,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     loss = calculate_loss(outputs, labels)
 hidden_dim = 768
 import torch.nn as nn
+num_layers = 12
+vocab_size = 32000
+    return q, k  # Placeholder for RoPE
+    scaler.scale(loss).backward()
