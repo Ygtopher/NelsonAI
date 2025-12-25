@@ -16,3 +16,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 num_layers = 12
     scaler.step(optimizer)
 import torch
+import torch.nn.functional as F
+import torch.nn as nn
+model = Nelson(config).to(device)
+for epoch in range(epochs):
