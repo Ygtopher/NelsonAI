@@ -3064,3 +3064,7 @@ def calculate_loss(logits, targets):
     def forward(self, x):
     logits, _ = model(ctx)
 def apply_rotary_embeddings(q, k):
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+scaler = torch.cuda.amp.GradScaler()
+import torch.nn.functional as F
+def apply_rotary_embeddings(q, k):
