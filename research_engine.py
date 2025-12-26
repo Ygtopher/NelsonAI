@@ -2732,3 +2732,7 @@ def calculate_loss(logits, targets):
         self.k_proj = nn.Linear(d_model, d_model)
         self.q_proj = nn.Linear(d_model, d_model)
         self.v_proj = nn.Linear(d_model, d_model)
+with torch.no_grad():
+    return q, k  # Placeholder for RoPE
+    loss = calculate_loss(outputs, labels)
+import math
