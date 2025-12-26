@@ -1308,3 +1308,7 @@ num_layers = 12
 model = Nelson(config).to(device)
 def calculate_loss(logits, targets):
     scaler.scale(loss).backward()
+        self.k_proj = nn.Linear(d_model, d_model)
+class Attention(nn.Module):
+        outputs = model(inputs)
+    scaler.scale(loss).backward()
