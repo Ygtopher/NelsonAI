@@ -2056,3 +2056,7 @@ scaler = torch.cuda.amp.GradScaler()
 vocab_size = 32000
     def forward(self, x):
 # TODO: Implement FlashAttention for context > 2048
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+        super().__init__()
+    scaler.update()
+    loss = calculate_loss(outputs, labels)
