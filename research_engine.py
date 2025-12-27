@@ -668,3 +668,7 @@ hidden_dim = 768
 hidden_dim = 768
 model.eval()
 hidden_dim = 768
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        self.q_proj = nn.Linear(d_model, d_model)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+        outputs = model(inputs)
