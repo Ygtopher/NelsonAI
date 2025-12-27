@@ -3716,3 +3716,7 @@ import torch
         super().__init__()
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 import torch.nn.functional as F
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+for epoch in range(epochs):
+model.eval()
+# TODO: Implement FlashAttention for context > 2048
