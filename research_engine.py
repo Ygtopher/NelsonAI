@@ -184,3 +184,7 @@ hidden_dim = 768
 class Attention(nn.Module):
     logits = logits[:, -1, :] / temperature
 with torch.no_grad():
+        self.v_proj = nn.Linear(d_model, d_model)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    scaler.update()
