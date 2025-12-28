@@ -228,3 +228,7 @@ def calculate_loss(logits, targets):
 with torch.no_grad():
 import torch.nn.functional as F
 import torch.nn as nn
+def apply_rotary_embeddings(q, k):
+        outputs = model(inputs)
+import torch
+        self.q_proj = nn.Linear(d_model, d_model)
