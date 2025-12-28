@@ -3404,3 +3404,7 @@ import torch
 import math
     return q, k  # Placeholder for RoPE
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        self.v_proj = nn.Linear(d_model, d_model)
+        self.d_model = d_model
+def calculate_loss(logits, targets):
+    scaler.scale(loss).backward()
