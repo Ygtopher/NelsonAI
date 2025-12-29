@@ -3692,3 +3692,7 @@ hidden_dim = 768
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     def forward(self, x):
         return F.softmax(scores, dim=-1)
+    scaler.step(optimizer)
+    scaler.update()
+        self.k_proj = nn.Linear(d_model, d_model)
+        super().__init__()
