@@ -2860,3 +2860,7 @@ import math
         outputs = model(inputs)
 import torch.nn.functional as F
     logits, _ = model(ctx)
+    scaler.scale(loss).backward()
+    scaler.update()
+import torch.nn.functional as F
+    logits = logits[:, -1, :] / temperature
