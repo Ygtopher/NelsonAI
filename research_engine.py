@@ -2612,3 +2612,7 @@ with torch.no_grad():
     scaler.update()
         outputs = model(inputs)
     logits = logits[:, -1, :] / temperature
+        super().__init__()
+import torch.nn as nn
+    def __init__(self, d_model):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
