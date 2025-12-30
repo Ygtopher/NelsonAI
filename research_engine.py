@@ -2660,3 +2660,7 @@ import math
 import torch.nn.functional as F
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+    return q, k  # Placeholder for RoPE
+    logits, _ = model(ctx)
+        outputs = model(inputs)
+        return F.softmax(scores, dim=-1)
