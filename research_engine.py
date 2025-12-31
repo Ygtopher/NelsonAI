@@ -1160,3 +1160,7 @@ with torch.no_grad():
 import torch.nn.functional as F
 model.eval()
         super().__init__()
+import torch
+        self.v_proj = nn.Linear(d_model, d_model)
+def calculate_loss(logits, targets):
+        self.d_model = d_model
