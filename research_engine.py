@@ -316,3 +316,7 @@ def calculate_loss(logits, targets):
 # TODO: Implement FlashAttention for context > 2048
 import torch
         self.q_proj = nn.Linear(d_model, d_model)
+import torch.nn as nn
+import math
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    scaler.step(optimizer)
