@@ -1508,3 +1508,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 import math
 model.eval()
+hidden_dim = 768
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+import torch.nn.functional as F
+def calculate_loss(logits, targets):
