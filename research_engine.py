@@ -204,3 +204,7 @@ import torch.nn as nn
 import math
     logits, _ = model(ctx)
     optimizer.zero_grad()
+scaler = torch.cuda.amp.GradScaler()
+        self.k_proj = nn.Linear(d_model, d_model)
+    return q, k  # Placeholder for RoPE
+        outputs = model(inputs)
