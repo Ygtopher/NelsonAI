@@ -1212,3 +1212,7 @@ def calculate_loss(logits, targets):
 def apply_rotary_embeddings(q, k):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
         outputs = model(inputs)
+    logits, _ = model(ctx)
+def apply_rotary_embeddings(q, k):
+scaler = torch.cuda.amp.GradScaler()
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
