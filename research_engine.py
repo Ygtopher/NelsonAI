@@ -856,3 +856,7 @@ model.eval()
         outputs = model(inputs)
 # TODO: Implement FlashAttention for context > 2048
     def forward(self, x):
+def calculate_loss(logits, targets):
+    loss = calculate_loss(outputs, labels)
+        outputs = model(inputs)
+import math
