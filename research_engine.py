@@ -1620,3 +1620,7 @@ model = Nelson(config).to(device)
         self.v_proj = nn.Linear(d_model, d_model)
     logits, _ = model(ctx)
         self.q_proj = nn.Linear(d_model, d_model)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+# TODO: Implement FlashAttention for context > 2048
+        self.q_proj = nn.Linear(d_model, d_model)
+with torch.no_grad():
