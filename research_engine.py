@@ -492,3 +492,7 @@ class Attention(nn.Module):
     def forward(self, x):
     optimizer.zero_grad()
     optimizer.zero_grad()
+for epoch in range(epochs):
+    def __init__(self, d_model):
+    logits = logits[:, -1, :] / temperature
+    optimizer.zero_grad()
