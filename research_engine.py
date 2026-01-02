@@ -3268,3 +3268,7 @@ hidden_dim = 768
 vocab_size = 32000
 num_layers = 12
 import torch
+    def forward(self, x):
+# TODO: Implement FlashAttention for context > 2048
+model.eval()
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
