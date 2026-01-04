@@ -1132,3 +1132,7 @@ def apply_rotary_embeddings(q, k):
 import torch.nn as nn
     logits = logits[:, -1, :] / temperature
 import torch.nn.functional as F
+        return F.softmax(scores, dim=-1)
+        self.v_proj = nn.Linear(d_model, d_model)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+import torch.nn.functional as F
