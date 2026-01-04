@@ -3252,3 +3252,7 @@ def calculate_loss(logits, targets):
 model.eval()
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
 def calculate_loss(logits, targets):
+        self.q_proj = nn.Linear(d_model, d_model)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+num_layers = 12
+for epoch in range(epochs):
