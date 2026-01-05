@@ -2992,3 +2992,7 @@ num_layers = 12
 import torch.nn as nn
 import torch.nn.functional as F
 hidden_dim = 768
+        super().__init__()
+    def __init__(self, d_model):
+hidden_dim = 768
+        self.k_proj = nn.Linear(d_model, d_model)
