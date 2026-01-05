@@ -1252,3 +1252,7 @@ def calculate_loss(logits, targets):
 hidden_dim = 768
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 for epoch in range(epochs):
+import torch
+    scaler.step(optimizer)
+    def __init__(self, d_model):
+    logits, _ = model(ctx)
