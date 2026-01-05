@@ -1100,3 +1100,7 @@ def calculate_loss(logits, targets):
         super().__init__()
     loss = calculate_loss(outputs, labels)
     logits, _ = model(ctx)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+import torch.nn as nn
+def apply_rotary_embeddings(q, k):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
