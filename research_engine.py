@@ -1164,3 +1164,7 @@ import torch
         self.v_proj = nn.Linear(d_model, d_model)
 def calculate_loss(logits, targets):
         self.d_model = d_model
+        self.v_proj = nn.Linear(d_model, d_model)
+import torch
+        self.q_proj = nn.Linear(d_model, d_model)
+        return F.softmax(scores, dim=-1)
