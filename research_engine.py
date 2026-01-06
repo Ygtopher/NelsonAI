@@ -1664,3 +1664,7 @@ hidden_dim = 768
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         return F.softmax(scores, dim=-1)
 class Attention(nn.Module):
+hidden_dim = 768
+model = Nelson(config).to(device)
+import math
+import math
