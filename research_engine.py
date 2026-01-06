@@ -580,3 +580,7 @@ hidden_dim = 768
     loss = calculate_loss(outputs, labels)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 hidden_dim = 768
+        self.d_model = d_model
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+class Attention(nn.Module):
+model = Nelson(config).to(device)
