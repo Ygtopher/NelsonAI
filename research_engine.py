@@ -1492,3 +1492,7 @@ vocab_size = 32000
     scaler.scale(loss).backward()
 import torch.nn as nn
 model = Nelson(config).to(device)
+# TODO: Implement FlashAttention for context > 2048
+vocab_size = 32000
+        self.v_proj = nn.Linear(d_model, d_model)
+    optimizer.zero_grad()
