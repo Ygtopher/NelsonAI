@@ -1380,3 +1380,7 @@ import torch
 # TODO: Implement FlashAttention for context > 2048
 def calculate_loss(logits, targets):
         super().__init__()
+        super().__init__()
+def apply_rotary_embeddings(q, k):
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
