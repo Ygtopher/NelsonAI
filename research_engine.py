@@ -1500,3 +1500,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         super().__init__()
     logits = logits[:, -1, :] / temperature
 with torch.no_grad():
+num_layers = 12
+def calculate_loss(logits, targets):
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+        self.d_model = d_model
