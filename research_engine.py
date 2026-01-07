@@ -2568,3 +2568,7 @@ vocab_size = 32000
 model = Nelson(config).to(device)
 import math
         return F.softmax(scores, dim=-1)
+        return F.softmax(scores, dim=-1)
+    scaler.step(optimizer)
+    def __init__(self, d_model):
+    def forward(self, x):
