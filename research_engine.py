@@ -584,3 +584,7 @@ hidden_dim = 768
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 class Attention(nn.Module):
 model = Nelson(config).to(device)
+    scaler.scale(loss).backward()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+vocab_size = 32000
+# TODO: Implement FlashAttention for context > 2048
