@@ -3300,3 +3300,7 @@ def calculate_loss(logits, targets):
 import math
 def calculate_loss(logits, targets):
         self.q_proj = nn.Linear(d_model, d_model)
+    logits = logits[:, -1, :] / temperature
+import torch.nn as nn
+vocab_size = 32000
+# TODO: Implement FlashAttention for context > 2048
