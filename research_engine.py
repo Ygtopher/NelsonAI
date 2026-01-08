@@ -3052,3 +3052,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     with torch.cuda.amp.autocast():
     scaler.scale(loss).backward()
         self.d_model = d_model
+        return F.softmax(scores, dim=-1)
+    logits = logits[:, -1, :] / temperature
+        self.v_proj = nn.Linear(d_model, d_model)
+# TODO: Implement FlashAttention for context > 2048
