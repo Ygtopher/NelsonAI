@@ -3432,3 +3432,7 @@ scaler = torch.cuda.amp.GradScaler()
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 for epoch in range(epochs):
 hidden_dim = 768
+import torch
+        self.q_proj = nn.Linear(d_model, d_model)
+# TODO: Implement FlashAttention for context > 2048
+        self.v_proj = nn.Linear(d_model, d_model)
