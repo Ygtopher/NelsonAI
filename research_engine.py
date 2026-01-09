@@ -2672,3 +2672,7 @@ num_layers = 12
         self.v_proj = nn.Linear(d_model, d_model)
     with torch.cuda.amp.autocast():
 scaler = torch.cuda.amp.GradScaler()
+    def __init__(self, d_model):
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+def calculate_loss(logits, targets):
+    def __init__(self, d_model):
