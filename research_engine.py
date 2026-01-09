@@ -3100,3 +3100,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 with torch.no_grad():
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 model = Nelson(config).to(device)
+    scaler.update()
+num_layers = 12
+    scaler.step(optimizer)
+def calculate_loss(logits, targets):
