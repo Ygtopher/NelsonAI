@@ -3680,3 +3680,7 @@ def apply_rotary_embeddings(q, k):
     loss = calculate_loss(outputs, labels)
     scaler.scale(loss).backward()
 hidden_dim = 768
+        self.q_proj = nn.Linear(d_model, d_model)
+        self.k_proj = nn.Linear(d_model, d_model)
+    scaler.update()
+    scaler.scale(loss).backward()
