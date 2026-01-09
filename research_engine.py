@@ -2920,3 +2920,7 @@ scaler = torch.cuda.amp.GradScaler()
 for epoch in range(epochs):
 with torch.no_grad():
 def apply_rotary_embeddings(q, k):
+import torch.nn as nn
+with torch.no_grad():
+    logits, _ = model(ctx)
+model = Nelson(config).to(device)
