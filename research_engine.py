@@ -1756,3 +1756,7 @@ scaler = torch.cuda.amp.GradScaler()
     logits = logits[:, -1, :] / temperature
 vocab_size = 32000
 import torch
+import torch.nn.functional as F
+    scaler.update()
+scaler = torch.cuda.amp.GradScaler()
+    logits = logits[:, -1, :] / temperature
