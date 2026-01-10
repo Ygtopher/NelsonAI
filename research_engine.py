@@ -612,3 +612,7 @@ def apply_rotary_embeddings(q, k):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 def apply_rotary_embeddings(q, k):
 import torch.nn as nn
+    def __init__(self, d_model):
+def calculate_loss(logits, targets):
+        self.v_proj = nn.Linear(d_model, d_model)
+import torch.nn as nn
