@@ -1192,3 +1192,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 hidden_dim = 768
         self.k_proj = nn.Linear(d_model, d_model)
     logits, _ = model(ctx)
+scaler = torch.cuda.amp.GradScaler()
+        self.v_proj = nn.Linear(d_model, d_model)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        self.v_proj = nn.Linear(d_model, d_model)
