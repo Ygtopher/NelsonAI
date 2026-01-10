@@ -3568,3 +3568,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 # TODO: Implement FlashAttention for context > 2048
 import torch.nn as nn
 for epoch in range(epochs):
+import torch.nn.functional as F
+scaler = torch.cuda.amp.GradScaler()
+        self.q_proj = nn.Linear(d_model, d_model)
+        self.d_model = d_model
