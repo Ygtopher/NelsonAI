@@ -2192,3 +2192,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     scaler.scale(loss).backward()
 import math
 model.eval()
+vocab_size = 32000
+    def forward(self, x):
+model = Nelson(config).to(device)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
