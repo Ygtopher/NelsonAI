@@ -3400,3 +3400,7 @@ import torch
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     optimizer.zero_grad()
 import torch
+        self.k_proj = nn.Linear(d_model, d_model)
+import math
+    return q, k  # Placeholder for RoPE
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
