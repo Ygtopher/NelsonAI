@@ -940,3 +940,7 @@ import torch.nn.functional as F
 import torch
 import math
 import torch.nn as nn
+import torch.nn as nn
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+import torch.nn as nn
+import torch
