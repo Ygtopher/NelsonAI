@@ -3828,3 +3828,7 @@ def apply_rotary_embeddings(q, k):
         return F.softmax(scores, dim=-1)
 model = Nelson(config).to(device)
 def calculate_loss(logits, targets):
+scaler = torch.cuda.amp.GradScaler()
+class Attention(nn.Module):
+    return q, k  # Placeholder for RoPE
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
