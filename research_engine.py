@@ -1804,3 +1804,7 @@ import math
     scaler.scale(loss).backward()
 class Attention(nn.Module):
 import torch
+# TODO: Implement FlashAttention for context > 2048
+for epoch in range(epochs):
+    optimizer.zero_grad()
+        return F.softmax(scores, dim=-1)
