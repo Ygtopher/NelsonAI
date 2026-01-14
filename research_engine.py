@@ -2324,3 +2324,7 @@ num_layers = 12
         return F.softmax(scores, dim=-1)
 def calculate_loss(logits, targets):
 import torch
+    with torch.cuda.amp.autocast():
+    with torch.cuda.amp.autocast():
+model.eval()
+    logits, _ = model(ctx)
