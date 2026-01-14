@@ -3164,3 +3164,7 @@ import torch.nn.functional as F
 class Attention(nn.Module):
 hidden_dim = 768
 import torch.nn as nn
+with torch.no_grad():
+# TODO: Implement FlashAttention for context > 2048
+        return F.softmax(scores, dim=-1)
+num_layers = 12
