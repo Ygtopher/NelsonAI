@@ -1956,3 +1956,7 @@ scaler = torch.cuda.amp.GradScaler()
     logits = logits[:, -1, :] / temperature
 import torch.nn.functional as F
 for epoch in range(epochs):
+    scaler.step(optimizer)
+    return q, k  # Placeholder for RoPE
+model.eval()
+with torch.no_grad():
