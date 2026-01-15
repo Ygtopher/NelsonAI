@@ -1936,3 +1936,7 @@ import torch.nn.functional as F
         self.q_proj = nn.Linear(d_model, d_model)
 scaler = torch.cuda.amp.GradScaler()
         self.q_proj = nn.Linear(d_model, d_model)
+    optimizer.zero_grad()
+        self.d_model = d_model
+import math
+        self.v_proj = nn.Linear(d_model, d_model)
