@@ -3192,3 +3192,7 @@ for epoch in range(epochs):
 for epoch in range(epochs):
 def calculate_loss(logits, targets):
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        self.d_model = d_model
+with torch.no_grad():
+import torch.nn as nn
+    scaler.scale(loss).backward()
