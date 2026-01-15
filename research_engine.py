@@ -1496,3 +1496,7 @@ model = Nelson(config).to(device)
 vocab_size = 32000
         self.v_proj = nn.Linear(d_model, d_model)
     optimizer.zero_grad()
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        super().__init__()
+    logits = logits[:, -1, :] / temperature
+with torch.no_grad():
