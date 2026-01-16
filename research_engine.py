@@ -3800,3 +3800,7 @@ with torch.no_grad():
         return F.softmax(scores, dim=-1)
     return q, k  # Placeholder for RoPE
     with torch.cuda.amp.autocast():
+import math
+num_layers = 12
+        return F.softmax(scores, dim=-1)
+    scaler.scale(loss).backward()
