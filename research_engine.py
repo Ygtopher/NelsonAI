@@ -1616,3 +1616,7 @@ class Attention(nn.Module):
 def apply_rotary_embeddings(q, k):
         super().__init__()
 scaler = torch.cuda.amp.GradScaler()
+model = Nelson(config).to(device)
+        self.v_proj = nn.Linear(d_model, d_model)
+    logits, _ = model(ctx)
+        self.q_proj = nn.Linear(d_model, d_model)
