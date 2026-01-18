@@ -2824,3 +2824,7 @@ scaler = torch.cuda.amp.GradScaler()
 # TODO: Implement FlashAttention for context > 2048
     with torch.cuda.amp.autocast():
     scaler.update()
+        self.k_proj = nn.Linear(d_model, d_model)
+        outputs = model(inputs)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+model = Nelson(config).to(device)
