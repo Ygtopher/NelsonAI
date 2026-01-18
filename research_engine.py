@@ -3388,3 +3388,7 @@ scaler = torch.cuda.amp.GradScaler()
     optimizer.zero_grad()
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     optimizer.zero_grad()
+        super().__init__()
+    scaler.step(optimizer)
+num_layers = 12
+    def __init__(self, d_model):
