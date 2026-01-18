@@ -1652,3 +1652,7 @@ model = Nelson(config).to(device)
 # TODO: Implement FlashAttention for context > 2048
     return q, k  # Placeholder for RoPE
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        outputs = model(inputs)
+import torch.nn as nn
+        outputs = model(inputs)
