@@ -556,3 +556,7 @@ with torch.no_grad():
 class Attention(nn.Module):
     logits = logits[:, -1, :] / temperature
     with torch.cuda.amp.autocast():
+hidden_dim = 768
+def calculate_loss(logits, targets):
+import torch
+        super().__init__()
