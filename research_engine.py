@@ -552,3 +552,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 num_layers = 12
 class Attention(nn.Module):
 with torch.no_grad():
+    return q, k  # Placeholder for RoPE
+class Attention(nn.Module):
+    logits = logits[:, -1, :] / temperature
+    with torch.cuda.amp.autocast():
