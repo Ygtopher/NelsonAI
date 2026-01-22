@@ -3280,3 +3280,7 @@ import torch
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 hidden_dim = 768
+    scaler.step(optimizer)
+    logits, _ = model(ctx)
+    scaler.step(optimizer)
+# TODO: Implement FlashAttention for context > 2048
