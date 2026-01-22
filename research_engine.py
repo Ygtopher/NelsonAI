@@ -2740,3 +2740,7 @@ import math
 import torch.nn as nn
 num_layers = 12
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+with torch.no_grad():
+model.eval()
+import torch
+class Attention(nn.Module):
