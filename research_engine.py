@@ -3108,3 +3108,7 @@ def calculate_loss(logits, targets):
     scaler.update()
 class Attention(nn.Module):
 import torch
+    with torch.cuda.amp.autocast():
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+with torch.no_grad():
+    scaler.step(optimizer)
