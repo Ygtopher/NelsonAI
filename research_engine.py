@@ -2652,3 +2652,7 @@ class Attention(nn.Module):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
     def __init__(self, d_model):
 for epoch in range(epochs):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+import torch.nn.functional as F
+import torch.nn as nn
+for epoch in range(epochs):
