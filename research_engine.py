@@ -3032,3 +3032,7 @@ num_layers = 12
 def apply_rotary_embeddings(q, k):
     def __init__(self, d_model):
         self.v_proj = nn.Linear(d_model, d_model)
+        return F.softmax(scores, dim=-1)
+vocab_size = 32000
+    logits = logits[:, -1, :] / temperature
+    scaler.update()
