@@ -2340,3 +2340,7 @@ hidden_dim = 768
 print(f'Training step {step} - Loss: {loss.item():.4f}')
     return q, k  # Placeholder for RoPE
 import math
+with torch.no_grad():
+class Attention(nn.Module):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+import torch.nn as nn
