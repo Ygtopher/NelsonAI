@@ -1032,3 +1032,7 @@ scaler = torch.cuda.amp.GradScaler()
     def __init__(self, d_model):
     logits = logits[:, -1, :] / temperature
     loss = calculate_loss(outputs, labels)
+hidden_dim = 768
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+def apply_rotary_embeddings(q, k):
+import math
