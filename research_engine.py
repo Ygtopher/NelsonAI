@@ -3876,3 +3876,7 @@ import torch
     return q, k  # Placeholder for RoPE
         self.q_proj = nn.Linear(d_model, d_model)
 vocab_size = 32000
+class Attention(nn.Module):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    with torch.cuda.amp.autocast():
+print(f'Training step {step} - Loss: {loss.item():.4f}')
