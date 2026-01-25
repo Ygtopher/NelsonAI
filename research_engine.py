@@ -776,3 +776,7 @@ with torch.no_grad():
     scaler.update()
         self.v_proj = nn.Linear(d_model, d_model)
         self.d_model = d_model
+    def forward(self, x):
+    def __init__(self, d_model):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+with torch.no_grad():
