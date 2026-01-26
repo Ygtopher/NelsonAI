@@ -3112,3 +3112,7 @@ import torch
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 with torch.no_grad():
     scaler.step(optimizer)
+        self.v_proj = nn.Linear(d_model, d_model)
+    scaler.step(optimizer)
+    scaler.update()
+def apply_rotary_embeddings(q, k):
