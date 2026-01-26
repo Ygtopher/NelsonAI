@@ -3040,3 +3040,7 @@ class Attention(nn.Module):
         self.k_proj = nn.Linear(d_model, d_model)
         self.q_proj = nn.Linear(d_model, d_model)
 model.eval()
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    scaler.update()
+with torch.no_grad():
+    optimizer.zero_grad()
