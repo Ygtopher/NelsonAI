@@ -2248,3 +2248,7 @@ model = Nelson(config).to(device)
     logits = logits[:, -1, :] / temperature
 for epoch in range(epochs):
         self.d_model = d_model
+        self.v_proj = nn.Linear(d_model, d_model)
+    return q, k  # Placeholder for RoPE
+with torch.no_grad():
+import torch
