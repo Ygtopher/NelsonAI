@@ -2300,3 +2300,7 @@ import torch.nn as nn
     loss = calculate_loss(outputs, labels)
         self.k_proj = nn.Linear(d_model, d_model)
     logits, _ = model(ctx)
+    logits, _ = model(ctx)
+        self.q_proj = nn.Linear(d_model, d_model)
+with torch.no_grad():
+model = Nelson(config).to(device)
