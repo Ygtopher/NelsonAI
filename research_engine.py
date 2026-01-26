@@ -660,3 +660,7 @@ scaler = torch.cuda.amp.GradScaler()
 import torch
         self.d_model = d_model
     optimizer.zero_grad()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        self.d_model = d_model
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+def calculate_loss(logits, targets):
