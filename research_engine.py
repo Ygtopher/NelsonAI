@@ -3616,3 +3616,7 @@ model = Nelson(config).to(device)
 with torch.no_grad():
 scaler = torch.cuda.amp.GradScaler()
         self.d_model = d_model
+    optimizer.zero_grad()
+def calculate_loss(logits, targets):
+        self.d_model = d_model
+        outputs = model(inputs)
