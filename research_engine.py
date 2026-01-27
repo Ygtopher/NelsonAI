@@ -1056,3 +1056,7 @@ vocab_size = 32000
         outputs = model(inputs)
 with torch.no_grad():
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        self.q_proj = nn.Linear(d_model, d_model)
+import torch
+# TODO: Implement FlashAttention for context > 2048
+print(f'Training step {step} - Loss: {loss.item():.4f}')
