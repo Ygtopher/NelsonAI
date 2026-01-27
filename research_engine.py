@@ -384,3 +384,7 @@ vocab_size = 32000
 import torch.nn.functional as F
         return F.softmax(scores, dim=-1)
         outputs = model(inputs)
+    logits = logits[:, -1, :] / temperature
+def calculate_loss(logits, targets):
+    logits, _ = model(ctx)
+    with torch.cuda.amp.autocast():
