@@ -524,3 +524,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 with torch.no_grad():
         self.v_proj = nn.Linear(d_model, d_model)
+    scaler.scale(loss).backward()
+        self.q_proj = nn.Linear(d_model, d_model)
+    loss = calculate_loss(outputs, labels)
+import torch
