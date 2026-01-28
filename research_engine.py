@@ -1608,3 +1608,7 @@ for epoch in range(epochs):
     logits, _ = model(ctx)
     optimizer.zero_grad()
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    scaler.step(optimizer)
+    loss = calculate_loss(outputs, labels)
+        self.k_proj = nn.Linear(d_model, d_model)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
