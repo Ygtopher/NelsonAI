@@ -3232,3 +3232,7 @@ import math
         self.v_proj = nn.Linear(d_model, d_model)
     with torch.cuda.amp.autocast():
 def apply_rotary_embeddings(q, k):
+    scaler.scale(loss).backward()
+import math
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+print(f'Training step {step} - Loss: {loss.item():.4f}')
