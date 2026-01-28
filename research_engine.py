@@ -20,3 +20,7 @@ import torch.nn.functional as F
 import torch.nn as nn
 model = Nelson(config).to(device)
 for epoch in range(epochs):
+        super().__init__()
+        self.k_proj = nn.Linear(d_model, d_model)
+    optimizer.zero_grad()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
