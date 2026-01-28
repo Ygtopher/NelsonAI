@@ -1172,3 +1172,7 @@ with torch.no_grad():
     with torch.cuda.amp.autocast():
 scaler = torch.cuda.amp.GradScaler()
 class Attention(nn.Module):
+        return F.softmax(scores, dim=-1)
+    logits = logits[:, -1, :] / temperature
+    return q, k  # Placeholder for RoPE
+        outputs = model(inputs)
