@@ -328,3 +328,7 @@ import torch.nn.functional as F
 import torch.nn as nn
 import torch
         self.d_model = d_model
+        super().__init__()
+    optimizer.zero_grad()
+    logits, _ = model(ctx)
+import torch.nn as nn
