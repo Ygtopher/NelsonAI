@@ -3304,3 +3304,7 @@ def calculate_loss(logits, targets):
 import torch.nn as nn
 vocab_size = 32000
 # TODO: Implement FlashAttention for context > 2048
+    logits = logits[:, -1, :] / temperature
+        super().__init__()
+def calculate_loss(logits, targets):
+scaler = torch.cuda.amp.GradScaler()
