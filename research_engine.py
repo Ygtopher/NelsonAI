@@ -1136,3 +1136,7 @@ import torch.nn.functional as F
         self.v_proj = nn.Linear(d_model, d_model)
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 import torch.nn.functional as F
+        self.d_model = d_model
+    logits, _ = model(ctx)
+import torch
+    with torch.cuda.amp.autocast():
