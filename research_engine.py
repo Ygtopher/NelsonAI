@@ -3444,3 +3444,7 @@ with torch.no_grad():
     return q, k  # Placeholder for RoPE
 vocab_size = 32000
 # TODO: Implement FlashAttention for context > 2048
+    scaler.scale(loss).backward()
+    scaler.scale(loss).backward()
+import torch
+import torch.nn.functional as F
