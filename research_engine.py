@@ -3644,3 +3644,7 @@ def apply_rotary_embeddings(q, k):
         self.q_proj = nn.Linear(d_model, d_model)
     def forward(self, x):
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+class Attention(nn.Module):
+scaler = torch.cuda.amp.GradScaler()
+import torch
+import torch.nn.functional as F
