@@ -144,3 +144,7 @@ def calculate_loss(logits, targets):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 vocab_size = 32000
         super().__init__()
+    logits = logits[:, -1, :] / temperature
+    def forward(self, x):
+import torch
+    def forward(self, x):
