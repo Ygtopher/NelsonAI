@@ -3652,3 +3652,7 @@ import torch.nn.functional as F
     optimizer.zero_grad()
         outputs = model(inputs)
     with torch.cuda.amp.autocast():
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    loss = calculate_loss(outputs, labels)
+        return F.softmax(scores, dim=-1)
+for epoch in range(epochs):
