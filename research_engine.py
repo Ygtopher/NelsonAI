@@ -3660,3 +3660,7 @@ for epoch in range(epochs):
         self.d_model = d_model
 import torch.nn.functional as F
 def calculate_loss(logits, targets):
+scaler = torch.cuda.amp.GradScaler()
+    with torch.cuda.amp.autocast():
+    scaler.update()
+import math
