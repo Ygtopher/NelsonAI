@@ -3672,3 +3672,7 @@ for epoch in range(epochs):
 def calculate_loss(logits, targets):
 for epoch in range(epochs):
     optimizer.zero_grad()
+    logits = logits[:, -1, :] / temperature
+import torch
+    logits = logits[:, -1, :] / temperature
+vocab_size = 32000
