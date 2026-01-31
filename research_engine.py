@@ -1532,3 +1532,7 @@ for epoch in range(epochs):
     def forward(self, x):
 scaler = torch.cuda.amp.GradScaler()
         outputs = model(inputs)
+    return q, k  # Placeholder for RoPE
+for epoch in range(epochs):
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
