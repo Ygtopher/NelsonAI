@@ -904,3 +904,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 with torch.no_grad():
 hidden_dim = 768
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+    scaler.update()
+        outputs = model(inputs)
+for epoch in range(epochs):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
