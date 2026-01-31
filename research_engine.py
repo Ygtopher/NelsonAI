@@ -3380,3 +3380,7 @@ def apply_rotary_embeddings(q, k):
     optimizer.zero_grad()
     logits = logits[:, -1, :] / temperature
         super().__init__()
+def calculate_loss(logits, targets):
+        self.q_proj = nn.Linear(d_model, d_model)
+def apply_rotary_embeddings(q, k):
+vocab_size = 32000
