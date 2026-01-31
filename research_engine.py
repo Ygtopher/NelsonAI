@@ -3440,3 +3440,7 @@ import torch
     def forward(self, x):
 vocab_size = 32000
     scaler.update()
+with torch.no_grad():
+    return q, k  # Placeholder for RoPE
+vocab_size = 32000
+# TODO: Implement FlashAttention for context > 2048
