@@ -2152,3 +2152,7 @@ scaler = torch.cuda.amp.GradScaler()
     return q, k  # Placeholder for RoPE
 class Attention(nn.Module):
     logits = logits[:, -1, :] / temperature
+    scaler.update()
+class Attention(nn.Module):
+    def __init__(self, d_model):
+    return q, k  # Placeholder for RoPE
