@@ -1268,3 +1268,7 @@ import torch
         self.q_proj = nn.Linear(d_model, d_model)
     def __init__(self, d_model):
     with torch.cuda.amp.autocast():
+with torch.no_grad():
+    with torch.cuda.amp.autocast():
+import torch
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
