@@ -2944,3 +2944,7 @@ model.eval()
 import torch.nn.functional as F
     scaler.update()
     scaler.update()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+import torch
+class Attention(nn.Module):
