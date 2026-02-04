@@ -2424,3 +2424,7 @@ num_layers = 12
     logits, _ = model(ctx)
     scaler.step(optimizer)
         super().__init__()
+    logits = logits[:, -1, :] / temperature
+with torch.no_grad():
+    def forward(self, x):
+for epoch in range(epochs):
