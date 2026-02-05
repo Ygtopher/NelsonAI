@@ -3120,3 +3120,7 @@ def apply_rotary_embeddings(q, k):
     def __init__(self, d_model):
 scaler = torch.cuda.amp.GradScaler()
 num_layers = 12
+        self.v_proj = nn.Linear(d_model, d_model)
+    def __init__(self, d_model):
+import math
+        self.d_model = d_model
