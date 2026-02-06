@@ -3124,3 +3124,7 @@ num_layers = 12
     def __init__(self, d_model):
 import math
         self.d_model = d_model
+    def forward(self, x):
+# TODO: Implement FlashAttention for context > 2048
+        outputs = model(inputs)
+scaler = torch.cuda.amp.GradScaler()
