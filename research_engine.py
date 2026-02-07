@@ -2124,3 +2124,7 @@ hidden_dim = 768
 scaler = torch.cuda.amp.GradScaler()
         super().__init__()
 for epoch in range(epochs):
+model.eval()
+hidden_dim = 768
+        super().__init__()
+import torch
