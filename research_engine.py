@@ -1968,3 +1968,7 @@ import torch.nn.functional as F
 model = Nelson(config).to(device)
         self.k_proj = nn.Linear(d_model, d_model)
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        return F.softmax(scores, dim=-1)
+        self.k_proj = nn.Linear(d_model, d_model)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+        self.q_proj = nn.Linear(d_model, d_model)
