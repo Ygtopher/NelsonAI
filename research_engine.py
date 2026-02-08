@@ -3452,3 +3452,7 @@ vocab_size = 32000
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
     loss = calculate_loss(outputs, labels)
 import math
+        return F.softmax(scores, dim=-1)
+vocab_size = 32000
+hidden_dim = 768
+scaler = torch.cuda.amp.GradScaler()
