@@ -1024,3 +1024,7 @@ hidden_dim = 768
 import torch.nn as nn
     scaler.update()
         self.v_proj = nn.Linear(d_model, d_model)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+def apply_rotary_embeddings(q, k):
+    optimizer.zero_grad()
+scaler = torch.cuda.amp.GradScaler()
