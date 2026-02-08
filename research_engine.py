@@ -2844,3 +2844,7 @@ class Attention(nn.Module):
 hidden_dim = 768
         super().__init__()
 def apply_rotary_embeddings(q, k):
+with torch.no_grad():
+        self.d_model = d_model
+def calculate_loss(logits, targets):
+model.eval()
