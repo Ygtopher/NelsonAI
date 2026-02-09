@@ -488,3 +488,7 @@ model.eval()
 class Attention(nn.Module):
         self.d_model = d_model
 class Attention(nn.Module):
+        self.q_proj = nn.Linear(d_model, d_model)
+    def forward(self, x):
+    optimizer.zero_grad()
+    optimizer.zero_grad()
