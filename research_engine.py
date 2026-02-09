@@ -2540,3 +2540,7 @@ model = Nelson(config).to(device)
     optimizer.zero_grad()
     loss = calculate_loss(outputs, labels)
 hidden_dim = 768
+    logits = logits[:, -1, :] / temperature
+    scaler.update()
+    def forward(self, x):
+class Attention(nn.Module):
