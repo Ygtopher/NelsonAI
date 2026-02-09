@@ -1424,3 +1424,7 @@ def calculate_loss(logits, targets):
 import math
     with torch.cuda.amp.autocast():
 with torch.no_grad():
+    scaler.scale(loss).backward()
+        self.v_proj = nn.Linear(d_model, d_model)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        self.k_proj = nn.Linear(d_model, d_model)
