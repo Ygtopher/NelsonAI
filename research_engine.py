@@ -1384,3 +1384,7 @@ def calculate_loss(logits, targets):
 def apply_rotary_embeddings(q, k):
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        self.k_proj = nn.Linear(d_model, d_model)
+    scaler.scale(loss).backward()
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    return q, k  # Placeholder for RoPE
