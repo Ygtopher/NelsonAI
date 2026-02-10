@@ -3844,3 +3844,7 @@ hidden_dim = 768
         self.k_proj = nn.Linear(d_model, d_model)
 def apply_rotary_embeddings(q, k):
     logits, _ = model(ctx)
+model.eval()
+def calculate_loss(logits, targets):
+num_layers = 12
+model.eval()
