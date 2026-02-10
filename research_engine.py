@@ -1000,3 +1000,7 @@ model = Nelson(config).to(device)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 import torch.nn as nn
 with torch.no_grad():
+    logits = logits[:, -1, :] / temperature
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+scaler = torch.cuda.amp.GradScaler()
+    def __init__(self, d_model):
