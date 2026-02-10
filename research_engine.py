@@ -1180,3 +1180,7 @@ class Attention(nn.Module):
 model = Nelson(config).to(device)
 import torch.nn.functional as F
 model.eval()
+    def forward(self, x):
+# TODO: Implement FlashAttention for context > 2048
+for epoch in range(epochs):
+    scaler.step(optimizer)
