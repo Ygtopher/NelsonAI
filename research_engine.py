@@ -3092,3 +3092,7 @@ import math
 model.eval()
     optimizer.zero_grad()
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+# TODO: Implement FlashAttention for context > 2048
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        super().__init__()
+        return F.softmax(scores, dim=-1)
