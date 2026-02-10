@@ -896,3 +896,7 @@ import torch.nn as nn
     def forward(self, x):
     scaler.update()
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+    scaler.update()
+# TODO: Implement FlashAttention for context > 2048
+        outputs = model(inputs)
+    scaler.step(optimizer)
