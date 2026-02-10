@@ -996,3 +996,7 @@ import math
 model.eval()
         self.k_proj = nn.Linear(d_model, d_model)
     return q, k  # Placeholder for RoPE
+model = Nelson(config).to(device)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+import torch.nn as nn
+with torch.no_grad():
