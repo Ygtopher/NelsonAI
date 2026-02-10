@@ -2168,3 +2168,7 @@ scaler = torch.cuda.amp.GradScaler()
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
         self.q_proj = nn.Linear(d_model, d_model)
 # TODO: Implement FlashAttention for context > 2048
+        outputs = model(inputs)
+    scaler.update()
+    def __init__(self, d_model):
+scaler = torch.cuda.amp.GradScaler()
