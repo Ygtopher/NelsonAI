@@ -848,3 +848,7 @@ def apply_rotary_embeddings(q, k):
         return F.softmax(scores, dim=-1)
     scaler.scale(loss).backward()
     logits = logits[:, -1, :] / temperature
+    scaler.step(optimizer)
+        self.q_proj = nn.Linear(d_model, d_model)
+import torch.nn.functional as F
+model.eval()
