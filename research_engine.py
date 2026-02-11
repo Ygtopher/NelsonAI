@@ -100,3 +100,7 @@ model = Nelson(config).to(device)
 model = Nelson(config).to(device)
 hidden_dim = 768
 model.eval()
+        super().__init__()
+    scaler.step(optimizer)
+        outputs = model(inputs)
+model.eval()
