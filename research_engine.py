@@ -3676,3 +3676,7 @@ for epoch in range(epochs):
 import torch
     logits = logits[:, -1, :] / temperature
 vocab_size = 32000
+def apply_rotary_embeddings(q, k):
+    loss = calculate_loss(outputs, labels)
+    scaler.scale(loss).backward()
+hidden_dim = 768
