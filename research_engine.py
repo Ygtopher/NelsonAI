@@ -936,3 +936,7 @@ import torch.nn as nn
 model.eval()
 import torch.nn.functional as F
 # TODO: Implement FlashAttention for context > 2048
+    with torch.cuda.amp.autocast():
+import torch
+import math
+import torch.nn as nn
