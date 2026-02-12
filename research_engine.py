@@ -2700,3 +2700,7 @@ import torch.nn as nn
 num_layers = 12
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
 class Attention(nn.Module):
+vocab_size = 32000
+# TODO: Implement FlashAttention for context > 2048
+    return q, k  # Placeholder for RoPE
+with torch.no_grad():
