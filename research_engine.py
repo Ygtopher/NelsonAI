@@ -2788,3 +2788,7 @@ hidden_dim = 768
     logits, _ = model(ctx)
     return q, k  # Placeholder for RoPE
 with torch.no_grad():
+model.eval()
+model = Nelson(config).to(device)
+    scaler.update()
+class Attention(nn.Module):
