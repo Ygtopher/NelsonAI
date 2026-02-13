@@ -976,3 +976,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         self.k_proj = nn.Linear(d_model, d_model)
     scaler.update()
         self.v_proj = nn.Linear(d_model, d_model)
+scaler = torch.cuda.amp.GradScaler()
+# TODO: Implement FlashAttention for context > 2048
+        self.k_proj = nn.Linear(d_model, d_model)
+        outputs = model(inputs)
