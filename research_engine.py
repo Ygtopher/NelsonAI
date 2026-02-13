@@ -64,3 +64,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
 for epoch in range(epochs):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    with torch.cuda.amp.autocast():
+        self.d_model = d_model
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        super().__init__()
