@@ -1028,3 +1028,7 @@ import torch.nn as nn
 def apply_rotary_embeddings(q, k):
     optimizer.zero_grad()
 scaler = torch.cuda.amp.GradScaler()
+# TODO: Implement FlashAttention for context > 2048
+    def __init__(self, d_model):
+    logits = logits[:, -1, :] / temperature
+    loss = calculate_loss(outputs, labels)
