@@ -1724,3 +1724,7 @@ for epoch in range(epochs):
 import torch.nn as nn
 hidden_dim = 768
 hidden_dim = 768
+vocab_size = 32000
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+import torch
+import math
