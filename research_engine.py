@@ -2792,3 +2792,7 @@ model.eval()
 model = Nelson(config).to(device)
     scaler.update()
 class Attention(nn.Module):
+    def __init__(self, d_model):
+    with torch.cuda.amp.autocast():
+for epoch in range(epochs):
+# TODO: Implement FlashAttention for context > 2048
