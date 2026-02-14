@@ -3932,3 +3932,7 @@ hidden_dim = 768
     logits, _ = model(ctx)
 scaler = torch.cuda.amp.GradScaler()
     def __init__(self, d_model):
+    logits, _ = model(ctx)
+    optimizer.zero_grad()
+    logits, _ = model(ctx)
+        outputs = model(inputs)
