@@ -920,3 +920,7 @@ scaler = torch.cuda.amp.GradScaler()
     scaler.scale(loss).backward()
     scaler.update()
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+vocab_size = 32000
+vocab_size = 32000
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+def calculate_loss(logits, targets):
