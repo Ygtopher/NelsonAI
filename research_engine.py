@@ -2272,3 +2272,7 @@ model.eval()
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
     logits = logits[:, -1, :] / temperature
         return F.softmax(scores, dim=-1)
+model.eval()
+    optimizer.zero_grad()
+scaler = torch.cuda.amp.GradScaler()
+    def __init__(self, d_model):
