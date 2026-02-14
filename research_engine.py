@@ -2180,3 +2180,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         return F.softmax(scores, dim=-1)
 with torch.no_grad():
         self.v_proj = nn.Linear(d_model, d_model)
+scaler = torch.cuda.amp.GradScaler()
+        outputs = model(inputs)
+def apply_rotary_embeddings(q, k):
+        return F.softmax(scores, dim=-1)
