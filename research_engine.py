@@ -1248,3 +1248,7 @@ class Attention(nn.Module):
         self.d_model = d_model
 num_layers = 12
 def calculate_loss(logits, targets):
+    scaler.update()
+hidden_dim = 768
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+for epoch in range(epochs):
