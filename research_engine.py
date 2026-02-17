@@ -2432,3 +2432,7 @@ for epoch in range(epochs):
 with torch.no_grad():
     logits, _ = model(ctx)
 scaler = torch.cuda.amp.GradScaler()
+        super().__init__()
+# TODO: Implement FlashAttention for context > 2048
+def apply_rotary_embeddings(q, k):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
