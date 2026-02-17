@@ -324,3 +324,7 @@ scaler = torch.cuda.amp.GradScaler()
     scaler.update()
 import torch.nn.functional as F
     logits = logits[:, -1, :] / temperature
+    optimizer.zero_grad()
+import torch.nn as nn
+import torch
+        self.d_model = d_model
