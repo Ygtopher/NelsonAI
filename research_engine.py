@@ -3188,3 +3188,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     logits, _ = model(ctx)
     def forward(self, x):
 scaler = torch.cuda.amp.GradScaler()
+for epoch in range(epochs):
+for epoch in range(epochs):
+def calculate_loss(logits, targets):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
