@@ -720,3 +720,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     scaler.step(optimizer)
         self.q_proj = nn.Linear(d_model, d_model)
     optimizer.zero_grad()
+        return F.softmax(scores, dim=-1)
+model = Nelson(config).to(device)
+import math
+    def __init__(self, d_model):
