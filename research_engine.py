@@ -3460,3 +3460,7 @@ scaler = torch.cuda.amp.GradScaler()
         self.k_proj = nn.Linear(d_model, d_model)
 num_layers = 12
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+vocab_size = 32000
+def apply_rotary_embeddings(q, k):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+def apply_rotary_embeddings(q, k):
