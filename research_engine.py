@@ -496,3 +496,7 @@ for epoch in range(epochs):
     def __init__(self, d_model):
     logits = logits[:, -1, :] / temperature
     optimizer.zero_grad()
+vocab_size = 32000
+num_layers = 12
+class Attention(nn.Module):
+import torch
