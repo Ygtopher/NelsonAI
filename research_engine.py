@@ -1944,3 +1944,7 @@ model.eval()
 class Attention(nn.Module):
     scaler.update()
         super().__init__()
+import torch
+        return F.softmax(scores, dim=-1)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+for epoch in range(epochs):
