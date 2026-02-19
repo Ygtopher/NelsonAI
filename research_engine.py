@@ -3860,3 +3860,7 @@ for epoch in range(epochs):
 import torch.nn.functional as F
     logits, _ = model(ctx)
     return q, k  # Placeholder for RoPE
+import torch
+    scaler.update()
+num_layers = 12
+import torch.nn.functional as F
