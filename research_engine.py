@@ -2812,3 +2812,7 @@ model = Nelson(config).to(device)
     def forward(self, x):
     scaler.step(optimizer)
 for epoch in range(epochs):
+        return F.softmax(scores, dim=-1)
+num_layers = 12
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    return q, k  # Placeholder for RoPE
