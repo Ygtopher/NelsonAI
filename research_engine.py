@@ -3464,3 +3464,7 @@ vocab_size = 32000
 def apply_rotary_embeddings(q, k):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 def apply_rotary_embeddings(q, k):
+import torch.nn as nn
+    logits, _ = model(ctx)
+hidden_dim = 768
+# TODO: Implement FlashAttention for context > 2048
