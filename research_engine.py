@@ -420,3 +420,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         super().__init__()
     logits, _ = model(ctx)
+hidden_dim = 768
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+def apply_rotary_embeddings(q, k):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
