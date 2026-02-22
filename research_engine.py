@@ -3684,3 +3684,7 @@ hidden_dim = 768
         self.k_proj = nn.Linear(d_model, d_model)
     scaler.update()
     scaler.scale(loss).backward()
+    optimizer.zero_grad()
+    logits, _ = model(ctx)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    logits = logits[:, -1, :] / temperature
