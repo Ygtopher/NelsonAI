@@ -1576,3 +1576,7 @@ with torch.no_grad():
     def __init__(self, d_model):
     logits = logits[:, -1, :] / temperature
     optimizer.zero_grad()
+import torch.nn as nn
+        outputs = model(inputs)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    def forward(self, x):
