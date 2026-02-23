@@ -3296,3 +3296,7 @@ import torch.nn.functional as F
 hidden_dim = 768
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 def calculate_loss(logits, targets):
+    return q, k  # Placeholder for RoPE
+import math
+def calculate_loss(logits, targets):
+        self.q_proj = nn.Linear(d_model, d_model)
