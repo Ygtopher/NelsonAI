@@ -408,3 +408,7 @@ with torch.no_grad():
 with torch.no_grad():
     optimizer.zero_grad()
     return q, k  # Placeholder for RoPE
+num_layers = 12
+def apply_rotary_embeddings(q, k):
+import math
+import torch.nn.functional as F
