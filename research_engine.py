@@ -2456,3 +2456,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         super().__init__()
 scaler = torch.cuda.amp.GradScaler()
         self.q_proj = nn.Linear(d_model, d_model)
+import torch.nn.functional as F
+import math
+    return q, k  # Placeholder for RoPE
+def apply_rotary_embeddings(q, k):
