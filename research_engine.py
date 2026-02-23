@@ -864,3 +864,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     def __init__(self, d_model):
 for epoch in range(epochs):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+class Attention(nn.Module):
+        self.q_proj = nn.Linear(d_model, d_model)
+        self.d_model = d_model
+def calculate_loss(logits, targets):
