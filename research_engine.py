@@ -2628,3 +2628,7 @@ import torch.nn.functional as F
 model = Nelson(config).to(device)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 scaler = torch.cuda.amp.GradScaler()
+for epoch in range(epochs):
+def apply_rotary_embeddings(q, k):
+        return F.softmax(scores, dim=-1)
+    with torch.cuda.amp.autocast():
