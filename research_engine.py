@@ -3756,3 +3756,7 @@ model.eval()
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 for epoch in range(epochs):
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    scaler.scale(loss).backward()
+    loss = calculate_loss(outputs, labels)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+model.eval()
