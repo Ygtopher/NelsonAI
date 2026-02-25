@@ -3920,3 +3920,7 @@ hidden_dim = 768
 with torch.no_grad():
         self.d_model = d_model
 import torch.nn.functional as F
+    scaler.update()
+    def forward(self, x):
+        return F.softmax(scores, dim=-1)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
