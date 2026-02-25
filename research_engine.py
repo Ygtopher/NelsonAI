@@ -3016,3 +3016,7 @@ import math
 import torch.nn.functional as F
     scaler.update()
 def calculate_loss(logits, targets):
+        self.d_model = d_model
+        outputs = model(inputs)
+def apply_rotary_embeddings(q, k):
+with torch.no_grad():
