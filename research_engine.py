@@ -2132,3 +2132,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
     scaler.update()
     return q, k  # Placeholder for RoPE
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+def apply_rotary_embeddings(q, k):
+        self.k_proj = nn.Linear(d_model, d_model)
+    def __init__(self, d_model):
