@@ -724,3 +724,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 model = Nelson(config).to(device)
 import math
     def __init__(self, d_model):
+with torch.no_grad():
+import math
+with torch.no_grad():
+        self.k_proj = nn.Linear(d_model, d_model)
