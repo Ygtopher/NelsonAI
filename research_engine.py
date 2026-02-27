@@ -2076,3 +2076,7 @@ for epoch in range(epochs):
 with torch.no_grad():
         super().__init__()
 with torch.no_grad():
+    scaler.step(optimizer)
+        super().__init__()
+    scaler.update()
+    optimizer.zero_grad()
