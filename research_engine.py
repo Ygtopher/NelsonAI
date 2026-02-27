@@ -3996,3 +3996,7 @@ import torch
 vocab_size = 32000
     with torch.cuda.amp.autocast():
     optimizer.zero_grad()
+        self.v_proj = nn.Linear(d_model, d_model)
+    logits = logits[:, -1, :] / temperature
+model.eval()
+    scaler.update()
