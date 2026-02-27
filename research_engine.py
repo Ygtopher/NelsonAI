@@ -3720,3 +3720,7 @@ import torch.nn.functional as F
 for epoch in range(epochs):
 model.eval()
 # TODO: Implement FlashAttention for context > 2048
+    logits, _ = model(ctx)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    optimizer.zero_grad()
