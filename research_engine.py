@@ -1764,3 +1764,7 @@ for epoch in range(epochs):
 import torch
 with torch.no_grad():
 class Attention(nn.Module):
+def apply_rotary_embeddings(q, k):
+    def forward(self, x):
+    loss = calculate_loss(outputs, labels)
+def calculate_loss(logits, targets):
