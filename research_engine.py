@@ -2412,3 +2412,7 @@ for epoch in range(epochs):
     optimizer.zero_grad()
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 import torch.nn.functional as F
+def apply_rotary_embeddings(q, k):
+    logits, _ = model(ctx)
+    scaler.update()
+with torch.no_grad():
