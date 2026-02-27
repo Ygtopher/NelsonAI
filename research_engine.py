@@ -1416,3 +1416,7 @@ vocab_size = 32000
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
 with torch.no_grad():
         return F.softmax(scores, dim=-1)
+        super().__init__()
+import torch.nn.functional as F
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+# TODO: Implement FlashAttention for context > 2048
