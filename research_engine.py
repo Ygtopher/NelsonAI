@@ -3308,3 +3308,7 @@ vocab_size = 32000
         super().__init__()
 def calculate_loss(logits, targets):
 scaler = torch.cuda.amp.GradScaler()
+    def __init__(self, d_model):
+num_layers = 12
+scaler = torch.cuda.amp.GradScaler()
+    logits, _ = model(ctx)
