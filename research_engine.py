@@ -2276,3 +2276,7 @@ model.eval()
     optimizer.zero_grad()
 scaler = torch.cuda.amp.GradScaler()
     def __init__(self, d_model):
+import math
+def calculate_loss(logits, targets):
+        self.k_proj = nn.Linear(d_model, d_model)
+def apply_rotary_embeddings(q, k):
