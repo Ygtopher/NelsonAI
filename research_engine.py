@@ -2636,3 +2636,7 @@ model.eval()
     optimizer.zero_grad()
 model = Nelson(config).to(device)
         super().__init__()
+    scaler.update()
+import torch
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+with torch.no_grad():
