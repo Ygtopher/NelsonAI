@@ -3004,3 +3004,7 @@ class Attention(nn.Module):
 import torch.nn as nn
 class Attention(nn.Module):
     def __init__(self, d_model):
+        self.q_proj = nn.Linear(d_model, d_model)
+    def forward(self, x):
+# TODO: Implement FlashAttention for context > 2048
+        outputs = model(inputs)
