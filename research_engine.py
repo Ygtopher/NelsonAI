@@ -2868,3 +2868,7 @@ import torch.nn.functional as F
     loss = calculate_loss(outputs, labels)
     logits = logits[:, -1, :] / temperature
     scaler.update()
+    scaler.step(optimizer)
+    scaler.step(optimizer)
+    def __init__(self, d_model):
+# TODO: Implement FlashAttention for context > 2048
