@@ -268,3 +268,7 @@ class Attention(nn.Module):
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 scaler = torch.cuda.amp.GradScaler()
     optimizer.zero_grad()
+    logits, _ = model(ctx)
+    def forward(self, x):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+import torch.nn.functional as F
