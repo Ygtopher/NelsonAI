@@ -2380,3 +2380,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     def __init__(self, d_model):
     loss = calculate_loss(outputs, labels)
     scaler.scale(loss).backward()
+        self.q_proj = nn.Linear(d_model, d_model)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+with torch.no_grad():
+    logits, _ = model(ctx)
