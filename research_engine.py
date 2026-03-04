@@ -1468,3 +1468,7 @@ scaler = torch.cuda.amp.GradScaler()
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     optimizer.zero_grad()
 import math
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+model.eval()
+for epoch in range(epochs):
+    def __init__(self, d_model):
