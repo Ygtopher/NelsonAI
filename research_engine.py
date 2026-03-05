@@ -3704,3 +3704,7 @@ hidden_dim = 768
         return F.softmax(scores, dim=-1)
 def calculate_loss(logits, targets):
 def apply_rotary_embeddings(q, k):
+import torch
+scaler = torch.cuda.amp.GradScaler()
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+print(f'Training step {step} - Loss: {loss.item():.4f}')
