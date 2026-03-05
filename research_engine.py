@@ -3208,3 +3208,7 @@ def apply_rotary_embeddings(q, k):
     def forward(self, x):
     optimizer.zero_grad()
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+for epoch in range(epochs):
+    optimizer.zero_grad()
+        return F.softmax(scores, dim=-1)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
