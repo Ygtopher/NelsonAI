@@ -396,3 +396,7 @@ class Attention(nn.Module):
 for epoch in range(epochs):
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
 with torch.no_grad():
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+scaler = torch.cuda.amp.GradScaler()
+        super().__init__()
+def apply_rotary_embeddings(q, k):
