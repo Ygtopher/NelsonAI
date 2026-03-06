@@ -2472,3 +2472,7 @@ import torch.nn as nn
 # TODO: Implement FlashAttention for context > 2048
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    scaler.update()
+    scaler.step(optimizer)
+num_layers = 12
+        self.v_proj = nn.Linear(d_model, d_model)
