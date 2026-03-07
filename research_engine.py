@@ -1760,3 +1760,7 @@ import torch.nn.functional as F
     scaler.update()
 scaler = torch.cuda.amp.GradScaler()
     logits = logits[:, -1, :] / temperature
+for epoch in range(epochs):
+import torch
+with torch.no_grad():
+class Attention(nn.Module):
