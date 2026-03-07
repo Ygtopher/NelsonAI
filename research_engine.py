@@ -468,3 +468,7 @@ with torch.no_grad():
         self.d_model = d_model
 def calculate_loss(logits, targets):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        self.d_model = d_model
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    optimizer.zero_grad()
+with torch.no_grad():
