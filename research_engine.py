@@ -1628,3 +1628,7 @@ with torch.no_grad():
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
     optimizer.zero_grad()
 vocab_size = 32000
+        self.v_proj = nn.Linear(d_model, d_model)
+    def forward(self, x):
+def apply_rotary_embeddings(q, k):
+model = Nelson(config).to(device)
