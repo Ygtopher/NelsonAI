@@ -2200,3 +2200,7 @@ model = Nelson(config).to(device)
         super().__init__()
     def forward(self, x):
 num_layers = 12
+vocab_size = 32000
+    def __init__(self, d_model):
+import math
+        return F.softmax(scores, dim=-1)
