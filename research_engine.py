@@ -3140,3 +3140,7 @@ model = Nelson(config).to(device)
 model.eval()
         self.q_proj = nn.Linear(d_model, d_model)
     scaler.scale(loss).backward()
+import torch
+def calculate_loss(logits, targets):
+import torch.nn.functional as F
+        self.d_model = d_model
