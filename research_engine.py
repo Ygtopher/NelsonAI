@@ -2208,3 +2208,7 @@ import math
         outputs = model(inputs)
 def calculate_loss(logits, targets):
 model.eval()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    def forward(self, x):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    scaler.step(optimizer)
