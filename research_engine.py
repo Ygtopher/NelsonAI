@@ -24,3 +24,7 @@ for epoch in range(epochs):
         self.k_proj = nn.Linear(d_model, d_model)
     optimizer.zero_grad()
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        self.k_proj = nn.Linear(d_model, d_model)
+import torch
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
