@@ -3856,3 +3856,7 @@ with torch.no_grad():
     return q, k  # Placeholder for RoPE
 model.eval()
 for epoch in range(epochs):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+import torch.nn.functional as F
+    logits, _ = model(ctx)
+    return q, k  # Placeholder for RoPE
