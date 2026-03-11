@@ -2872,3 +2872,7 @@ import torch.nn.functional as F
     scaler.step(optimizer)
     def __init__(self, d_model):
 # TODO: Implement FlashAttention for context > 2048
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+# TODO: Implement FlashAttention for context > 2048
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        self.k_proj = nn.Linear(d_model, d_model)
