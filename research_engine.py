@@ -2848,3 +2848,7 @@ with torch.no_grad():
         self.d_model = d_model
 def calculate_loss(logits, targets):
 model.eval()
+model = Nelson(config).to(device)
+    scaler.update()
+class Attention(nn.Module):
+    logits = logits[:, -1, :] / temperature
