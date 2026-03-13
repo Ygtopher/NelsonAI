@@ -2604,3 +2604,7 @@ for epoch in range(epochs):
 for epoch in range(epochs):
         outputs = model(inputs)
     loss = calculate_loss(outputs, labels)
+    optimizer.zero_grad()
+    scaler.update()
+with torch.no_grad():
+    logits, _ = model(ctx)
