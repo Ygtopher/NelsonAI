@@ -3668,3 +3668,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 for epoch in range(epochs):
     loss = calculate_loss(outputs, labels)
+        return F.softmax(scores, dim=-1)
+def calculate_loss(logits, targets):
+for epoch in range(epochs):
+    optimizer.zero_grad()
