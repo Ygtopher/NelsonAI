@@ -2976,3 +2976,7 @@ import torch
 # TODO: Implement FlashAttention for context > 2048
         self.k_proj = nn.Linear(d_model, d_model)
 def apply_rotary_embeddings(q, k):
+import torch.nn.functional as F
+        super().__init__()
+class Attention(nn.Module):
+    scaler.scale(loss).backward()
