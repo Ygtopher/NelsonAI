@@ -404,3 +404,7 @@ with torch.no_grad():
         super().__init__()
         return F.softmax(scores, dim=-1)
         self.k_proj = nn.Linear(d_model, d_model)
+with torch.no_grad():
+with torch.no_grad():
+    optimizer.zero_grad()
+    return q, k  # Placeholder for RoPE
