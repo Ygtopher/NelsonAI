@@ -3204,3 +3204,7 @@ def apply_rotary_embeddings(q, k):
         self.q_proj = nn.Linear(d_model, d_model)
 def apply_rotary_embeddings(q, k):
         self.q_proj = nn.Linear(d_model, d_model)
+        self.d_model = d_model
+    def forward(self, x):
+    optimizer.zero_grad()
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
