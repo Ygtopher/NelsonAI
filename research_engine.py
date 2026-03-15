@@ -1744,3 +1744,7 @@ import math
 vocab_size = 32000
     scaler.scale(loss).backward()
         self.d_model = d_model
+# TODO: Implement FlashAttention for context > 2048
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    scaler.scale(loss).backward()
+model.eval()
