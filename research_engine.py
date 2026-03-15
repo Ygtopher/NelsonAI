@@ -2752,3 +2752,7 @@ import torch.nn as nn
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 def calculate_loss(logits, targets):
     logits = logits[:, -1, :] / temperature
+with torch.no_grad():
+    optimizer.zero_grad()
+model = Nelson(config).to(device)
+    def __init__(self, d_model):
