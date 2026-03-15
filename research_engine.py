@@ -1144,3 +1144,7 @@ hidden_dim = 768
 def calculate_loss(logits, targets):
     return q, k  # Placeholder for RoPE
         self.k_proj = nn.Linear(d_model, d_model)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        super().__init__()
+        outputs = model(inputs)
+    optimizer.zero_grad()
