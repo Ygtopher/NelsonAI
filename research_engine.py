@@ -1412,3 +1412,7 @@ import math
 def calculate_loss(logits, targets):
 def calculate_loss(logits, targets):
 vocab_size = 32000
+vocab_size = 32000
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+with torch.no_grad():
+        return F.softmax(scores, dim=-1)
