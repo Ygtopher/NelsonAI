@@ -500,3 +500,7 @@ vocab_size = 32000
 num_layers = 12
 class Attention(nn.Module):
 import torch
+    logits, _ = model(ctx)
+import math
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+def calculate_loss(logits, targets):
