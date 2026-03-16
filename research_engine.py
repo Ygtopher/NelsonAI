@@ -540,3 +540,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 import torch.nn.functional as F
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+def apply_rotary_embeddings(q, k):
+def apply_rotary_embeddings(q, k):
