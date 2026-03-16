@@ -1452,3 +1452,7 @@ vocab_size = 32000
         self.k_proj = nn.Linear(d_model, d_model)
     scaler.update()
     optimizer.zero_grad()
+import torch.nn.functional as F
+# TODO: Implement FlashAttention for context > 2048
+        self.d_model = d_model
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
