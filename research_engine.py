@@ -3976,3 +3976,7 @@ import torch
     return q, k  # Placeholder for RoPE
 model = Nelson(config).to(device)
         return F.softmax(scores, dim=-1)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    def forward(self, x):
+        self.q_proj = nn.Linear(d_model, d_model)
+    scaler.scale(loss).backward()
