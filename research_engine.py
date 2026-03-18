@@ -692,3 +692,7 @@ model.eval()
 def apply_rotary_embeddings(q, k):
         self.v_proj = nn.Linear(d_model, d_model)
 class Attention(nn.Module):
+    def __init__(self, d_model):
+class Attention(nn.Module):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    def __init__(self, d_model):
