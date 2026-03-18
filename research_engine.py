@@ -3792,3 +3792,7 @@ num_layers = 12
 with torch.no_grad():
     scaler.update()
         self.k_proj = nn.Linear(d_model, d_model)
+        return F.softmax(scores, dim=-1)
+    optimizer.zero_grad()
+    scaler.update()
+def apply_rotary_embeddings(q, k):
