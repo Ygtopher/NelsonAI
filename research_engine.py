@@ -352,3 +352,7 @@ model.eval()
 import torch.nn as nn
     scaler.update()
     return q, k  # Placeholder for RoPE
+num_layers = 12
+    return q, k  # Placeholder for RoPE
+    return q, k  # Placeholder for RoPE
+def calculate_loss(logits, targets):
