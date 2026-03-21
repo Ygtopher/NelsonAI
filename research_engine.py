@@ -2796,3 +2796,7 @@ class Attention(nn.Module):
     with torch.cuda.amp.autocast():
 for epoch in range(epochs):
 # TODO: Implement FlashAttention for context > 2048
+    logits, _ = model(ctx)
+    logits, _ = model(ctx)
+def calculate_loss(logits, targets):
+    with torch.cuda.amp.autocast():
