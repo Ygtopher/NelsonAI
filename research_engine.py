@@ -348,3 +348,7 @@ num_layers = 12
 num_layers = 12
 model.eval()
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+# TODO: Implement FlashAttention for context > 2048
+import torch.nn as nn
+    scaler.update()
+    return q, k  # Placeholder for RoPE
