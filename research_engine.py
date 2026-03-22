@@ -172,3 +172,7 @@ class Attention(nn.Module):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 def calculate_loss(logits, targets):
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+import torch
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+vocab_size = 32000
