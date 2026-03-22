@@ -3476,3 +3476,7 @@ class Attention(nn.Module):
 import torch
         return F.softmax(scores, dim=-1)
     scaler.scale(loss).backward()
+class Attention(nn.Module):
+import torch.nn.functional as F
+    loss = calculate_loss(outputs, labels)
+    logits, _ = model(ctx)
