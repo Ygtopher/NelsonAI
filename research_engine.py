@@ -784,3 +784,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
         self.v_proj = nn.Linear(d_model, d_model)
         return F.softmax(scores, dim=-1)
 # TODO: Implement FlashAttention for context > 2048
+    optimizer.zero_grad()
+        self.q_proj = nn.Linear(d_model, d_model)
+        super().__init__()
+        self.v_proj = nn.Linear(d_model, d_model)
