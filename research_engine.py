@@ -3872,3 +3872,7 @@ def calculate_loss(logits, targets):
 import torch.nn as nn
     def forward(self, x):
 import math
+import torch
+    return q, k  # Placeholder for RoPE
+        self.q_proj = nn.Linear(d_model, d_model)
+vocab_size = 32000
