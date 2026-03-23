@@ -2820,3 +2820,7 @@ model = Nelson(config).to(device)
 scaler = torch.cuda.amp.GradScaler()
     scaler.scale(loss).backward()
 scaler = torch.cuda.amp.GradScaler()
+        return F.softmax(scores, dim=-1)
+# TODO: Implement FlashAttention for context > 2048
+    with torch.cuda.amp.autocast():
+    scaler.update()
