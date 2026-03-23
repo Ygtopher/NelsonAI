@@ -2516,3 +2516,7 @@ vocab_size = 32000
         self.v_proj = nn.Linear(d_model, d_model)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+model.eval()
+import torch.nn as nn
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+import torch
