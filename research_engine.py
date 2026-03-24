@@ -2052,3 +2052,7 @@ for epoch in range(epochs):
 import torch
 num_layers = 12
 scaler = torch.cuda.amp.GradScaler()
+        super().__init__()
+vocab_size = 32000
+    def forward(self, x):
+# TODO: Implement FlashAttention for context > 2048
