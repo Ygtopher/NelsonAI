@@ -656,3 +656,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 import torch.nn as nn
 hidden_dim = 768
         super().__init__()
+scaler = torch.cuda.amp.GradScaler()
+import torch
+        self.d_model = d_model
+    optimizer.zero_grad()
