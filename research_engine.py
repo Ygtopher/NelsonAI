@@ -3656,3 +3656,7 @@ import torch.nn.functional as F
     loss = calculate_loss(outputs, labels)
         return F.softmax(scores, dim=-1)
 for epoch in range(epochs):
+        self.k_proj = nn.Linear(d_model, d_model)
+        self.d_model = d_model
+import torch.nn.functional as F
+def calculate_loss(logits, targets):
