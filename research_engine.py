@@ -2384,3 +2384,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
 with torch.no_grad():
     logits, _ = model(ctx)
+import torch.nn as nn
+    scaler.step(optimizer)
+scaler = torch.cuda.amp.GradScaler()
+model = Nelson(config).to(device)
