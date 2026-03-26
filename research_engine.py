@@ -3320,3 +3320,7 @@ num_layers = 12
         return F.softmax(scores, dim=-1)
     return q, k  # Placeholder for RoPE
 model.eval()
+    optimizer.zero_grad()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+# TODO: Implement FlashAttention for context > 2048
+print(f'Training step {step} - Loss: {loss.item():.4f}')
