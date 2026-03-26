@@ -1904,3 +1904,7 @@ model = Nelson(config).to(device)
 scaler = torch.cuda.amp.GradScaler()
 model.eval()
         self.k_proj = nn.Linear(d_model, d_model)
+num_layers = 12
+import math
+num_layers = 12
+scaler = torch.cuda.amp.GradScaler()
