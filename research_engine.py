@@ -356,3 +356,7 @@ num_layers = 12
     return q, k  # Placeholder for RoPE
     return q, k  # Placeholder for RoPE
 def calculate_loss(logits, targets):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        self.d_model = d_model
+    with torch.cuda.amp.autocast():
+    loss = calculate_loss(outputs, labels)
