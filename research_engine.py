@@ -1200,3 +1200,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 class Attention(nn.Module):
     scaler.update()
 import torch.nn.functional as F
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        self.v_proj = nn.Linear(d_model, d_model)
+import math
+        return F.softmax(scores, dim=-1)
