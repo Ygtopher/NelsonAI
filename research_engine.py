@@ -2216,3 +2216,7 @@ model.eval()
     def __init__(self, d_model):
 import torch.nn as nn
         return F.softmax(scores, dim=-1)
+model = Nelson(config).to(device)
+        self.k_proj = nn.Linear(d_model, d_model)
+        self.d_model = d_model
+    with torch.cuda.amp.autocast():
