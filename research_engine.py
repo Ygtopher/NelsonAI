@@ -3564,3 +3564,7 @@ vocab_size = 32000
     return q, k  # Placeholder for RoPE
         outputs = model(inputs)
     optimizer.zero_grad()
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+# TODO: Implement FlashAttention for context > 2048
+import torch.nn as nn
+for epoch in range(epochs):
