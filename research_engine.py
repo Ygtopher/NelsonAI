@@ -1996,3 +1996,7 @@ import math
 for epoch in range(epochs):
 import torch
         self.q_proj = nn.Linear(d_model, d_model)
+    loss = calculate_loss(outputs, labels)
+    logits = logits[:, -1, :] / temperature
+model = Nelson(config).to(device)
+    optimizer.zero_grad()
