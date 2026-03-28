@@ -1008,3 +1008,7 @@ import torch.nn.functional as F
     def __init__(self, d_model):
     optimizer.zero_grad()
         self.d_model = d_model
+import math
+import torch
+    logits = logits[:, -1, :] / temperature
+    with torch.cuda.amp.autocast():
