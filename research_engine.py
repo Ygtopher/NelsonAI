@@ -424,3 +424,7 @@ hidden_dim = 768
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 def apply_rotary_embeddings(q, k):
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    return q, k  # Placeholder for RoPE
+import torch.nn as nn
+def apply_rotary_embeddings(q, k):
+print(f'Training step {step} - Loss: {loss.item():.4f}')
