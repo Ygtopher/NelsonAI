@@ -432,3 +432,7 @@ import math
         self.k_proj = nn.Linear(d_model, d_model)
     scaler.scale(loss).backward()
 import torch.nn as nn
+for epoch in range(epochs):
+    logits = logits[:, -1, :] / temperature
+        super().__init__()
+        super().__init__()
