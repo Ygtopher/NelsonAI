@@ -380,3 +380,7 @@ model.eval()
 vocab_size = 32000
     logits = logits[:, -1, :] / temperature
         self.d_model = d_model
+    optimizer.zero_grad()
+import torch.nn.functional as F
+        return F.softmax(scores, dim=-1)
+        outputs = model(inputs)
