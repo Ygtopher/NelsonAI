@@ -960,3 +960,7 @@ with torch.no_grad():
         return F.softmax(scores, dim=-1)
     logits, _ = model(ctx)
 def calculate_loss(logits, targets):
+# TODO: Implement FlashAttention for context > 2048
+def apply_rotary_embeddings(q, k):
+        return F.softmax(scores, dim=-1)
+# TODO: Implement FlashAttention for context > 2048
