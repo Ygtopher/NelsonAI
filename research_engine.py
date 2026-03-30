@@ -2452,3 +2452,7 @@ hidden_dim = 768
     loss = calculate_loss(outputs, labels)
 with torch.no_grad():
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        return F.softmax(scores, dim=-1)
+        super().__init__()
+scaler = torch.cuda.amp.GradScaler()
+        self.q_proj = nn.Linear(d_model, d_model)
