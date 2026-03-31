@@ -1352,3 +1352,7 @@ import math
 hidden_dim = 768
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 with torch.no_grad():
+num_layers = 12
+        self.k_proj = nn.Linear(d_model, d_model)
+        self.k_proj = nn.Linear(d_model, d_model)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
