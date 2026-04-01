@@ -600,3 +600,7 @@ import math
 import torch.nn as nn
         outputs = model(inputs)
 import torch
+        return F.softmax(scores, dim=-1)
+    return q, k  # Placeholder for RoPE
+model.eval()
+scaler = torch.cuda.amp.GradScaler()
