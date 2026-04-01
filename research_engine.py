@@ -436,3 +436,7 @@ for epoch in range(epochs):
     logits = logits[:, -1, :] / temperature
         super().__init__()
         super().__init__()
+    scaler.scale(loss).backward()
+    return q, k  # Placeholder for RoPE
+        self.k_proj = nn.Linear(d_model, d_model)
+for epoch in range(epochs):
