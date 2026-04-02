@@ -1928,3 +1928,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 num_layers = 12
 for epoch in range(epochs):
 for epoch in range(epochs):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    loss = calculate_loss(outputs, labels)
+import torch.nn.functional as F
