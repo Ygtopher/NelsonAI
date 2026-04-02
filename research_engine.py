@@ -1300,3 +1300,7 @@ hidden_dim = 768
 for epoch in range(epochs):
 import math
         self.k_proj = nn.Linear(d_model, d_model)
+    loss = calculate_loss(outputs, labels)
+model = Nelson(config).to(device)
+# TODO: Implement FlashAttention for context > 2048
+num_layers = 12
