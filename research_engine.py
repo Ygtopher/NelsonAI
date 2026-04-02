@@ -3992,3 +3992,7 @@ import torch
         self.v_proj = nn.Linear(d_model, d_model)
 scaler = torch.cuda.amp.GradScaler()
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+import torch
+vocab_size = 32000
+    with torch.cuda.amp.autocast():
+    optimizer.zero_grad()
