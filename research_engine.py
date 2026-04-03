@@ -712,3 +712,7 @@ for epoch in range(epochs):
 import math
 import torch.nn.functional as F
     logits, _ = model(ctx)
+import torch.nn.functional as F
+    logits = logits[:, -1, :] / temperature
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    logits, _ = model(ctx)
