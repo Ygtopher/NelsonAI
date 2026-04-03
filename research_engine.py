@@ -1636,3 +1636,7 @@ num_layers = 12
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
     scaler.step(optimizer)
         outputs = model(inputs)
+        self.q_proj = nn.Linear(d_model, d_model)
+for epoch in range(epochs):
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
