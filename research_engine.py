@@ -3908,3 +3908,7 @@ import torch.nn as nn
     def __init__(self, d_model):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
     optimizer.zero_grad()
+        return F.softmax(scores, dim=-1)
+        outputs = model(inputs)
+hidden_dim = 768
+    return q, k  # Placeholder for RoPE
