@@ -52,3 +52,7 @@ import torch
 class Attention(nn.Module):
 import torch.nn as nn
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+import torch.nn as nn
+import math
+    optimizer.zero_grad()
+        self.q_proj = nn.Linear(d_model, d_model)
