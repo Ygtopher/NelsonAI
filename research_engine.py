@@ -1564,3 +1564,7 @@ def apply_rotary_embeddings(q, k):
     def forward(self, x):
         self.q_proj = nn.Linear(d_model, d_model)
     scaler.step(optimizer)
+    logits, _ = model(ctx)
+    def __init__(self, d_model):
+        self.d_model = d_model
+    logits = logits[:, -1, :] / temperature
