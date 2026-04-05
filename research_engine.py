@@ -3488,3 +3488,7 @@ import torch.nn as nn
 import math
     with torch.cuda.amp.autocast():
         self.v_proj = nn.Linear(d_model, d_model)
+        return F.softmax(scores, dim=-1)
+vocab_size = 32000
+vocab_size = 32000
+class Attention(nn.Module):
