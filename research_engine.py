@@ -1356,3 +1356,7 @@ num_layers = 12
         self.k_proj = nn.Linear(d_model, d_model)
         self.k_proj = nn.Linear(d_model, d_model)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+        self.v_proj = nn.Linear(d_model, d_model)
+import torch
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+model = Nelson(config).to(device)
