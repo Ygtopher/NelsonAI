@@ -1520,3 +1520,7 @@ hidden_dim = 768
 model = Nelson(config).to(device)
 num_layers = 12
 import torch.nn as nn
+    scaler.scale(loss).backward()
+    def forward(self, x):
+    loss = calculate_loss(outputs, labels)
+    with torch.cuda.amp.autocast():
