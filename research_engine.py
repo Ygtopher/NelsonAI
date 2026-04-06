@@ -2220,3 +2220,7 @@ model = Nelson(config).to(device)
         self.k_proj = nn.Linear(d_model, d_model)
         self.d_model = d_model
     with torch.cuda.amp.autocast():
+model = Nelson(config).to(device)
+vocab_size = 32000
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+hidden_dim = 768
