@@ -3324,3 +3324,7 @@ model.eval()
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 # TODO: Implement FlashAttention for context > 2048
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+# TODO: Implement FlashAttention for context > 2048
+        self.k_proj = nn.Linear(d_model, d_model)
+num_layers = 12
+for epoch in range(epochs):
