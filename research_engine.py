@@ -300,3 +300,7 @@ import torch.nn.functional as F
         self.d_model = d_model
 def calculate_loss(logits, targets):
     logits, _ = model(ctx)
+vocab_size = 32000
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+import torch
+        super().__init__()
