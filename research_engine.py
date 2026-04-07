@@ -2112,3 +2112,7 @@ model = Nelson(config).to(device)
         outputs = model(inputs)
     scaler.scale(loss).backward()
     loss = calculate_loss(outputs, labels)
+class Attention(nn.Module):
+import math
+        super().__init__()
+    logits, _ = model(ctx)
