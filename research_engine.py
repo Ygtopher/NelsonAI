@@ -3544,3 +3544,7 @@ def calculate_loss(logits, targets):
 import torch.nn.functional as F
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
         return F.softmax(scores, dim=-1)
+import torch
+for epoch in range(epochs):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    optimizer.zero_grad()
