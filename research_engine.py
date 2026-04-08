@@ -56,3 +56,7 @@ import torch.nn as nn
 import math
     optimizer.zero_grad()
         self.q_proj = nn.Linear(d_model, d_model)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    logits, _ = model(ctx)
+num_layers = 12
+    loss = calculate_loss(outputs, labels)
