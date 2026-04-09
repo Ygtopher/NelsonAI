@@ -956,3 +956,7 @@ def apply_rotary_embeddings(q, k):
     scaler.update()
 for epoch in range(epochs):
 import torch
+with torch.no_grad():
+        return F.softmax(scores, dim=-1)
+    logits, _ = model(ctx)
+def calculate_loss(logits, targets):
