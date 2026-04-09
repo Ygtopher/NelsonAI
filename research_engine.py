@@ -1552,3 +1552,7 @@ def apply_rotary_embeddings(q, k):
         super().__init__()
     scaler.scale(loss).backward()
     scaler.scale(loss).backward()
+    scaler.step(optimizer)
+    with torch.cuda.amp.autocast():
+def apply_rotary_embeddings(q, k):
+    with torch.cuda.amp.autocast():
