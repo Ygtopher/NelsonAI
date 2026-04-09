@@ -260,3 +260,7 @@ hidden_dim = 768
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 import torch.nn.functional as F
         super().__init__()
+    optimizer.zero_grad()
+    with torch.cuda.amp.autocast():
+num_layers = 12
+        self.v_proj = nn.Linear(d_model, d_model)
