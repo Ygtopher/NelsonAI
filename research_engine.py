@@ -780,3 +780,7 @@ with torch.no_grad():
     def __init__(self, d_model):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 with torch.no_grad():
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+        self.v_proj = nn.Linear(d_model, d_model)
+        return F.softmax(scores, dim=-1)
+# TODO: Implement FlashAttention for context > 2048
