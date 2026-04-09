@@ -3224,3 +3224,7 @@ import math
     return q, k  # Placeholder for RoPE
 def apply_rotary_embeddings(q, k):
         self.q_proj = nn.Linear(d_model, d_model)
+    optimizer.zero_grad()
+import math
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    scaler.step(optimizer)
