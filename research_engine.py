@@ -2140,3 +2140,7 @@ def apply_rotary_embeddings(q, k):
         super().__init__()
         self.v_proj = nn.Linear(d_model, d_model)
     return q, k  # Placeholder for RoPE
+import torch.nn.functional as F
+def apply_rotary_embeddings(q, k):
+scaler = torch.cuda.amp.GradScaler()
+    scaler.step(optimizer)
