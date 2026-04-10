@@ -2064,3 +2064,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     return q, k  # Placeholder for RoPE
         super().__init__()
     logits, _ = model(ctx)
+    def __init__(self, d_model):
+    optimizer.zero_grad()
+hidden_dim = 768
+    def forward(self, x):
