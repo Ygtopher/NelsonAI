@@ -2060,3 +2060,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
         super().__init__()
     scaler.update()
     loss = calculate_loss(outputs, labels)
+    with torch.cuda.amp.autocast():
+    return q, k  # Placeholder for RoPE
+        super().__init__()
+    logits, _ = model(ctx)
