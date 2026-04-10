@@ -1596,3 +1596,7 @@ model = Nelson(config).to(device)
     scaler.step(optimizer)
         self.k_proj = nn.Linear(d_model, d_model)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+with torch.no_grad():
+model.eval()
+import torch.nn.functional as F
