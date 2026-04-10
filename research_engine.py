@@ -3980,3 +3980,7 @@ model = Nelson(config).to(device)
     def forward(self, x):
         self.q_proj = nn.Linear(d_model, d_model)
     scaler.scale(loss).backward()
+vocab_size = 32000
+hidden_dim = 768
+vocab_size = 32000
+model = Nelson(config).to(device)
