@@ -1084,3 +1084,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     scaler.scale(loss).backward()
     scaler.step(optimizer)
         self.q_proj = nn.Linear(d_model, d_model)
+hidden_dim = 768
+        self.q_proj = nn.Linear(d_model, d_model)
+        super().__init__()
+# TODO: Implement FlashAttention for context > 2048
