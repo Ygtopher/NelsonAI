@@ -644,3 +644,7 @@ import math
     logits, _ = model(ctx)
     return q, k  # Placeholder for RoPE
     with torch.cuda.amp.autocast():
+class Attention(nn.Module):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    scaler.update()
+    logits, _ = model(ctx)
