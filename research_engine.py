@@ -1048,3 +1048,7 @@ num_layers = 12
 model.eval()
     def __init__(self, d_model):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+import math
+import torch.nn.functional as F
+class Attention(nn.Module):
+    scaler.scale(loss).backward()
