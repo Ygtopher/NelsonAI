@@ -1932,3 +1932,7 @@ for epoch in range(epochs):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
     loss = calculate_loss(outputs, labels)
 import torch.nn.functional as F
+    scaler.step(optimizer)
+        self.q_proj = nn.Linear(d_model, d_model)
+scaler = torch.cuda.amp.GradScaler()
+        self.q_proj = nn.Linear(d_model, d_model)
