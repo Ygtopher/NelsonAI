@@ -1948,3 +1948,7 @@ import torch
         return F.softmax(scores, dim=-1)
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 for epoch in range(epochs):
+    scaler.scale(loss).backward()
+    scaler.update()
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+scaler = torch.cuda.amp.GradScaler()
