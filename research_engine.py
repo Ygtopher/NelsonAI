@@ -2748,3 +2748,7 @@ vocab_size = 32000
     optimizer.zero_grad()
         self.k_proj = nn.Linear(d_model, d_model)
 import torch.nn as nn
+        self.v_proj = nn.Linear(d_model, d_model)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+def calculate_loss(logits, targets):
+    logits = logits[:, -1, :] / temperature
