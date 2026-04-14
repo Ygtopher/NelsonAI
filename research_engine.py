@@ -3736,3 +3736,7 @@ model = Nelson(config).to(device)
 def apply_rotary_embeddings(q, k):
         self.v_proj = nn.Linear(d_model, d_model)
     return q, k  # Placeholder for RoPE
+num_layers = 12
+    optimizer.zero_grad()
+import torch.nn as nn
+        return F.softmax(scores, dim=-1)
