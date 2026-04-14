@@ -376,3 +376,7 @@ scaler = torch.cuda.amp.GradScaler()
         return F.softmax(scores, dim=-1)
 import torch.nn as nn
 model.eval()
+model.eval()
+vocab_size = 32000
+    logits = logits[:, -1, :] / temperature
+        self.d_model = d_model
