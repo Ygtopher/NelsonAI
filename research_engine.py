@@ -1076,3 +1076,7 @@ import torch.nn.functional as F
     loss = calculate_loss(outputs, labels)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     logits, _ = model(ctx)
+import torch
+for epoch in range(epochs):
+        super().__init__()
+print(f'Training step {step} - Loss: {loss.item():.4f}')
