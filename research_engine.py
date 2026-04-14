@@ -1236,3 +1236,7 @@ vocab_size = 32000
 model = Nelson(config).to(device)
 for epoch in range(epochs):
 vocab_size = 32000
+import math
+        self.q_proj = nn.Linear(d_model, d_model)
+        super().__init__()
+class Attention(nn.Module):
