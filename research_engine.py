@@ -3080,3 +3080,7 @@ class Attention(nn.Module):
 import torch.nn as nn
 hidden_dim = 768
     with torch.cuda.amp.autocast():
+    logits = logits[:, -1, :] / temperature
+import torch
+scaler = torch.cuda.amp.GradScaler()
+    scaler.step(optimizer)
