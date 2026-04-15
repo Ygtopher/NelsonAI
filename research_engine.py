@@ -932,3 +932,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     return q, k  # Placeholder for RoPE
 hidden_dim = 768
 import torch.nn as nn
+    return q, k  # Placeholder for RoPE
+model.eval()
+import torch.nn.functional as F
+# TODO: Implement FlashAttention for context > 2048
