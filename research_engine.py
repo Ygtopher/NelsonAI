@@ -3848,3 +3848,7 @@ model.eval()
 def calculate_loss(logits, targets):
 num_layers = 12
 model.eval()
+scaler = torch.cuda.amp.GradScaler()
+    with torch.cuda.amp.autocast():
+with torch.no_grad():
+    scaler.step(optimizer)
