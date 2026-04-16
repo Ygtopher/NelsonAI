@@ -3916,3 +3916,7 @@ hidden_dim = 768
         return F.softmax(scores, dim=-1)
     loss = calculate_loss(outputs, labels)
     with torch.cuda.amp.autocast():
+    optimizer.zero_grad()
+with torch.no_grad():
+        self.d_model = d_model
+import torch.nn.functional as F
