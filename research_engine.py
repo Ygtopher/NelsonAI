@@ -1116,3 +1116,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     loss = calculate_loss(outputs, labels)
 class Attention(nn.Module):
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        super().__init__()
+with torch.no_grad():
+model = Nelson(config).to(device)
+with torch.no_grad():
