@@ -3688,3 +3688,7 @@ hidden_dim = 768
     logits, _ = model(ctx)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     logits = logits[:, -1, :] / temperature
+    def forward(self, x):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    def forward(self, x):
+        return F.softmax(scores, dim=-1)
