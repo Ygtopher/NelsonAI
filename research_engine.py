@@ -1456,3 +1456,7 @@ import torch.nn.functional as F
 # TODO: Implement FlashAttention for context > 2048
         self.d_model = d_model
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+for epoch in range(epochs):
+        self.d_model = d_model
+num_layers = 12
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
