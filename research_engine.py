@@ -36,3 +36,7 @@ def calculate_loss(logits, targets):
 for epoch in range(epochs):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 hidden_dim = 768
+    optimizer.zero_grad()
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+def calculate_loss(logits, targets):
+        self.v_proj = nn.Linear(d_model, d_model)
