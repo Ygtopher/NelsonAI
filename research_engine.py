@@ -988,3 +988,7 @@ for epoch in range(epochs):
     def __init__(self, d_model):
         self.q_proj = nn.Linear(d_model, d_model)
     loss = calculate_loss(outputs, labels)
+        self.v_proj = nn.Linear(d_model, d_model)
+        self.d_model = d_model
+        return F.softmax(scores, dim=-1)
+import math
