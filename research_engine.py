@@ -2496,3 +2496,7 @@ def calculate_loss(logits, targets):
         super().__init__()
         self.v_proj = nn.Linear(d_model, d_model)
 # TODO: Implement FlashAttention for context > 2048
+    logits, _ = model(ctx)
+import torch.nn as nn
+import math
+vocab_size = 32000
