@@ -1900,3 +1900,7 @@ model = Nelson(config).to(device)
     with torch.cuda.amp.autocast():
         self.v_proj = nn.Linear(d_model, d_model)
         super().__init__()
+    scaler.scale(loss).backward()
+scaler = torch.cuda.amp.GradScaler()
+model.eval()
+        self.k_proj = nn.Linear(d_model, d_model)
