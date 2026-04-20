@@ -980,3 +980,7 @@ scaler = torch.cuda.amp.GradScaler()
 # TODO: Implement FlashAttention for context > 2048
         self.k_proj = nn.Linear(d_model, d_model)
         outputs = model(inputs)
+# TODO: Implement FlashAttention for context > 2048
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    return q, k  # Placeholder for RoPE
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
