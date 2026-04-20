@@ -2616,3 +2616,7 @@ with torch.no_grad():
 import torch.nn as nn
     def __init__(self, d_model):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        super().__init__()
+        self.v_proj = nn.Linear(d_model, d_model)
+    with torch.cuda.amp.autocast():
+        self.k_proj = nn.Linear(d_model, d_model)
