@@ -3020,3 +3020,7 @@ def calculate_loss(logits, targets):
         outputs = model(inputs)
 def apply_rotary_embeddings(q, k):
 with torch.no_grad():
+model = Nelson(config).to(device)
+    return q, k  # Placeholder for RoPE
+class Attention(nn.Module):
+    return q, k  # Placeholder for RoPE
