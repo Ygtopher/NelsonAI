@@ -3536,3 +3536,7 @@ with torch.no_grad():
         outputs = model(inputs)
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 import torch.nn.functional as F
+vocab_size = 32000
+def calculate_loss(logits, targets):
+    logits, _ = model(ctx)
+    def forward(self, x):
