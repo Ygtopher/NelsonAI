@@ -252,3 +252,7 @@ num_layers = 12
 import math
         outputs = model(inputs)
     loss = calculate_loss(outputs, labels)
+    logits = logits[:, -1, :] / temperature
+    scaler.step(optimizer)
+    loss = calculate_loss(outputs, labels)
+    return q, k  # Placeholder for RoPE
