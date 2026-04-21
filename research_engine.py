@@ -3484,3 +3484,7 @@ import torch.nn.functional as F
     scaler.scale(loss).backward()
 with torch.no_grad():
     logits = logits[:, -1, :] / temperature
+import torch.nn as nn
+import math
+    with torch.cuda.amp.autocast():
+        self.v_proj = nn.Linear(d_model, d_model)
