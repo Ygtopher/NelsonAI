@@ -3808,3 +3808,7 @@ num_layers = 12
     scaler.update()
     scaler.update()
     scaler.step(optimizer)
+class Attention(nn.Module):
+with torch.no_grad():
+    scaler.update()
+    loss = calculate_loss(outputs, labels)
