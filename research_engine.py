@@ -1648,3 +1648,7 @@ import math
         self.q_proj = nn.Linear(d_model, d_model)
         super().__init__()
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+model = Nelson(config).to(device)
+# TODO: Implement FlashAttention for context > 2048
+    return q, k  # Placeholder for RoPE
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
