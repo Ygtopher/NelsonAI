@@ -2592,3 +2592,7 @@ model.eval()
         self.v_proj = nn.Linear(d_model, d_model)
 import torch.nn as nn
     logits, _ = model(ctx)
+    def forward(self, x):
+scaler = torch.cuda.amp.GradScaler()
+        return F.softmax(scores, dim=-1)
+num_layers = 12
