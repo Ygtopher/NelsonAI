@@ -560,3 +560,7 @@ hidden_dim = 768
 def calculate_loss(logits, targets):
 import torch
         super().__init__()
+import torch.nn as nn
+import torch
+        self.q_proj = nn.Linear(d_model, d_model)
+    logits = logits[:, -1, :] / temperature
