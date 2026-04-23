@@ -2416,3 +2416,7 @@ def apply_rotary_embeddings(q, k):
     logits, _ = model(ctx)
     scaler.update()
 with torch.no_grad():
+    scaler.scale(loss).backward()
+    def __init__(self, d_model):
+import torch.nn as nn
+model = Nelson(config).to(device)
