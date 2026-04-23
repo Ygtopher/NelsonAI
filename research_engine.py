@@ -2136,3 +2136,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 def apply_rotary_embeddings(q, k):
         self.k_proj = nn.Linear(d_model, d_model)
     def __init__(self, d_model):
+    def forward(self, x):
+        super().__init__()
+        self.v_proj = nn.Linear(d_model, d_model)
+    return q, k  # Placeholder for RoPE
