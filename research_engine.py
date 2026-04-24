@@ -1340,3 +1340,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
         super().__init__()
 def apply_rotary_embeddings(q, k):
         self.q_proj = nn.Linear(d_model, d_model)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        self.v_proj = nn.Linear(d_model, d_model)
+for epoch in range(epochs):
+        super().__init__()
