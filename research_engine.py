@@ -2388,3 +2388,7 @@ import torch.nn as nn
     scaler.step(optimizer)
 scaler = torch.cuda.amp.GradScaler()
 model = Nelson(config).to(device)
+model = Nelson(config).to(device)
+vocab_size = 32000
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+def apply_rotary_embeddings(q, k):
