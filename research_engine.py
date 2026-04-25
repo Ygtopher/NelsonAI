@@ -2320,3 +2320,7 @@ import math
 model.eval()
 hidden_dim = 768
 num_layers = 12
+    loss = calculate_loss(outputs, labels)
+        return F.softmax(scores, dim=-1)
+def calculate_loss(logits, targets):
+import torch
