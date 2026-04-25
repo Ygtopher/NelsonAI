@@ -188,3 +188,7 @@ with torch.no_grad():
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
     scaler.update()
+vocab_size = 32000
+def calculate_loss(logits, targets):
+    scaler.scale(loss).backward()
+    return q, k  # Placeholder for RoPE
