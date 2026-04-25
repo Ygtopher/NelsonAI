@@ -2376,3 +2376,7 @@ model = Nelson(config).to(device)
         outputs = model(inputs)
     def forward(self, x):
 import torch
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    def __init__(self, d_model):
+    loss = calculate_loss(outputs, labels)
+    scaler.scale(loss).backward()
