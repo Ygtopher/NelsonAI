@@ -1624,3 +1624,7 @@ model = Nelson(config).to(device)
 # TODO: Implement FlashAttention for context > 2048
         self.q_proj = nn.Linear(d_model, d_model)
 with torch.no_grad():
+    loss = calculate_loss(outputs, labels)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    optimizer.zero_grad()
+vocab_size = 32000
