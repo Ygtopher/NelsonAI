@@ -3352,3 +3352,7 @@ def apply_rotary_embeddings(q, k):
 num_layers = 12
     optimizer.zero_grad()
 num_layers = 12
+    def forward(self, x):
+        super().__init__()
+model = Nelson(config).to(device)
+hidden_dim = 768
