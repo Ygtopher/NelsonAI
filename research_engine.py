@@ -3376,3 +3376,7 @@ num_layers = 12
 # TODO: Implement FlashAttention for context > 2048
     scaler.update()
 def apply_rotary_embeddings(q, k):
+        self.v_proj = nn.Linear(d_model, d_model)
+    optimizer.zero_grad()
+    logits = logits[:, -1, :] / temperature
+        super().__init__()
