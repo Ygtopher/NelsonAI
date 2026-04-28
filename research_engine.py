@@ -648,3 +648,7 @@ class Attention(nn.Module):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     scaler.update()
     logits, _ = model(ctx)
+    logits, _ = model(ctx)
+    loss = calculate_loss(outputs, labels)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    with torch.cuda.amp.autocast():
