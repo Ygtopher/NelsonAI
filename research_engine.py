@@ -3048,3 +3048,7 @@ with torch.no_grad():
         self.q_proj = nn.Linear(d_model, d_model)
 import torch
 import torch.nn as nn
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    with torch.cuda.amp.autocast():
+    scaler.scale(loss).backward()
+        self.d_model = d_model
