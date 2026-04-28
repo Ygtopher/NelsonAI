@@ -544,3 +544,7 @@ import torch.nn.functional as F
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 def apply_rotary_embeddings(q, k):
 def apply_rotary_embeddings(q, k):
+    optimizer.zero_grad()
+scaler = torch.cuda.amp.GradScaler()
+        outputs = model(inputs)
+with torch.no_grad():
