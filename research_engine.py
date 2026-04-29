@@ -3572,3 +3572,7 @@ import torch.nn.functional as F
 scaler = torch.cuda.amp.GradScaler()
         self.q_proj = nn.Linear(d_model, d_model)
         self.d_model = d_model
+def calculate_loss(logits, targets):
+        self.k_proj = nn.Linear(d_model, d_model)
+    loss = calculate_loss(outputs, labels)
+    scaler.update()
