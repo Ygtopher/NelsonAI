@@ -3864,3 +3864,7 @@ import torch
     scaler.update()
 num_layers = 12
 import torch.nn.functional as F
+for epoch in range(epochs):
+scaler = torch.cuda.amp.GradScaler()
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+def calculate_loss(logits, targets):
