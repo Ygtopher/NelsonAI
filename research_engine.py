@@ -1440,3 +1440,7 @@ class Attention(nn.Module):
 hidden_dim = 768
 def calculate_loss(logits, targets):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    def __init__(self, d_model):
+def calculate_loss(logits, targets):
+        self.v_proj = nn.Linear(d_model, d_model)
