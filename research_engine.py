@@ -2072,3 +2072,7 @@ import torch.nn as nn
     optimizer.zero_grad()
 with torch.no_grad():
 for epoch in range(epochs):
+        return F.softmax(scores, dim=-1)
+with torch.no_grad():
+        super().__init__()
+with torch.no_grad():
