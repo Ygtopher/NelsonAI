@@ -708,3 +708,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 def calculate_loss(logits, targets):
         return F.softmax(scores, dim=-1)
+for epoch in range(epochs):
+import math
+import torch.nn.functional as F
+    logits, _ = model(ctx)
