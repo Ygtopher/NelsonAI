@@ -568,3 +568,7 @@ import torch
 for epoch in range(epochs):
 scaler = torch.cuda.amp.GradScaler()
     scaler.scale(loss).backward()
+# TODO: Implement FlashAttention for context > 2048
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+scaler = torch.cuda.amp.GradScaler()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
