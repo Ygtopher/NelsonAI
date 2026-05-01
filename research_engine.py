@@ -840,3 +840,7 @@ import torch.nn.functional as F
 with torch.no_grad():
     logits = logits[:, -1, :] / temperature
 num_layers = 12
+import torch.nn.functional as F
+import torch.nn.functional as F
+    scaler.update()
+        self.d_model = d_model
