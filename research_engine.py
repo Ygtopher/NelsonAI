@@ -3156,3 +3156,7 @@ for epoch in range(epochs):
 import torch.nn as nn
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     logits = logits[:, -1, :] / temperature
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+import torch.nn.functional as F
+        outputs = model(inputs)
+        return F.softmax(scores, dim=-1)
