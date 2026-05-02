@@ -2720,3 +2720,7 @@ import math
     scaler.update()
     logits = logits[:, -1, :] / temperature
         self.q_proj = nn.Linear(d_model, d_model)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    def __init__(self, d_model):
+        self.v_proj = nn.Linear(d_model, d_model)
+        super().__init__()
