@@ -2548,3 +2548,7 @@ class Attention(nn.Module):
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 model.eval()
     scaler.scale(loss).backward()
+        outputs = model(inputs)
+        self.d_model = d_model
+    def forward(self, x):
+    loss = calculate_loss(outputs, labels)
