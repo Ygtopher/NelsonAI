@@ -2256,3 +2256,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     def __init__(self, d_model):
     loss = calculate_loss(outputs, labels)
     def forward(self, x):
+class Attention(nn.Module):
+model.eval()
+    logits, _ = model(ctx)
+    def __init__(self, d_model):
