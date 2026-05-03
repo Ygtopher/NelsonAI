@@ -2724,3 +2724,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     def __init__(self, d_model):
         self.v_proj = nn.Linear(d_model, d_model)
         super().__init__()
+        super().__init__()
+    logits = logits[:, -1, :] / temperature
+class Attention(nn.Module):
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
