@@ -192,3 +192,7 @@ vocab_size = 32000
 def calculate_loss(logits, targets):
     scaler.scale(loss).backward()
     return q, k  # Placeholder for RoPE
+        super().__init__()
+def calculate_loss(logits, targets):
+import torch
+        self.k_proj = nn.Linear(d_model, d_model)
