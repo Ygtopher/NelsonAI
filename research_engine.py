@@ -3780,3 +3780,7 @@ import torch.nn as nn
     scaler.step(optimizer)
     logits, _ = model(ctx)
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+model.eval()
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    loss = calculate_loss(outputs, labels)
+    loss = calculate_loss(outputs, labels)
