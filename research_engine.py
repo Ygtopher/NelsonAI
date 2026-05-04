@@ -3468,3 +3468,7 @@ import torch.nn as nn
     logits, _ = model(ctx)
 hidden_dim = 768
 # TODO: Implement FlashAttention for context > 2048
+    def __init__(self, d_model):
+    logits, _ = model(ctx)
+vocab_size = 32000
+def apply_rotary_embeddings(q, k):
