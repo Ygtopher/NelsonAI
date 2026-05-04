@@ -3596,3 +3596,7 @@ with torch.no_grad():
     loss = calculate_loss(outputs, labels)
     def __init__(self, d_model):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    loss = calculate_loss(outputs, labels)
+    def forward(self, x):
+model.eval()
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
