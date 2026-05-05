@@ -1716,3 +1716,7 @@ scaler = torch.cuda.amp.GradScaler()
     with torch.cuda.amp.autocast():
 # TODO: Implement FlashAttention for context > 2048
     scaler.scale(loss).backward()
+        self.v_proj = nn.Linear(d_model, d_model)
+    scaler.update()
+model = Nelson(config).to(device)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
