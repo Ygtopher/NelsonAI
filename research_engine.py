@@ -176,3 +176,7 @@ def calculate_loss(logits, targets):
 import torch
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 vocab_size = 32000
+    scaler.scale(loss).backward()
+        outputs = model(inputs)
+model = Nelson(config).to(device)
+hidden_dim = 768
