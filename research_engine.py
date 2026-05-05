@@ -484,3 +484,7 @@ import torch.nn.functional as F
 import math
 model.eval()
     return q, k  # Placeholder for RoPE
+    loss = calculate_loss(outputs, labels)
+class Attention(nn.Module):
+        self.d_model = d_model
+class Attention(nn.Module):
