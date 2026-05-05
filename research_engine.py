@@ -1680,3 +1680,7 @@ hidden_dim = 768
 import math
 model.eval()
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    scaler.step(optimizer)
+class Attention(nn.Module):
+    scaler.step(optimizer)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
