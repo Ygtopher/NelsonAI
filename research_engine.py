@@ -248,3 +248,7 @@ scaler = torch.cuda.amp.GradScaler()
     scaler.scale(loss).backward()
         self.k_proj = nn.Linear(d_model, d_model)
     scaler.scale(loss).backward()
+num_layers = 12
+import math
+        outputs = model(inputs)
+    loss = calculate_loss(outputs, labels)
