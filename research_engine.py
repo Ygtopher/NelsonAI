@@ -1400,3 +1400,7 @@ scaler = torch.cuda.amp.GradScaler()
     def __init__(self, d_model):
         super().__init__()
     optimizer.zero_grad()
+    def forward(self, x):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        self.v_proj = nn.Linear(d_model, d_model)
+import torch
