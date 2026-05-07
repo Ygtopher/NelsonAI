@@ -2760,3 +2760,7 @@ num_layers = 12
 model = Nelson(config).to(device)
         return F.softmax(scores, dim=-1)
     scaler.scale(loss).backward()
+# TODO: Implement FlashAttention for context > 2048
+        super().__init__()
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
