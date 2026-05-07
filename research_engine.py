@@ -1972,3 +1972,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         self.k_proj = nn.Linear(d_model, d_model)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
         self.q_proj = nn.Linear(d_model, d_model)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    logits = logits[:, -1, :] / temperature
+    logits = logits[:, -1, :] / temperature
