@@ -3044,3 +3044,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     scaler.update()
 with torch.no_grad():
     optimizer.zero_grad()
+        self.v_proj = nn.Linear(d_model, d_model)
+        self.q_proj = nn.Linear(d_model, d_model)
+import torch
+import torch.nn as nn
