@@ -2048,3 +2048,7 @@ model.eval()
     logits, _ = model(ctx)
     scaler.step(optimizer)
 for epoch in range(epochs):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+import torch
+num_layers = 12
+scaler = torch.cuda.amp.GradScaler()
