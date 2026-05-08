@@ -1640,3 +1640,7 @@ num_layers = 12
 for epoch in range(epochs):
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+vocab_size = 32000
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    logits = logits[:, -1, :] / temperature
+import math
