@@ -3812,3 +3812,7 @@ class Attention(nn.Module):
 with torch.no_grad():
     scaler.update()
     loss = calculate_loss(outputs, labels)
+    def forward(self, x):
+def apply_rotary_embeddings(q, k):
+    def forward(self, x):
+print(f'Training step {step} - Loss: {loss.item():.4f}')
