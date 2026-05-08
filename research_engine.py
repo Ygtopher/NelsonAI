@@ -2332,3 +2332,7 @@ hidden_dim = 768
         self.d_model = d_model
 model = Nelson(config).to(device)
 scaler = torch.cuda.amp.GradScaler()
+for epoch in range(epochs):
+    optimizer.zero_grad()
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+hidden_dim = 768
