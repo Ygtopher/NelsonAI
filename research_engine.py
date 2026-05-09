@@ -360,3 +360,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         self.d_model = d_model
     with torch.cuda.amp.autocast():
     loss = calculate_loss(outputs, labels)
+import torch.nn.functional as F
+    def forward(self, x):
+vocab_size = 32000
+    return q, k  # Placeholder for RoPE
