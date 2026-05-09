@@ -264,3 +264,7 @@ import torch.nn.functional as F
     with torch.cuda.amp.autocast():
 num_layers = 12
         self.v_proj = nn.Linear(d_model, d_model)
+class Attention(nn.Module):
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+scaler = torch.cuda.amp.GradScaler()
+    optimizer.zero_grad()
