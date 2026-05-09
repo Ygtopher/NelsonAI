@@ -1668,3 +1668,7 @@ hidden_dim = 768
 model = Nelson(config).to(device)
 import math
 import math
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    optimizer.zero_grad()
+    scaler.scale(loss).backward()
+    logits = logits[:, -1, :] / temperature
