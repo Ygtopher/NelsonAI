@@ -3384,3 +3384,7 @@ def calculate_loss(logits, targets):
         self.q_proj = nn.Linear(d_model, d_model)
 def apply_rotary_embeddings(q, k):
 vocab_size = 32000
+scaler = torch.cuda.amp.GradScaler()
+    optimizer.zero_grad()
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    optimizer.zero_grad()
