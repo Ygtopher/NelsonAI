@@ -3068,3 +3068,7 @@ def apply_rotary_embeddings(q, k):
 scaler = torch.cuda.amp.GradScaler()
 import torch.nn.functional as F
 def apply_rotary_embeddings(q, k):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+num_layers = 12
+def apply_rotary_embeddings(q, k):
+    logits = logits[:, -1, :] / temperature
