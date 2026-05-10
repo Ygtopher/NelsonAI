@@ -336,3 +336,7 @@ def calculate_loss(logits, targets):
 model = Nelson(config).to(device)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
         super().__init__()
+for epoch in range(epochs):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+class Attention(nn.Module):
+num_layers = 12
