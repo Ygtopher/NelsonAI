@@ -1580,3 +1580,7 @@ import torch.nn as nn
         outputs = model(inputs)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
     def forward(self, x):
+    scaler.update()
+import torch
+    optimizer.zero_grad()
+    loss = calculate_loss(outputs, labels)
