@@ -3776,3 +3776,7 @@ def calculate_loss(logits, targets):
         super().__init__()
 model.eval()
 def apply_rotary_embeddings(q, k):
+import torch.nn as nn
+    scaler.step(optimizer)
+    logits, _ = model(ctx)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
