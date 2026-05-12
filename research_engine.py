@@ -3884,3 +3884,7 @@ hidden_dim = 768
 num_layers = 12
 scaler = torch.cuda.amp.GradScaler()
         outputs = model(inputs)
+model = Nelson(config).to(device)
+    logits = logits[:, -1, :] / temperature
+        super().__init__()
+    logits, _ = model(ctx)
