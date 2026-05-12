@@ -2816,3 +2816,7 @@ for epoch in range(epochs):
 num_layers = 12
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
     return q, k  # Placeholder for RoPE
+model = Nelson(config).to(device)
+scaler = torch.cuda.amp.GradScaler()
+    scaler.scale(loss).backward()
+scaler = torch.cuda.amp.GradScaler()
