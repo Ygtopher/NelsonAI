@@ -528,3 +528,7 @@ with torch.no_grad():
         self.q_proj = nn.Linear(d_model, d_model)
     loss = calculate_loss(outputs, labels)
 import torch
+        super().__init__()
+        return F.softmax(scores, dim=-1)
+        self.v_proj = nn.Linear(d_model, d_model)
+scaler = torch.cuda.amp.GradScaler()
