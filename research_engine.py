@@ -2080,3 +2080,7 @@ with torch.no_grad():
         super().__init__()
     scaler.update()
     optimizer.zero_grad()
+# TODO: Implement FlashAttention for context > 2048
+    scaler.step(optimizer)
+    def forward(self, x):
+print(f'Training step {step} - Loss: {loss.item():.4f}')
