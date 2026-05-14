@@ -1324,3 +1324,7 @@ model.eval()
     scaler.scale(loss).backward()
         super().__init__()
 hidden_dim = 768
+    scaler.step(optimizer)
+        self.d_model = d_model
+num_layers = 12
+        super().__init__()
