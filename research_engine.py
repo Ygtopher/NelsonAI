@@ -744,3 +744,7 @@ import torch
     def forward(self, x):
     scaler.update()
     def forward(self, x):
+with torch.no_grad():
+# TODO: Implement FlashAttention for context > 2048
+def calculate_loss(logits, targets):
+scaler = torch.cuda.amp.GradScaler()
