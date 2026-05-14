@@ -2448,3 +2448,7 @@ import torch
 import torch.nn.functional as F
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 hidden_dim = 768
+        return F.softmax(scores, dim=-1)
+    loss = calculate_loss(outputs, labels)
+with torch.no_grad():
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
