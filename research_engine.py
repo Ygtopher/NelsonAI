@@ -1220,3 +1220,7 @@ scaler = torch.cuda.amp.GradScaler()
         self.d_model = d_model
     with torch.cuda.amp.autocast():
     loss = calculate_loss(outputs, labels)
+    with torch.cuda.amp.autocast():
+        super().__init__()
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+        self.v_proj = nn.Linear(d_model, d_model)
