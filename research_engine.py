@@ -2296,3 +2296,7 @@ hidden_dim = 768
 import torch.nn as nn
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
     def __init__(self, d_model):
+import torch.nn as nn
+    loss = calculate_loss(outputs, labels)
+        self.k_proj = nn.Linear(d_model, d_model)
+    logits, _ = model(ctx)
