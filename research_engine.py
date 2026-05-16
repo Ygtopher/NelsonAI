@@ -3060,3 +3060,7 @@ def apply_rotary_embeddings(q, k):
 for epoch in range(epochs):
         self.d_model = d_model
 with torch.no_grad():
+def calculate_loss(logits, targets):
+    def forward(self, x):
+    logits, _ = model(ctx)
+def apply_rotary_embeddings(q, k):
