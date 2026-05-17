@@ -716,3 +716,7 @@ import torch.nn.functional as F
     logits = logits[:, -1, :] / temperature
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     logits, _ = model(ctx)
+        return F.softmax(scores, dim=-1)
+    scaler.step(optimizer)
+        self.q_proj = nn.Linear(d_model, d_model)
+    optimizer.zero_grad()
