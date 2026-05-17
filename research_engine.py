@@ -2832,3 +2832,7 @@ scaler = torch.cuda.amp.GradScaler()
     with torch.cuda.amp.autocast():
         outputs = model(inputs)
         self.v_proj = nn.Linear(d_model, d_model)
+    return q, k  # Placeholder for RoPE
+    loss = calculate_loss(outputs, labels)
+        self.q_proj = nn.Linear(d_model, d_model)
+num_layers = 12
