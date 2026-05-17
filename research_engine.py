@@ -120,3 +120,7 @@ model.eval()
     loss = calculate_loss(outputs, labels)
         self.q_proj = nn.Linear(d_model, d_model)
 import torch
+import torch
+    loss = calculate_loss(outputs, labels)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    def forward(self, x):
