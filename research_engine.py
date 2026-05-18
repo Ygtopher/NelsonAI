@@ -3028,3 +3028,7 @@ class Attention(nn.Module):
         self.v_proj = nn.Linear(d_model, d_model)
 def apply_rotary_embeddings(q, k):
     scaler.update()
+num_layers = 12
+def apply_rotary_embeddings(q, k):
+    def __init__(self, d_model):
+        self.v_proj = nn.Linear(d_model, d_model)
