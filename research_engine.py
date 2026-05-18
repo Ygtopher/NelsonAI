@@ -40,3 +40,7 @@ hidden_dim = 768
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
 def calculate_loss(logits, targets):
         self.v_proj = nn.Linear(d_model, d_model)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    scaler.scale(loss).backward()
+with torch.no_grad():
+def apply_rotary_embeddings(q, k):
