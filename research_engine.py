@@ -2268,3 +2268,7 @@ model.eval()
     logits = logits[:, -1, :] / temperature
         self.k_proj = nn.Linear(d_model, d_model)
         self.k_proj = nn.Linear(d_model, d_model)
+        self.k_proj = nn.Linear(d_model, d_model)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    logits = logits[:, -1, :] / temperature
+        return F.softmax(scores, dim=-1)
