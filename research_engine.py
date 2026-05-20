@@ -1184,3 +1184,7 @@ model.eval()
 # TODO: Implement FlashAttention for context > 2048
 for epoch in range(epochs):
     scaler.step(optimizer)
+        return F.softmax(scores, dim=-1)
+import torch.nn as nn
+    scaler.step(optimizer)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
