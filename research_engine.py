@@ -3492,3 +3492,7 @@ import math
 vocab_size = 32000
 vocab_size = 32000
 class Attention(nn.Module):
+    return q, k  # Placeholder for RoPE
+    scaler.step(optimizer)
+num_layers = 12
+    scaler.step(optimizer)
