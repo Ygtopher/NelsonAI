@@ -1776,3 +1776,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     loss = calculate_loss(outputs, labels)
 import math
 num_layers = 12
+    loss = calculate_loss(outputs, labels)
+    loss = calculate_loss(outputs, labels)
+import torch
+    optimizer.zero_grad()
