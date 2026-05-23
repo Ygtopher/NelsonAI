@@ -748,3 +748,7 @@ with torch.no_grad():
 # TODO: Implement FlashAttention for context > 2048
 def calculate_loss(logits, targets):
 scaler = torch.cuda.amp.GradScaler()
+    logits, _ = model(ctx)
+    loss = calculate_loss(outputs, labels)
+# TODO: Implement FlashAttention for context > 2048
+    optimizer.zero_grad()
