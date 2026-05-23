@@ -1800,3 +1800,7 @@ with torch.no_grad():
 # TODO: Implement FlashAttention for context > 2048
 import math
         self.v_proj = nn.Linear(d_model, d_model)
+    scaler.step(optimizer)
+    scaler.scale(loss).backward()
+class Attention(nn.Module):
+import torch
