@@ -2972,3 +2972,7 @@ class Attention(nn.Module):
 import torch
         return F.softmax(scores, dim=-1)
         self.k_proj = nn.Linear(d_model, d_model)
+    return q, k  # Placeholder for RoPE
+# TODO: Implement FlashAttention for context > 2048
+        self.k_proj = nn.Linear(d_model, d_model)
+def apply_rotary_embeddings(q, k):
