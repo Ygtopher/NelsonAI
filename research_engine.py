@@ -3760,3 +3760,7 @@ for epoch in range(epochs):
     loss = calculate_loss(outputs, labels)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 model.eval()
+        self.d_model = d_model
+with torch.no_grad():
+def calculate_loss(logits, targets):
+        return F.softmax(scores, dim=-1)
