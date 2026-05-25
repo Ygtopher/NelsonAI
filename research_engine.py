@@ -372,3 +372,7 @@ def calculate_loss(logits, targets):
 model.eval()
     def __init__(self, d_model):
         self.k_proj = nn.Linear(d_model, d_model)
+scaler = torch.cuda.amp.GradScaler()
+        return F.softmax(scores, dim=-1)
+import torch.nn as nn
+model.eval()
