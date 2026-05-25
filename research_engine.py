@@ -1152,3 +1152,7 @@ vocab_size = 32000
 import torch
     loss = calculate_loss(outputs, labels)
     with torch.cuda.amp.autocast():
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    with torch.cuda.amp.autocast():
+with torch.no_grad():
+    loss = calculate_loss(outputs, labels)
