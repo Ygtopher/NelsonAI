@@ -1348,3 +1348,7 @@ for epoch in range(epochs):
     with torch.cuda.amp.autocast():
 import math
     loss = calculate_loss(outputs, labels)
+    logits = logits[:, -1, :] / temperature
+hidden_dim = 768
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+with torch.no_grad():
