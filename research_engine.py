@@ -448,3 +448,7 @@ num_layers = 12
     scaler.update()
 import torch.nn as nn
 def apply_rotary_embeddings(q, k):
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+import torch
+vocab_size = 32000
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
