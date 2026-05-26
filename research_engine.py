@@ -2500,3 +2500,7 @@ def calculate_loss(logits, targets):
 import torch.nn as nn
 import math
 vocab_size = 32000
+    with torch.cuda.amp.autocast():
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        super().__init__()
+        self.v_proj = nn.Linear(d_model, d_model)
