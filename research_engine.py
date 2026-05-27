@@ -3900,3 +3900,7 @@ model = Nelson(config).to(device)
 model = Nelson(config).to(device)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     logits, _ = model(ctx)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+import torch.nn as nn
+for epoch in range(epochs):
+import torch.nn as nn
