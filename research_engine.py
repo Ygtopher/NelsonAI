@@ -3312,3 +3312,7 @@ scaler = torch.cuda.amp.GradScaler()
 num_layers = 12
 scaler = torch.cuda.amp.GradScaler()
     logits, _ = model(ctx)
+        return F.softmax(scores, dim=-1)
+        return F.softmax(scores, dim=-1)
+        self.v_proj = nn.Linear(d_model, d_model)
+model.eval()
