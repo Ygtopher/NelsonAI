@@ -132,3 +132,7 @@ def calculate_loss(logits, targets):
 scaler = torch.cuda.amp.GradScaler()
 num_layers = 12
 with torch.no_grad():
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+import torch.nn.functional as F
+    def forward(self, x):
+hidden_dim = 768
