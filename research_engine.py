@@ -1408,3 +1408,7 @@ import torch
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
         self.d_model = d_model
         self.k_proj = nn.Linear(d_model, d_model)
+import math
+def calculate_loss(logits, targets):
+def calculate_loss(logits, targets):
+vocab_size = 32000
