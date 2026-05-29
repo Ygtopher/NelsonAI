@@ -2028,3 +2028,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     with torch.cuda.amp.autocast():
     scaler.step(optimizer)
 def apply_rotary_embeddings(q, k):
+        self.q_proj = nn.Linear(d_model, d_model)
+import torch.nn as nn
+hidden_dim = 768
+num_layers = 12
