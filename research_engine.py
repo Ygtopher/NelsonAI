@@ -2120,3 +2120,7 @@ def apply_rotary_embeddings(q, k):
 hidden_dim = 768
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     logits, _ = model(ctx)
+    def __init__(self, d_model):
+scaler = torch.cuda.amp.GradScaler()
+        super().__init__()
+for epoch in range(epochs):
