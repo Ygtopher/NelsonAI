@@ -2000,3 +2000,7 @@ import torch
     logits = logits[:, -1, :] / temperature
 model = Nelson(config).to(device)
     optimizer.zero_grad()
+        super().__init__()
+model.eval()
+import torch
+import torch.nn as nn
