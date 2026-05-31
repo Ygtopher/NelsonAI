@@ -2512,3 +2512,7 @@ vocab_size = 32000
     logits = logits[:, -1, :] / temperature
     loss = calculate_loss(outputs, labels)
     return q, k  # Placeholder for RoPE
+# TODO: Implement FlashAttention for context > 2048
+        self.v_proj = nn.Linear(d_model, d_model)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
