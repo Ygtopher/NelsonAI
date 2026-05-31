@@ -2688,3 +2688,7 @@ class Attention(nn.Module):
     scaler.update()
 scaler = torch.cuda.amp.GradScaler()
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+def calculate_loss(logits, targets):
+num_layers = 12
+# TODO: Implement FlashAttention for context > 2048
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
