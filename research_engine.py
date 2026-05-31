@@ -3952,3 +3952,7 @@ def apply_rotary_embeddings(q, k):
     loss = calculate_loss(outputs, labels)
         self.q_proj = nn.Linear(d_model, d_model)
         super().__init__()
+import torch
+    loss = calculate_loss(outputs, labels)
+        self.v_proj = nn.Linear(d_model, d_model)
+    logits, _ = model(ctx)
