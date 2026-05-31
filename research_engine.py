@@ -3820,3 +3820,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     loss = calculate_loss(outputs, labels)
 model = Nelson(config).to(device)
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    scaler.update()
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+vocab_size = 32000
