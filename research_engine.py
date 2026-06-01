@@ -908,3 +908,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
         outputs = model(inputs)
 for epoch in range(epochs):
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+def apply_rotary_embeddings(q, k):
+import torch
+model = Nelson(config).to(device)
+    with torch.cuda.amp.autocast():
