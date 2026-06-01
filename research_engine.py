@@ -2188,3 +2188,7 @@ def apply_rotary_embeddings(q, k):
     scaler.step(optimizer)
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+    logits, _ = model(ctx)
+    scaler.scale(loss).backward()
+import math
+model.eval()
