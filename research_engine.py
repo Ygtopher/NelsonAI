@@ -1476,3 +1476,7 @@ vocab_size = 32000
 # TODO: Implement FlashAttention for context > 2048
     def forward(self, x):
         outputs = model(inputs)
+model = Nelson(config).to(device)
+    scaler.scale(loss).backward()
+        super().__init__()
+        self.d_model = d_model
