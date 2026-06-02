@@ -1460,3 +1460,7 @@ for epoch in range(epochs):
         self.d_model = d_model
 num_layers = 12
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+def calculate_loss(logits, targets):
+model.eval()
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+scaler = torch.cuda.amp.GradScaler()
