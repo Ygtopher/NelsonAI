@@ -3636,3 +3636,7 @@ num_layers = 12
 vocab_size = 32000
     return q, k  # Placeholder for RoPE
     scaler.scale(loss).backward()
+# TODO: Implement FlashAttention for context > 2048
+def calculate_loss(logits, targets):
+with torch.no_grad():
+    logits, _ = model(ctx)
