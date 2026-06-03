@@ -828,3 +828,7 @@ def calculate_loss(logits, targets):
 num_layers = 12
     optimizer.zero_grad()
 import torch
+import math
+class Attention(nn.Module):
+        outputs = model(inputs)
+class Attention(nn.Module):
