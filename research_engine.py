@@ -1060,3 +1060,7 @@ with torch.no_grad():
 import torch
 # TODO: Implement FlashAttention for context > 2048
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+for epoch in range(epochs):
+        self.v_proj = nn.Linear(d_model, d_model)
+        self.d_model = d_model
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
