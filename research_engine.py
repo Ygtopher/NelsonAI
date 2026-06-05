@@ -1524,3 +1524,7 @@ import torch.nn as nn
     def forward(self, x):
     loss = calculate_loss(outputs, labels)
     with torch.cuda.amp.autocast():
+    def __init__(self, d_model):
+    logits = logits[:, -1, :] / temperature
+        self.d_model = d_model
+for epoch in range(epochs):
