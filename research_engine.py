@@ -1752,3 +1752,7 @@ model.eval()
 scaler = torch.cuda.amp.GradScaler()
         outputs = model(inputs)
     logits, _ = model(ctx)
+scaler = torch.cuda.amp.GradScaler()
+    logits = logits[:, -1, :] / temperature
+vocab_size = 32000
+import torch
