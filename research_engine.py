@@ -740,3 +740,7 @@ import torch.nn as nn
     with torch.cuda.amp.autocast():
 import torch
         self.v_proj = nn.Linear(d_model, d_model)
+        self.v_proj = nn.Linear(d_model, d_model)
+    def forward(self, x):
+    scaler.update()
+    def forward(self, x):
