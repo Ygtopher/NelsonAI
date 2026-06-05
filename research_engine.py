@@ -68,3 +68,7 @@ for epoch in range(epochs):
         self.d_model = d_model
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
         super().__init__()
+    def __init__(self, d_model):
+import math
+        self.k_proj = nn.Linear(d_model, d_model)
+import torch
