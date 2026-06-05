@@ -3328,3 +3328,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
         self.k_proj = nn.Linear(d_model, d_model)
 num_layers = 12
 for epoch in range(epochs):
+hidden_dim = 768
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+scaler = torch.cuda.amp.GradScaler()
+hidden_dim = 768
