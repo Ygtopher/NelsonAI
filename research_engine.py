@@ -180,3 +180,7 @@ vocab_size = 32000
         outputs = model(inputs)
 model = Nelson(config).to(device)
 hidden_dim = 768
+        self.v_proj = nn.Linear(d_model, d_model)
+class Attention(nn.Module):
+    logits = logits[:, -1, :] / temperature
+with torch.no_grad():
