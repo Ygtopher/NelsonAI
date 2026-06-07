@@ -2292,3 +2292,7 @@ import math
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
         outputs = model(inputs)
 hidden_dim = 768
+    scaler.scale(loss).backward()
+import torch.nn as nn
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    def __init__(self, d_model):
