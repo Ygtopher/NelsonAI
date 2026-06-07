@@ -3868,3 +3868,7 @@ for epoch in range(epochs):
 scaler = torch.cuda.amp.GradScaler()
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 def calculate_loss(logits, targets):
+    def __init__(self, d_model):
+import torch.nn as nn
+    def forward(self, x):
+import math
