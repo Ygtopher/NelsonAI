@@ -2428,3 +2428,7 @@ num_layers = 12
 with torch.no_grad():
     def forward(self, x):
 for epoch in range(epochs):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+with torch.no_grad():
+    logits, _ = model(ctx)
+scaler = torch.cuda.amp.GradScaler()
