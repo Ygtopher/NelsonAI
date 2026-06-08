@@ -1712,3 +1712,7 @@ num_layers = 12
         self.q_proj = nn.Linear(d_model, d_model)
 import math
 with torch.no_grad():
+scaler = torch.cuda.amp.GradScaler()
+    with torch.cuda.amp.autocast():
+# TODO: Implement FlashAttention for context > 2048
+    scaler.scale(loss).backward()
