@@ -3084,3 +3084,7 @@ hidden_dim = 768
 import torch
 scaler = torch.cuda.amp.GradScaler()
     scaler.step(optimizer)
+    def __init__(self, d_model):
+    return q, k  # Placeholder for RoPE
+import torch.nn as nn
+class Attention(nn.Module):
