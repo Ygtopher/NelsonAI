@@ -1740,3 +1740,7 @@ import math
         self.q_proj = nn.Linear(d_model, d_model)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
         return F.softmax(scores, dim=-1)
+import math
+vocab_size = 32000
+    scaler.scale(loss).backward()
+        self.d_model = d_model
