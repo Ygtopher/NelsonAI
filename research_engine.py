@@ -3840,3 +3840,7 @@ import torch
 # TODO: Implement FlashAttention for context > 2048
 import math
 hidden_dim = 768
+    logits, _ = model(ctx)
+        self.k_proj = nn.Linear(d_model, d_model)
+def apply_rotary_embeddings(q, k):
+    logits, _ = model(ctx)
