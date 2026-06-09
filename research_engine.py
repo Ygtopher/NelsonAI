@@ -2624,3 +2624,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     scaler.scale(loss).backward()
         self.d_model = d_model
 hidden_dim = 768
+import torch.nn.functional as F
+model = Nelson(config).to(device)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+scaler = torch.cuda.amp.GradScaler()
