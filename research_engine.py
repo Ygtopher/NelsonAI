@@ -620,3 +620,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 scaler = torch.cuda.amp.GradScaler()
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    loss = calculate_loss(outputs, labels)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+import torch
+num_layers = 12
