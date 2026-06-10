@@ -1784,3 +1784,7 @@ import torch
     with torch.cuda.amp.autocast():
     def forward(self, x):
         outputs = model(inputs)
+    def __init__(self, d_model):
+    def forward(self, x):
+num_layers = 12
+        self.q_proj = nn.Linear(d_model, d_model)
