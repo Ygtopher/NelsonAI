@@ -216,3 +216,7 @@ import torch.nn as nn
     logits, _ = model(ctx)
 model.eval()
         return F.softmax(scores, dim=-1)
+import math
+    scaler.step(optimizer)
+def calculate_loss(logits, targets):
+        self.k_proj = nn.Linear(d_model, d_model)
