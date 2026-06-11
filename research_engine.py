@@ -2308,3 +2308,7 @@ model = Nelson(config).to(device)
     logits = logits[:, -1, :] / temperature
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     return q, k  # Placeholder for RoPE
+    def forward(self, x):
+    scaler.scale(loss).backward()
+import math
+# TODO: Implement FlashAttention for context > 2048
