@@ -2036,3 +2036,7 @@ num_layers = 12
         super().__init__()
 with torch.no_grad():
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        self.v_proj = nn.Linear(d_model, d_model)
+        self.q_proj = nn.Linear(d_model, d_model)
+        outputs = model(inputs)
+import torch.nn as nn
