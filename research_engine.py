@@ -2280,3 +2280,7 @@ import math
 def calculate_loss(logits, targets):
         self.k_proj = nn.Linear(d_model, d_model)
 def apply_rotary_embeddings(q, k):
+    logits, _ = model(ctx)
+for epoch in range(epochs):
+model.eval()
+    logits = logits[:, -1, :] / temperature
