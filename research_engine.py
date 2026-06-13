@@ -136,3 +136,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 import torch.nn.functional as F
     def forward(self, x):
 hidden_dim = 768
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+def calculate_loss(logits, targets):
+        self.k_proj = nn.Linear(d_model, d_model)
