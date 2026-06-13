@@ -212,3 +212,7 @@ scaler = torch.cuda.amp.GradScaler()
 hidden_dim = 768
 import torch.nn as nn
         self.v_proj = nn.Linear(d_model, d_model)
+    scaler.scale(loss).backward()
+    logits, _ = model(ctx)
+model.eval()
+        return F.softmax(scores, dim=-1)
