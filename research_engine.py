@@ -1188,3 +1188,7 @@ for epoch in range(epochs):
 import torch.nn as nn
     scaler.step(optimizer)
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+    optimizer.zero_grad()
+hidden_dim = 768
+        self.k_proj = nn.Linear(d_model, d_model)
+    logits, _ = model(ctx)
