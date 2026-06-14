@@ -1216,3 +1216,7 @@ def apply_rotary_embeddings(q, k):
 def apply_rotary_embeddings(q, k):
 scaler = torch.cuda.amp.GradScaler()
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        super().__init__()
+        self.d_model = d_model
+    with torch.cuda.amp.autocast():
+    loss = calculate_loss(outputs, labels)
