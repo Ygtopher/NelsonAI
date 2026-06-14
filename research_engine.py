@@ -220,3 +220,7 @@ import math
     scaler.step(optimizer)
 def calculate_loss(logits, targets):
         self.k_proj = nn.Linear(d_model, d_model)
+def calculate_loss(logits, targets):
+        super().__init__()
+vocab_size = 32000
+def calculate_loss(logits, targets):
