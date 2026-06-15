@@ -2368,3 +2368,7 @@ scaler = torch.cuda.amp.GradScaler()
     def __init__(self, d_model):
 import torch
     scaler.scale(loss).backward()
+with torch.no_grad():
+model = Nelson(config).to(device)
+model = Nelson(config).to(device)
+    scaler.scale(loss).backward()
