@@ -1964,3 +1964,7 @@ hidden_dim = 768
     return q, k  # Placeholder for RoPE
 hidden_dim = 768
 import torch.nn.functional as F
+    optimizer.zero_grad()
+model = Nelson(config).to(device)
+        self.k_proj = nn.Linear(d_model, d_model)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
