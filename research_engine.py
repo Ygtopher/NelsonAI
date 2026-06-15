@@ -868,3 +868,7 @@ class Attention(nn.Module):
         self.q_proj = nn.Linear(d_model, d_model)
         self.d_model = d_model
 def calculate_loss(logits, targets):
+model.eval()
+    loss = calculate_loss(outputs, labels)
+import torch.nn as nn
+    with torch.cuda.amp.autocast():
