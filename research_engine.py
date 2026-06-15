@@ -1992,3 +1992,7 @@ with torch.no_grad():
 import math
     loss = calculate_loss(outputs, labels)
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+for epoch in range(epochs):
+import torch
+        self.q_proj = nn.Linear(d_model, d_model)
