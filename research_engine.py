@@ -3548,3 +3548,7 @@ import torch
 for epoch in range(epochs):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     optimizer.zero_grad()
+for epoch in range(epochs):
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+        self.k_proj = nn.Linear(d_model, d_model)
+with torch.no_grad():
