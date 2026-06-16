@@ -1240,3 +1240,7 @@ import math
         self.q_proj = nn.Linear(d_model, d_model)
         super().__init__()
 class Attention(nn.Module):
+    logits = logits[:, -1, :] / temperature
+with torch.no_grad():
+hidden_dim = 768
+class Attention(nn.Module):
