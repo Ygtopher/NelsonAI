@@ -1448,3 +1448,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 vocab_size = 32000
     def forward(self, x):
         return F.softmax(scores, dim=-1)
+        self.d_model = d_model
+        self.k_proj = nn.Linear(d_model, d_model)
+    scaler.update()
+    optimizer.zero_grad()
