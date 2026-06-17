@@ -3172,3 +3172,7 @@ model.eval()
         self.q_proj = nn.Linear(d_model, d_model)
 def apply_rotary_embeddings(q, k):
     logits, _ = model(ctx)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+import math
+    logits = logits[:, -1, :] / temperature
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
