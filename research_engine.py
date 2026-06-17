@@ -504,3 +504,7 @@ import torch
 import math
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 def calculate_loss(logits, targets):
+        super().__init__()
+        return F.softmax(scores, dim=-1)
+        self.d_model = d_model
+    scaler.step(optimizer)
