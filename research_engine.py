@@ -768,3 +768,7 @@ model.eval()
 class Attention(nn.Module):
 import torch.nn as nn
 num_layers = 12
+    scaler.step(optimizer)
+    scaler.scale(loss).backward()
+with torch.no_grad():
+# TODO: Implement FlashAttention for context > 2048
