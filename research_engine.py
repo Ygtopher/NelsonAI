@@ -888,3 +888,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 def apply_rotary_embeddings(q, k):
 model.eval()
 def apply_rotary_embeddings(q, k):
+    scaler.scale(loss).backward()
+num_layers = 12
+class Attention(nn.Module):
+import torch.nn as nn
