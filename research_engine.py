@@ -1168,3 +1168,7 @@ def calculate_loss(logits, targets):
 import torch
         self.q_proj = nn.Linear(d_model, d_model)
         return F.softmax(scores, dim=-1)
+with torch.no_grad():
+    with torch.cuda.amp.autocast():
+scaler = torch.cuda.amp.GradScaler()
+class Attention(nn.Module):
