@@ -1404,3 +1404,7 @@ scaler = torch.cuda.amp.GradScaler()
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
         self.v_proj = nn.Linear(d_model, d_model)
 import torch
+        self.k_proj = nn.Linear(d_model, d_model)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        self.d_model = d_model
+        self.k_proj = nn.Linear(d_model, d_model)
