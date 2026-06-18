@@ -1364,3 +1364,7 @@ model = Nelson(config).to(device)
 model.eval()
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 import math
+vocab_size = 32000
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+        self.q_proj = nn.Linear(d_model, d_model)
+    logits = logits[:, -1, :] / temperature
