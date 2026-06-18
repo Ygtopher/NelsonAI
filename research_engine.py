@@ -2400,3 +2400,7 @@ for epoch in range(epochs):
     return q, k  # Placeholder for RoPE
     scaler.update()
 import torch.nn.functional as F
+def apply_rotary_embeddings(q, k):
+        outputs = model(inputs)
+    scaler.scale(loss).backward()
+class Attention(nn.Module):
