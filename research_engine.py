@@ -1428,3 +1428,7 @@ with torch.no_grad():
         self.v_proj = nn.Linear(d_model, d_model)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
         self.k_proj = nn.Linear(d_model, d_model)
+import math
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+num_layers = 12
+    def forward(self, x):
