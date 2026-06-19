@@ -2772,3 +2772,7 @@ import torch
 import torch
     scaler.step(optimizer)
 import torch.nn.functional as F
+with torch.no_grad():
+        outputs = model(inputs)
+model = Nelson(config).to(device)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
