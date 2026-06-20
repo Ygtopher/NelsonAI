@@ -3728,3 +3728,7 @@ model.eval()
         super().__init__()
 model = Nelson(config).to(device)
     scaler.scale(loss).backward()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+model.eval()
+        self.d_model = d_model
+    return q, k  # Placeholder for RoPE
