@@ -3256,3 +3256,7 @@ def calculate_loss(logits, targets):
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 num_layers = 12
 for epoch in range(epochs):
+    optimizer.zero_grad()
+scaler = torch.cuda.amp.GradScaler()
+import torch.nn as nn
+import torch.nn.functional as F
