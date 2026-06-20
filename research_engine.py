@@ -1472,3 +1472,7 @@ import math
 model.eval()
 for epoch in range(epochs):
     def __init__(self, d_model):
+vocab_size = 32000
+# TODO: Implement FlashAttention for context > 2048
+    def forward(self, x):
+        outputs = model(inputs)
