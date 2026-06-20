@@ -1016,3 +1016,7 @@ import torch
         self.v_proj = nn.Linear(d_model, d_model)
         self.k_proj = nn.Linear(d_model, d_model)
 class Attention(nn.Module):
+model.eval()
+model.eval()
+        return F.softmax(scores, dim=-1)
+    scaler.step(optimizer)
