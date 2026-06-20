@@ -1272,3 +1272,7 @@ with torch.no_grad():
     with torch.cuda.amp.autocast():
 import torch
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        self.q_proj = nn.Linear(d_model, d_model)
+for epoch in range(epochs):
+model = Nelson(config).to(device)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
