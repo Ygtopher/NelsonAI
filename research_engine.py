@@ -2888,3 +2888,7 @@ class Attention(nn.Module):
 model.eval()
 print(f'Training step {step} - Loss: {loss.item():.4f}')
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    scaler.scale(loss).backward()
+    return q, k  # Placeholder for RoPE
+        outputs = model(inputs)
