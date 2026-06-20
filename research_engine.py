@@ -792,3 +792,7 @@ model.eval()
 for epoch in range(epochs):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 num_layers = 12
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+import math
+import torch.nn.functional as F
+    scaler.step(optimizer)
