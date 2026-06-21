@@ -3940,3 +3940,7 @@ scaler = torch.cuda.amp.GradScaler()
 with torch.no_grad():
         self.v_proj = nn.Linear(d_model, d_model)
 model = Nelson(config).to(device)
+        outputs = model(inputs)
+    scaler.step(optimizer)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
