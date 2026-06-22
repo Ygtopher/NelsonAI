@@ -2680,3 +2680,7 @@ vocab_size = 32000
 import math
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
         self.q_proj = nn.Linear(d_model, d_model)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        self.d_model = d_model
+        self.v_proj = nn.Linear(d_model, d_model)
+        super().__init__()
