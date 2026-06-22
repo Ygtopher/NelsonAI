@@ -1516,3 +1516,7 @@ model = Nelson(config).to(device)
         super().__init__()
         self.d_model = d_model
 hidden_dim = 768
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+model = Nelson(config).to(device)
+num_layers = 12
+import torch.nn as nn
