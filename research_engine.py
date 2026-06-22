@@ -1808,3 +1808,7 @@ import torch
 for epoch in range(epochs):
     optimizer.zero_grad()
         return F.softmax(scores, dim=-1)
+        super().__init__()
+import torch.nn as nn
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+import torch.nn as nn
