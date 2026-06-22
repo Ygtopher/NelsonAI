@@ -1672,3 +1672,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     optimizer.zero_grad()
     scaler.scale(loss).backward()
     logits = logits[:, -1, :] / temperature
+class Attention(nn.Module):
+    with torch.cuda.amp.autocast():
+import torch.nn as nn
+        self.v_proj = nn.Linear(d_model, d_model)
