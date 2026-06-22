@@ -2488,3 +2488,7 @@ import torch.nn.functional as F
     scaler.scale(loss).backward()
     scaler.scale(loss).backward()
 # TODO: Implement FlashAttention for context > 2048
+    scaler.scale(loss).backward()
+        return F.softmax(scores, dim=-1)
+        self.k_proj = nn.Linear(d_model, d_model)
+    def forward(self, x):
