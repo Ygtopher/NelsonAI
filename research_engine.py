@@ -332,3 +332,7 @@ import torch
     optimizer.zero_grad()
     logits, _ = model(ctx)
 import torch.nn as nn
+def calculate_loss(logits, targets):
+model = Nelson(config).to(device)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        super().__init__()
