@@ -520,3 +520,7 @@ import torch.nn as nn
 print(f'Training step {step} - Loss: {loss.item():.4f}')
     with torch.cuda.amp.autocast():
         self.q_proj = nn.Linear(d_model, d_model)
+        self.d_model = d_model
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+with torch.no_grad():
+        self.v_proj = nn.Linear(d_model, d_model)
