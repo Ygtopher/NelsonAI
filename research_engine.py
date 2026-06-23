@@ -288,3 +288,7 @@ scaler = torch.cuda.amp.GradScaler()
 hidden_dim = 768
 class Attention(nn.Module):
 import torch.nn as nn
+    def __init__(self, d_model):
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+vocab_size = 32000
+import torch.nn.functional as F
