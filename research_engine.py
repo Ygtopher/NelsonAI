@@ -3540,3 +3540,7 @@ vocab_size = 32000
 def calculate_loss(logits, targets):
     logits, _ = model(ctx)
     def forward(self, x):
+    with torch.cuda.amp.autocast():
+import torch.nn.functional as F
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        return F.softmax(scores, dim=-1)
