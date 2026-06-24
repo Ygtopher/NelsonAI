@@ -3008,3 +3008,7 @@ class Attention(nn.Module):
     def forward(self, x):
 # TODO: Implement FlashAttention for context > 2048
         outputs = model(inputs)
+import math
+# TODO: Implement FlashAttention for context > 2048
+    logits = logits[:, -1, :] / temperature
+    loss = calculate_loss(outputs, labels)
