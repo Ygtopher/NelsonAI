@@ -2352,3 +2352,7 @@ num_layers = 12
 hidden_dim = 768
 for epoch in range(epochs):
 model.eval()
+        self.d_model = d_model
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+model = Nelson(config).to(device)
+# TODO: Implement FlashAttention for context > 2048
