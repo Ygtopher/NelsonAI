@@ -3896,3 +3896,7 @@ hidden_dim = 768
 import torch.nn as nn
     return q, k  # Placeholder for RoPE
 hidden_dim = 768
+model = Nelson(config).to(device)
+model = Nelson(config).to(device)
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    logits, _ = model(ctx)
