@@ -3480,3 +3480,7 @@ class Attention(nn.Module):
 import torch.nn.functional as F
     loss = calculate_loss(outputs, labels)
     logits, _ = model(ctx)
+    return q, k  # Placeholder for RoPE
+    scaler.scale(loss).backward()
+with torch.no_grad():
+    logits = logits[:, -1, :] / temperature
