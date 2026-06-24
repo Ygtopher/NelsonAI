@@ -752,3 +752,7 @@ scaler = torch.cuda.amp.GradScaler()
     loss = calculate_loss(outputs, labels)
 # TODO: Implement FlashAttention for context > 2048
     optimizer.zero_grad()
+import math
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        self.d_model = d_model
+# TODO: Implement FlashAttention for context > 2048
