@@ -3180,3 +3180,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 import torch.nn.functional as F
 import torch.nn as nn
+with torch.no_grad():
+num_layers = 12
+# TODO: Implement FlashAttention for context > 2048
+print(f'Training step {step} - Loss: {loss.item():.4f}')
