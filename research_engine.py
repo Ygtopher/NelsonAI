@@ -3796,3 +3796,7 @@ with torch.no_grad():
     optimizer.zero_grad()
     scaler.update()
 def apply_rotary_embeddings(q, k):
+with torch.no_grad():
+        return F.softmax(scores, dim=-1)
+    return q, k  # Placeholder for RoPE
+    with torch.cuda.amp.autocast():
