@@ -588,3 +588,7 @@ model = Nelson(config).to(device)
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 vocab_size = 32000
 # TODO: Implement FlashAttention for context > 2048
+import torch.nn.functional as F
+        self.v_proj = nn.Linear(d_model, d_model)
+import torch.nn.functional as F
+        self.v_proj = nn.Linear(d_model, d_model)
