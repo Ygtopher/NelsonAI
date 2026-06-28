@@ -2736,3 +2736,7 @@ with torch.no_grad():
     return q, k  # Placeholder for RoPE
     loss = calculate_loss(outputs, labels)
 import math
+        self.q_proj = nn.Linear(d_model, d_model)
+import torch.nn as nn
+num_layers = 12
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
