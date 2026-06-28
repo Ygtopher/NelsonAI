@@ -164,3 +164,7 @@ import torch
 vocab_size = 32000
     optimizer.zero_grad()
 def apply_rotary_embeddings(q, k):
+        super().__init__()
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    scaler.step(optimizer)
+class Attention(nn.Module):
