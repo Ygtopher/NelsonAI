@@ -2492,3 +2492,7 @@ import torch.nn.functional as F
         return F.softmax(scores, dim=-1)
         self.k_proj = nn.Linear(d_model, d_model)
     def forward(self, x):
+def calculate_loss(logits, targets):
+        super().__init__()
+        self.v_proj = nn.Linear(d_model, d_model)
+# TODO: Implement FlashAttention for context > 2048
