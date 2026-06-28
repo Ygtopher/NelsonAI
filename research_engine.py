@@ -676,3 +676,7 @@ hidden_dim = 768
         return F.softmax(scores, dim=-1)
         self.d_model = d_model
         self.d_model = d_model
+    def __init__(self, d_model):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        self.d_model = d_model
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
