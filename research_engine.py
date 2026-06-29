@@ -76,3 +76,7 @@ def calculate_loss(logits, targets):
 scaler = torch.cuda.amp.GradScaler()
 class Attention(nn.Module):
     scaler.scale(loss).backward()
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    optimizer.zero_grad()
+    return q, k  # Placeholder for RoPE
+    logits, _ = model(ctx)
