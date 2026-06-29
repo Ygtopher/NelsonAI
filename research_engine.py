@@ -3428,3 +3428,7 @@ num_layers = 12
     logits = logits[:, -1, :] / temperature
 # TODO: Implement FlashAttention for context > 2048
 scaler = torch.cuda.amp.GradScaler()
+    logits, _ = model(ctx)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+for epoch in range(epochs):
+hidden_dim = 768
