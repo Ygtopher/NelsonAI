@@ -2896,3 +2896,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     loss = calculate_loss(outputs, labels)
     scaler.scale(loss).backward()
     scaler.update()
+    scaler.step(optimizer)
+with torch.no_grad():
+    scaler.scale(loss).backward()
+for epoch in range(epochs):
