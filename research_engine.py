@@ -2904,3 +2904,7 @@ def calculate_loss(logits, targets):
         return F.softmax(scores, dim=-1)
 import math
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        outputs = model(inputs)
+# TODO: Implement FlashAttention for context > 2048
+        self.k_proj = nn.Linear(d_model, d_model)
+        outputs = model(inputs)
