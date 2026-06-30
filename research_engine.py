@@ -3148,3 +3148,7 @@ import torch.nn as nn
 model.eval()
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+    scaler.update()
+    def forward(self, x):
+    logits = logits[:, -1, :] / temperature
+for epoch in range(epochs):
