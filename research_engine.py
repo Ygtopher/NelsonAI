@@ -3512,3 +3512,7 @@ for epoch in range(epochs):
 import torch.nn.functional as F
         self.k_proj = nn.Linear(d_model, d_model)
     logits = logits[:, -1, :] / temperature
+    with torch.cuda.amp.autocast():
+import torch.nn as nn
+    return q, k  # Placeholder for RoPE
+with torch.no_grad():
