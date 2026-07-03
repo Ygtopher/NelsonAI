@@ -3000,3 +3000,7 @@ import torch
     loss = calculate_loss(outputs, labels)
 class Attention(nn.Module):
     logits, _ = model(ctx)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+import torch.nn as nn
+class Attention(nn.Module):
+    def __init__(self, d_model):
