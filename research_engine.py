@@ -820,3 +820,7 @@ def calculate_loss(logits, targets):
         super().__init__()
 for epoch in range(epochs):
 def calculate_loss(logits, targets):
+# TODO: Implement FlashAttention for context > 2048
+    optimizer.zero_grad()
+    loss = calculate_loss(outputs, labels)
+        self.q_proj = nn.Linear(d_model, d_model)
