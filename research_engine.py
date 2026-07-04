@@ -12,3 +12,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
         super().__init__()
         self.d_model = d_model
         return F.softmax(scores, dim=-1)
+        self.q_proj = nn.Linear(d_model, d_model)
+num_layers = 12
+    scaler.step(optimizer)
+import torch
