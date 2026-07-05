@@ -2476,3 +2476,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     scaler.step(optimizer)
 num_layers = 12
         self.v_proj = nn.Linear(d_model, d_model)
+# TODO: Implement FlashAttention for context > 2048
+# TODO: Implement FlashAttention for context > 2048
+    scaler.scale(loss).backward()
+# TODO: Implement FlashAttention for context > 2048
