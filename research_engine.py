@@ -1392,3 +1392,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
         super().__init__()
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
         self.d_model = d_model
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+        self.k_proj = nn.Linear(d_model, d_model)
+        self.v_proj = nn.Linear(d_model, d_model)
+scaler = torch.cuda.amp.GradScaler()
