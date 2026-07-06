@@ -2584,3 +2584,7 @@ import torch
 for epoch in range(epochs):
     def __init__(self, d_model):
 import math
+for epoch in range(epochs):
+import torch
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+model.eval()
