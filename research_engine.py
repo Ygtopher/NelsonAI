@@ -2312,3 +2312,7 @@ model = Nelson(config).to(device)
     scaler.scale(loss).backward()
 import math
 # TODO: Implement FlashAttention for context > 2048
+    scaler.update()
+        outputs = model(inputs)
+    scaler.scale(loss).backward()
+        return F.softmax(scores, dim=-1)
