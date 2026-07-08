@@ -1112,3 +1112,7 @@ class Attention(nn.Module):
     logits, _ = model(ctx)
 num_layers = 12
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    loss = calculate_loss(outputs, labels)
+class Attention(nn.Module):
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
