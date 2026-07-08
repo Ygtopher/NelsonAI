@@ -3924,3 +3924,7 @@ import torch.nn.functional as F
     def forward(self, x):
         return F.softmax(scores, dim=-1)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+model.eval()
+hidden_dim = 768
+    optimizer.zero_grad()
+        self.d_model = d_model
