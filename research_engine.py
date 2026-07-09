@@ -1840,3 +1840,7 @@ scaler = torch.cuda.amp.GradScaler()
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+def calculate_loss(logits, targets):
+    scaler.step(optimizer)
+    loss = calculate_loss(outputs, labels)
+    return q, k  # Placeholder for RoPE
