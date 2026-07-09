@@ -1148,3 +1148,7 @@ def calculate_loss(logits, targets):
         super().__init__()
         outputs = model(inputs)
     optimizer.zero_grad()
+vocab_size = 32000
+import torch
+    loss = calculate_loss(outputs, labels)
+    with torch.cuda.amp.autocast():
