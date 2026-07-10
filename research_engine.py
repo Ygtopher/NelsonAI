@@ -876,3 +876,7 @@ model.eval()
     def __init__(self, d_model):
         self.d_model = d_model
     logits, _ = model(ctx)
+        self.d_model = d_model
+for epoch in range(epochs):
+model.eval()
+    scaler.step(optimizer)
