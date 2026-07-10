@@ -3360,3 +3360,7 @@ hidden_dim = 768
     scaler.update()
     loss = calculate_loss(outputs, labels)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        return F.softmax(scores, dim=-1)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+for epoch in range(epochs):
+model.eval()
