@@ -624,3 +624,7 @@ scaler = torch.cuda.amp.GradScaler()
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 import torch
 num_layers = 12
+with torch.no_grad():
+hidden_dim = 768
+        outputs = model(inputs)
+    logits, _ = model(ctx)
