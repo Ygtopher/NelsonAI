@@ -1940,3 +1940,7 @@ scaler = torch.cuda.amp.GradScaler()
         self.d_model = d_model
 import math
         self.v_proj = nn.Linear(d_model, d_model)
+model.eval()
+class Attention(nn.Module):
+    scaler.update()
+        super().__init__()
