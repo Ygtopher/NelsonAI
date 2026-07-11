@@ -296,3 +296,7 @@ import torch.nn.functional as F
     logits = logits[:, -1, :] / temperature
     logits, _ = model(ctx)
     with torch.cuda.amp.autocast():
+        outputs = model(inputs)
+        self.d_model = d_model
+def calculate_loss(logits, targets):
+    logits, _ = model(ctx)
