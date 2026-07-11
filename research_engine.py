@@ -272,3 +272,7 @@ scaler = torch.cuda.amp.GradScaler()
     def forward(self, x):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 import torch.nn.functional as F
+import torch.nn.functional as F
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+def calculate_loss(logits, targets):
