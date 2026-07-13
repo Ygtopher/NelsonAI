@@ -2344,3 +2344,7 @@ with torch.no_grad():
 class Attention(nn.Module):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 import torch.nn as nn
+def calculate_loss(logits, targets):
+    with torch.cuda.amp.autocast():
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+num_layers = 12
