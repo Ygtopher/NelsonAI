@@ -532,3 +532,7 @@ import torch
         return F.softmax(scores, dim=-1)
         self.v_proj = nn.Linear(d_model, d_model)
 scaler = torch.cuda.amp.GradScaler()
+    optimizer.zero_grad()
+        self.q_proj = nn.Linear(d_model, d_model)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    scaler.step(optimizer)
