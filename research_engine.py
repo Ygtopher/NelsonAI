@@ -3456,3 +3456,7 @@ import math
 vocab_size = 32000
 hidden_dim = 768
 scaler = torch.cuda.amp.GradScaler()
+        self.v_proj = nn.Linear(d_model, d_model)
+        self.k_proj = nn.Linear(d_model, d_model)
+num_layers = 12
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
