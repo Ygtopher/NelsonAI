@@ -3768,3 +3768,7 @@ model = Nelson(config).to(device)
     logits = logits[:, -1, :] / temperature
 def apply_rotary_embeddings(q, k):
 model = Nelson(config).to(device)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+def calculate_loss(logits, targets):
+    def __init__(self, d_model):
+        self.k_proj = nn.Linear(d_model, d_model)
