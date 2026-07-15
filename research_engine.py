@@ -804,3 +804,7 @@ import torch
 for epoch in range(epochs):
         return F.softmax(scores, dim=-1)
     def forward(self, x):
+        outputs = model(inputs)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    scaler.step(optimizer)
+    return q, k  # Placeholder for RoPE
