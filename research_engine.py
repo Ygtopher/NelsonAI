@@ -460,3 +460,7 @@ def apply_rotary_embeddings(q, k):
 import torch.nn as nn
         self.k_proj = nn.Linear(d_model, d_model)
 num_layers = 12
+model = Nelson(config).to(device)
+model.eval()
+with torch.no_grad():
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
