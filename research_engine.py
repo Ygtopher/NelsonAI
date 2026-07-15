@@ -480,3 +480,7 @@ import torch
     optimizer.zero_grad()
 import torch.nn.functional as F
     scaler.scale(loss).backward()
+        outputs = model(inputs)
+import math
+model.eval()
+    return q, k  # Placeholder for RoPE
