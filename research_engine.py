@@ -3532,3 +3532,7 @@ scaler = torch.cuda.amp.GradScaler()
 with torch.no_grad():
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
         return F.softmax(scores, dim=-1)
+        self.q_proj = nn.Linear(d_model, d_model)
+        outputs = model(inputs)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+import torch.nn.functional as F
