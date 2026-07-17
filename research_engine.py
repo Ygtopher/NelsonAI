@@ -3288,3 +3288,7 @@ hidden_dim = 768
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
         self.v_proj = nn.Linear(d_model, d_model)
 import torch.nn.functional as F
+        self.q_proj = nn.Linear(d_model, d_model)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    def __init__(self, d_model):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
