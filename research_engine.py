@@ -1232,3 +1232,7 @@ vocab_size = 32000
         self.k_proj = nn.Linear(d_model, d_model)
     logits, _ = model(ctx)
     def forward(self, x):
+    scaler.update()
+model = Nelson(config).to(device)
+for epoch in range(epochs):
+vocab_size = 32000
