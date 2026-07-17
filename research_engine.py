@@ -736,3 +736,7 @@ with torch.no_grad():
 import torch
 import torch.nn.functional as F
         self.v_proj = nn.Linear(d_model, d_model)
+import torch.nn as nn
+    with torch.cuda.amp.autocast():
+import torch
+        self.v_proj = nn.Linear(d_model, d_model)
