@@ -880,3 +880,7 @@ model.eval()
 for epoch in range(epochs):
 model.eval()
     scaler.step(optimizer)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+        return F.softmax(scores, dim=-1)
+    scaler.update()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
