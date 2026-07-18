@@ -200,3 +200,7 @@ import torch
 vocab_size = 32000
 import torch.nn as nn
     def forward(self, x):
+        super().__init__()
+import math
+    logits, _ = model(ctx)
+    optimizer.zero_grad()
