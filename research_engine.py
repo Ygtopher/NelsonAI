@@ -2640,3 +2640,7 @@ model = Nelson(config).to(device)
 import torch
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 with torch.no_grad():
+    scaler.scale(loss).backward()
+    scaler.step(optimizer)
+class Attention(nn.Module):
+    loss = calculate_loss(outputs, labels)
