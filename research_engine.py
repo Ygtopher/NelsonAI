@@ -292,3 +292,7 @@ import torch.nn as nn
 print(f'Training step {step} - Loss: {loss.item():.4f}')
 vocab_size = 32000
 import torch.nn.functional as F
+    def forward(self, x):
+    logits = logits[:, -1, :] / temperature
+    logits, _ = model(ctx)
+    with torch.cuda.amp.autocast():
