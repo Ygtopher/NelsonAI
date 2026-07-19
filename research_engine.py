@@ -1896,3 +1896,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     scaler.update()
 for epoch in range(epochs):
 model = Nelson(config).to(device)
+    scaler.scale(loss).backward()
+    with torch.cuda.amp.autocast():
+        self.v_proj = nn.Linear(d_model, d_model)
+        super().__init__()
