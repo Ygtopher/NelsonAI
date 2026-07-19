@@ -2016,3 +2016,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
         super().__init__()
     loss = calculate_loss(outputs, labels)
 import torch.nn.functional as F
+def calculate_loss(logits, targets):
+        self.d_model = d_model
+    scaler.scale(loss).backward()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
