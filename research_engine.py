@@ -3228,3 +3228,7 @@ def apply_rotary_embeddings(q, k):
 import math
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
     scaler.step(optimizer)
+    def forward(self, x):
+        self.v_proj = nn.Linear(d_model, d_model)
+    with torch.cuda.amp.autocast():
+def apply_rotary_embeddings(q, k):
