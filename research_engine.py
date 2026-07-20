@@ -2900,3 +2900,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
 with torch.no_grad():
     scaler.scale(loss).backward()
 for epoch in range(epochs):
+def calculate_loss(logits, targets):
+        return F.softmax(scores, dim=-1)
+import math
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
