@@ -48,3 +48,7 @@ def apply_rotary_embeddings(q, k):
 model = Nelson(config).to(device)
         super().__init__()
 import torch
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+class Attention(nn.Module):
+import torch.nn as nn
+print(f'Training step {step} - Loss: {loss.item():.4f}')
