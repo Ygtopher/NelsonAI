@@ -1208,3 +1208,7 @@ import torch
 def calculate_loss(logits, targets):
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     with torch.cuda.amp.autocast():
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+def apply_rotary_embeddings(q, k):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        outputs = model(inputs)
