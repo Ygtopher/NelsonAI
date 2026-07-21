@@ -2148,3 +2148,7 @@ scaler = torch.cuda.amp.GradScaler()
     optimizer.zero_grad()
 class Attention(nn.Module):
 vocab_size = 32000
+scaler = torch.cuda.amp.GradScaler()
+    return q, k  # Placeholder for RoPE
+class Attention(nn.Module):
+    logits = logits[:, -1, :] / temperature
