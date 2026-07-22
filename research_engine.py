@@ -1124,3 +1124,7 @@ with torch.no_grad():
     logits = logits[:, -1, :] / temperature
         self.k_proj = nn.Linear(d_model, d_model)
         outputs = model(inputs)
+scaler = torch.cuda.amp.GradScaler()
+for epoch in range(epochs):
+def apply_rotary_embeddings(q, k):
+    def forward(self, x):
