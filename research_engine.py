@@ -2916,3 +2916,7 @@ import torch.nn as nn
         return F.softmax(scores, dim=-1)
 model.eval()
 # TODO: Implement FlashAttention for context > 2048
+scaler = torch.cuda.amp.GradScaler()
+for epoch in range(epochs):
+with torch.no_grad():
+def apply_rotary_embeddings(q, k):
