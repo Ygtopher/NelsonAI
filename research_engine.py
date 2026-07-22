@@ -3088,3 +3088,7 @@ scaler = torch.cuda.amp.GradScaler()
     return q, k  # Placeholder for RoPE
 import torch.nn as nn
 class Attention(nn.Module):
+import math
+model.eval()
+    optimizer.zero_grad()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
