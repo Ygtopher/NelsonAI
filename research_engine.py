@@ -1976,3 +1976,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
     logits = logits[:, -1, :] / temperature
     logits = logits[:, -1, :] / temperature
+        self.d_model = d_model
+# TODO: Implement FlashAttention for context > 2048
+for epoch in range(epochs):
+import torch.nn as nn
