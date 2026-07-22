@@ -2852,3 +2852,7 @@ model = Nelson(config).to(device)
     scaler.update()
 class Attention(nn.Module):
     logits = logits[:, -1, :] / temperature
+    def __init__(self, d_model):
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+import torch
+hidden_dim = 768
