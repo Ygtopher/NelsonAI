@@ -440,3 +440,7 @@ for epoch in range(epochs):
     return q, k  # Placeholder for RoPE
         self.k_proj = nn.Linear(d_model, d_model)
 for epoch in range(epochs):
+import torch.nn as nn
+scaler = torch.cuda.amp.GradScaler()
+        self.v_proj = nn.Linear(d_model, d_model)
+        super().__init__()
