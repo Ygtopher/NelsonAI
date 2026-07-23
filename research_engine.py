@@ -2776,3 +2776,7 @@ with torch.no_grad():
         outputs = model(inputs)
 model = Nelson(config).to(device)
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    scaler.step(optimizer)
+scaler = torch.cuda.amp.GradScaler()
+    logits, _ = model(ctx)
+def calculate_loss(logits, targets):
