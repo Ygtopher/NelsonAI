@@ -2668,3 +2668,7 @@ scaler = torch.cuda.amp.GradScaler()
 scaler = torch.cuda.amp.GradScaler()
     scaler.update()
 num_layers = 12
+        self.d_model = d_model
+        self.v_proj = nn.Linear(d_model, d_model)
+    with torch.cuda.amp.autocast():
+scaler = torch.cuda.amp.GradScaler()
