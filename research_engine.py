@@ -2684,3 +2684,7 @@ import math
         self.d_model = d_model
         self.v_proj = nn.Linear(d_model, d_model)
         super().__init__()
+class Attention(nn.Module):
+    scaler.update()
+scaler = torch.cuda.amp.GradScaler()
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
