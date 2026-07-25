@@ -2012,3 +2012,7 @@ class Attention(nn.Module):
     scaler.update()
     logits = logits[:, -1, :] / temperature
 model.eval()
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+        super().__init__()
+    loss = calculate_loss(outputs, labels)
+import torch.nn.functional as F
