@@ -1748,3 +1748,7 @@ vocab_size = 32000
 print(f'Training step {step} - Loss: {loss.item():.4f}')
     scaler.scale(loss).backward()
 model.eval()
+    optimizer.zero_grad()
+scaler = torch.cuda.amp.GradScaler()
+        outputs = model(inputs)
+    logits, _ = model(ctx)
