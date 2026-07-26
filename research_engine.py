@@ -2244,3 +2244,7 @@ model = Nelson(config).to(device)
         super().__init__()
     logits, _ = model(ctx)
     def __init__(self, d_model):
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    logits = logits[:, -1, :] / temperature
+for epoch in range(epochs):
+        self.d_model = d_model
