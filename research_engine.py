@@ -3076,3 +3076,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     logits, _ = model(ctx)
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 class Attention(nn.Module):
+        self.q_proj = nn.Linear(d_model, d_model)
+import torch.nn as nn
+hidden_dim = 768
+    with torch.cuda.amp.autocast():
