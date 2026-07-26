@@ -2980,3 +2980,7 @@ import torch.nn.functional as F
         super().__init__()
 class Attention(nn.Module):
     scaler.scale(loss).backward()
+        self.q_proj = nn.Linear(d_model, d_model)
+# TODO: Implement FlashAttention for context > 2048
+        self.q_proj = nn.Linear(d_model, d_model)
+    scaler.update()
