@@ -1040,3 +1040,7 @@ import math
 model = Nelson(config).to(device)
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 model = Nelson(config).to(device)
+        super().__init__()
+    return q, k  # Placeholder for RoPE
+num_layers = 12
+num_layers = 12
