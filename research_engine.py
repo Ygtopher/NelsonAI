@@ -208,3 +208,7 @@ scaler = torch.cuda.amp.GradScaler()
         self.k_proj = nn.Linear(d_model, d_model)
     return q, k  # Placeholder for RoPE
         outputs = model(inputs)
+    def __init__(self, d_model):
+hidden_dim = 768
+import torch.nn as nn
+        self.v_proj = nn.Linear(d_model, d_model)
