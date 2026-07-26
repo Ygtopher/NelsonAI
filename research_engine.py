@@ -2996,3 +2996,7 @@ hidden_dim = 768
     def __init__(self, d_model):
 hidden_dim = 768
         self.k_proj = nn.Linear(d_model, d_model)
+import torch
+    loss = calculate_loss(outputs, labels)
+class Attention(nn.Module):
+    logits, _ = model(ctx)
