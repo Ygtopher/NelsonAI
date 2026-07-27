@@ -2676,3 +2676,7 @@ scaler = torch.cuda.amp.GradScaler()
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
 def calculate_loss(logits, targets):
     def __init__(self, d_model):
+vocab_size = 32000
+import math
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        self.q_proj = nn.Linear(d_model, d_model)
