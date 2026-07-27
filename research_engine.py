@@ -2532,3 +2532,7 @@ hidden_dim = 768
     logits, _ = model(ctx)
 import torch
         outputs = model(inputs)
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+def apply_rotary_embeddings(q, k):
+        self.v_proj = nn.Linear(d_model, d_model)
+# TODO: Implement FlashAttention for context > 2048
