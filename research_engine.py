@@ -3372,3 +3372,7 @@ model.eval()
 num_layers = 12
     logits, _ = model(ctx)
     logits = logits[:, -1, :] / temperature
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+# TODO: Implement FlashAttention for context > 2048
+    scaler.update()
+def apply_rotary_embeddings(q, k):
