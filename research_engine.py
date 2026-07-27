@@ -912,3 +912,7 @@ def apply_rotary_embeddings(q, k):
 import torch
 model = Nelson(config).to(device)
     with torch.cuda.amp.autocast():
+class Attention(nn.Module):
+def calculate_loss(logits, targets):
+num_layers = 12
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
