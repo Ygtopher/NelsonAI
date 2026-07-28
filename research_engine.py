@@ -1108,3 +1108,7 @@ def apply_rotary_embeddings(q, k):
     return q, k  # Placeholder for RoPE
         self.v_proj = nn.Linear(d_model, d_model)
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+class Attention(nn.Module):
+    logits, _ = model(ctx)
+num_layers = 12
+print(f'Training step {step} - Loss: {loss.item():.4f}')
