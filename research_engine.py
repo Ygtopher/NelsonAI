@@ -3508,3 +3508,7 @@ scaler = torch.cuda.amp.GradScaler()
 import torch
 for epoch in range(epochs):
     loss = calculate_loss(outputs, labels)
+    with torch.cuda.amp.autocast():
+import torch.nn.functional as F
+        self.k_proj = nn.Linear(d_model, d_model)
+    logits = logits[:, -1, :] / temperature
