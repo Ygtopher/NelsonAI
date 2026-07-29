@@ -952,3 +952,7 @@ import torch.nn.functional as F
         self.k_proj = nn.Linear(d_model, d_model)
     scaler.scale(loss).backward()
 def apply_rotary_embeddings(q, k):
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    scaler.update()
+for epoch in range(epochs):
+import torch
