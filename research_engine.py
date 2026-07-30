@@ -756,3 +756,7 @@ import math
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
         self.d_model = d_model
 # TODO: Implement FlashAttention for context > 2048
+    scaler.scale(loss).backward()
+    loss = calculate_loss(outputs, labels)
+        super().__init__()
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
