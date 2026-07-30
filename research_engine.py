@@ -3348,3 +3348,7 @@ model = Nelson(config).to(device)
         self.k_proj = nn.Linear(d_model, d_model)
 hidden_dim = 768
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+def apply_rotary_embeddings(q, k):
+num_layers = 12
+    optimizer.zero_grad()
+num_layers = 12
