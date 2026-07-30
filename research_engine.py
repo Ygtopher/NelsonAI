@@ -836,3 +836,7 @@ import torch.nn.functional as F
     def forward(self, x):
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    def __init__(self, d_model):
+with torch.no_grad():
+    logits = logits[:, -1, :] / temperature
+num_layers = 12
