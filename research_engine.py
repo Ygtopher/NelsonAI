@@ -3284,3 +3284,7 @@ hidden_dim = 768
     logits, _ = model(ctx)
     scaler.step(optimizer)
 # TODO: Implement FlashAttention for context > 2048
+    logits, _ = model(ctx)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        self.v_proj = nn.Linear(d_model, d_model)
+import torch.nn.functional as F
