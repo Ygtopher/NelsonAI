@@ -3116,3 +3116,7 @@ with torch.no_grad():
     scaler.step(optimizer)
     scaler.update()
 def apply_rotary_embeddings(q, k):
+    with torch.cuda.amp.autocast():
+    def __init__(self, d_model):
+scaler = torch.cuda.amp.GradScaler()
+num_layers = 12
