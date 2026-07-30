@@ -2284,3 +2284,7 @@ def apply_rotary_embeddings(q, k):
 for epoch in range(epochs):
 model.eval()
     logits = logits[:, -1, :] / temperature
+        super().__init__()
+vocab_size = 32000
+        return F.softmax(scores, dim=-1)
+model.eval()
