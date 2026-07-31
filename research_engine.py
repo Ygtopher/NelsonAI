@@ -1376,3 +1376,7 @@ model = Nelson(config).to(device)
     scaler.update()
 import math
 for epoch in range(epochs):
+import torch
+# TODO: Implement FlashAttention for context > 2048
+def calculate_loss(logits, targets):
+        super().__init__()
