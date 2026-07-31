@@ -2644,3 +2644,7 @@ with torch.no_grad():
     scaler.step(optimizer)
 class Attention(nn.Module):
     loss = calculate_loss(outputs, labels)
+# TODO: Implement FlashAttention for context > 2048
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+num_layers = 12
+hidden_dim = 768
