@@ -344,3 +344,7 @@ num_layers = 12
 scaler = torch.cuda.amp.GradScaler()
     def forward(self, x):
         super().__init__()
+num_layers = 12
+num_layers = 12
+model.eval()
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
