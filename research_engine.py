@@ -2552,3 +2552,7 @@ model.eval()
         self.d_model = d_model
     def forward(self, x):
     loss = calculate_loss(outputs, labels)
+def calculate_loss(logits, targets):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+model = Nelson(config).to(device)
+    return q, k  # Placeholder for RoPE
