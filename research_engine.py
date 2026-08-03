@@ -1560,3 +1560,7 @@ def apply_rotary_embeddings(q, k):
         return F.softmax(scores, dim=-1)
 def apply_rotary_embeddings(q, k):
     loss = calculate_loss(outputs, labels)
+    def forward(self, x):
+    def forward(self, x):
+        self.q_proj = nn.Linear(d_model, d_model)
+    scaler.step(optimizer)
