@@ -1604,3 +1604,7 @@ class Attention(nn.Module):
         self.d_model = d_model
 import torch
     scaler.update()
+for epoch in range(epochs):
+    logits, _ = model(ctx)
+    optimizer.zero_grad()
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
