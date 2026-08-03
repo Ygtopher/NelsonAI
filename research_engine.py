@@ -2408,3 +2408,7 @@ for epoch in range(epochs):
 # TODO: Implement FlashAttention for context > 2048
     def forward(self, x):
     with torch.cuda.amp.autocast():
+    def forward(self, x):
+    optimizer.zero_grad()
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+import torch.nn.functional as F
