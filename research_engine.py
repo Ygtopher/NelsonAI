@@ -2460,3 +2460,7 @@ import torch.nn.functional as F
 import math
     return q, k  # Placeholder for RoPE
 def apply_rotary_embeddings(q, k):
+    logits = logits[:, -1, :] / temperature
+    scaler.scale(loss).backward()
+def apply_rotary_embeddings(q, k):
+        return F.softmax(scores, dim=-1)
