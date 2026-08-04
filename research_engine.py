@@ -2712,3 +2712,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     logits, _ = model(ctx)
         self.v_proj = nn.Linear(d_model, d_model)
     loss = calculate_loss(outputs, labels)
+    logits, _ = model(ctx)
+def calculate_loss(logits, targets):
+hidden_dim = 768
+import math
