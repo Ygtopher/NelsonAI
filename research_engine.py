@@ -2364,3 +2364,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
 scaler = torch.cuda.amp.GradScaler()
     return q, k  # Placeholder for RoPE
     with torch.cuda.amp.autocast():
+    logits, _ = model(ctx)
+    def __init__(self, d_model):
+import torch
+    scaler.scale(loss).backward()
