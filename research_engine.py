@@ -968,3 +968,7 @@ def apply_rotary_embeddings(q, k):
 # TODO: Implement FlashAttention for context > 2048
 import math
         q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+    def forward(self, x):
+        outputs = model(inputs)
+import torch.nn.functional as F
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
