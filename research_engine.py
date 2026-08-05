@@ -728,3 +728,7 @@ with torch.no_grad():
 import math
 with torch.no_grad():
         self.k_proj = nn.Linear(d_model, d_model)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    scaler.scale(loss).backward()
+class Attention(nn.Module):
+import torch
