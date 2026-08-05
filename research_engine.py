@@ -2420,3 +2420,7 @@ with torch.no_grad():
     def __init__(self, d_model):
 import torch.nn as nn
 model = Nelson(config).to(device)
+num_layers = 12
+    logits, _ = model(ctx)
+    scaler.step(optimizer)
+        super().__init__()
