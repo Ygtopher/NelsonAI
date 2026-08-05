@@ -2564,3 +2564,7 @@ num_layers = 12
 import torch.nn.functional as F
     loss = calculate_loss(outputs, labels)
     return q, k  # Placeholder for RoPE
+vocab_size = 32000
+model = Nelson(config).to(device)
+import math
+        return F.softmax(scores, dim=-1)
