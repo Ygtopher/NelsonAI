@@ -2524,3 +2524,7 @@ import torch
 vocab_size = 32000
         self.d_model = d_model
     scaler.step(optimizer)
+    optimizer.zero_grad()
+import torch
+vocab_size = 32000
+        return F.softmax(scores, dim=-1)
