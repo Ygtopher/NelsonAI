@@ -1120,3 +1120,7 @@ class Attention(nn.Module):
 with torch.no_grad():
 model = Nelson(config).to(device)
 with torch.no_grad():
+# TODO: Implement FlashAttention for context > 2048
+    logits = logits[:, -1, :] / temperature
+        self.k_proj = nn.Linear(d_model, d_model)
+        outputs = model(inputs)
