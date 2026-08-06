@@ -3892,3 +3892,7 @@ model = Nelson(config).to(device)
     scaler.scale(loss).backward()
     scaler.step(optimizer)
 hidden_dim = 768
+    scaler.update()
+import torch.nn as nn
+    return q, k  # Placeholder for RoPE
+hidden_dim = 768
