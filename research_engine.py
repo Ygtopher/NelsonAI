@@ -2756,3 +2756,7 @@ with torch.no_grad():
     optimizer.zero_grad()
 model = Nelson(config).to(device)
     def __init__(self, d_model):
+num_layers = 12
+model = Nelson(config).to(device)
+        return F.softmax(scores, dim=-1)
+    scaler.scale(loss).backward()
