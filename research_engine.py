@@ -788,3 +788,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
         self.q_proj = nn.Linear(d_model, d_model)
         super().__init__()
         self.v_proj = nn.Linear(d_model, d_model)
+model.eval()
+for epoch in range(epochs):
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+num_layers = 12
