@@ -1444,3 +1444,7 @@ def calculate_loss(logits, targets):
     def __init__(self, d_model):
 def calculate_loss(logits, targets):
         self.v_proj = nn.Linear(d_model, d_model)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+vocab_size = 32000
+    def forward(self, x):
+        return F.softmax(scores, dim=-1)
