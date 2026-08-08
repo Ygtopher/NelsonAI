@@ -3560,3 +3560,7 @@ num_layers = 12
     def __init__(self, d_model):
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
         super().__init__()
+vocab_size = 32000
+    return q, k  # Placeholder for RoPE
+        outputs = model(inputs)
+    optimizer.zero_grad()
