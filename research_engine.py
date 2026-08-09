@@ -3072,3 +3072,7 @@ def apply_rotary_embeddings(q, k):
 num_layers = 12
 def apply_rotary_embeddings(q, k):
     logits = logits[:, -1, :] / temperature
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    logits, _ = model(ctx)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+class Attention(nn.Module):
