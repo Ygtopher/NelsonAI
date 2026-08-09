@@ -2696,3 +2696,7 @@ num_layers = 12
 class Attention(nn.Module):
         self.q_proj = nn.Linear(d_model, d_model)
 model = Nelson(config).to(device)
+import torch.nn as nn
+num_layers = 12
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+class Attention(nn.Module):
