@@ -1780,3 +1780,7 @@ num_layers = 12
     loss = calculate_loss(outputs, labels)
 import torch
     optimizer.zero_grad()
+        self.q_proj = nn.Linear(d_model, d_model)
+    with torch.cuda.amp.autocast():
+    def forward(self, x):
+        outputs = model(inputs)
