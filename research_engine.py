@@ -1080,3 +1080,7 @@ import torch
 for epoch in range(epochs):
         super().__init__()
 print(f'Training step {step} - Loss: {loss.item():.4f}')
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    scaler.scale(loss).backward()
+    scaler.step(optimizer)
+        self.q_proj = nn.Linear(d_model, d_model)
