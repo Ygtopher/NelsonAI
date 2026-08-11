@@ -2252,3 +2252,7 @@ for epoch in range(epochs):
     return q, k  # Placeholder for RoPE
 with torch.no_grad():
 import torch
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+    def __init__(self, d_model):
+    loss = calculate_loss(outputs, labels)
+    def forward(self, x):
