@@ -2232,3 +2232,7 @@ vocab_size = 32000
     optimizer.zero_grad()
 # TODO: Implement FlashAttention for context > 2048
     def forward(self, x):
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        outputs = model(inputs)
+model = Nelson(config).to(device)
