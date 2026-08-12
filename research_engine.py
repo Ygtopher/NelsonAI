@@ -2808,3 +2808,7 @@ def calculate_loss(logits, targets):
     loss = calculate_loss(outputs, labels)
 model = Nelson(config).to(device)
         super().__init__()
+    scaler.update()
+    def forward(self, x):
+    scaler.step(optimizer)
+for epoch in range(epochs):
