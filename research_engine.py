@@ -2744,3 +2744,7 @@ with torch.no_grad():
 model.eval()
 import torch
 class Attention(nn.Module):
+vocab_size = 32000
+    optimizer.zero_grad()
+        self.k_proj = nn.Linear(d_model, d_model)
+import torch.nn as nn
