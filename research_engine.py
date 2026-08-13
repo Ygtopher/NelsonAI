@@ -1556,3 +1556,7 @@ def apply_rotary_embeddings(q, k):
     with torch.cuda.amp.autocast():
 def apply_rotary_embeddings(q, k):
     with torch.cuda.amp.autocast():
+    def forward(self, x):
+        return F.softmax(scores, dim=-1)
+def apply_rotary_embeddings(q, k):
+    loss = calculate_loss(outputs, labels)
