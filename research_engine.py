@@ -2984,3 +2984,7 @@ class Attention(nn.Module):
 # TODO: Implement FlashAttention for context > 2048
         self.q_proj = nn.Linear(d_model, d_model)
     scaler.update()
+        return F.softmax(scores, dim=-1)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+vocab_size = 32000
+class Attention(nn.Module):
