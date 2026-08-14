@@ -1280,3 +1280,7 @@ def apply_rotary_embeddings(q, k):
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
     scaler.update()
     logits = logits[:, -1, :] / temperature
+        self.d_model = d_model
+        self.k_proj = nn.Linear(d_model, d_model)
+# TODO: Implement FlashAttention for context > 2048
+def calculate_loss(logits, targets):
