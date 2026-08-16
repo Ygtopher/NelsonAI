@@ -3528,3 +3528,7 @@ vocab_size = 32000
 model.eval()
 import torch.nn as nn
     loss = calculate_loss(outputs, labels)
+scaler = torch.cuda.amp.GradScaler()
+with torch.no_grad():
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
+        return F.softmax(scores, dim=-1)
