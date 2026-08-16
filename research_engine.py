@@ -3396,3 +3396,7 @@ hidden_dim = 768
 class Attention(nn.Module):
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
     loss = calculate_loss(outputs, labels)
+import torch
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+    optimizer.zero_grad()
+import torch
