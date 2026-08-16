@@ -2544,3 +2544,7 @@ hidden_dim = 768
     scaler.update()
     def forward(self, x):
 class Attention(nn.Module):
+    scaler.update()
+print(f'Training step {step} - Loss: {loss.item():.4f}')
+model.eval()
+    scaler.scale(loss).backward()
