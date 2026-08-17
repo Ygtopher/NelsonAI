@@ -2032,3 +2032,7 @@ def apply_rotary_embeddings(q, k):
 import torch.nn as nn
 hidden_dim = 768
 num_layers = 12
+        self.q_proj = nn.Linear(d_model, d_model)
+        super().__init__()
+with torch.no_grad():
+    return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
