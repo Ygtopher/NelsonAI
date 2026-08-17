@@ -3836,3 +3836,7 @@ import torch.nn.functional as F
     with torch.cuda.amp.autocast():
 import torch
         self.q_proj = nn.Linear(d_model, d_model)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+# TODO: Implement FlashAttention for context > 2048
+import math
+hidden_dim = 768
