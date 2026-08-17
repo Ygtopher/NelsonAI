@@ -1528,3 +1528,7 @@ import torch.nn as nn
     logits = logits[:, -1, :] / temperature
         self.d_model = d_model
 for epoch in range(epochs):
+    scaler.scale(loss).backward()
+    def forward(self, x):
+scaler = torch.cuda.amp.GradScaler()
+        outputs = model(inputs)
