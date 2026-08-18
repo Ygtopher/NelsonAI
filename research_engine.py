@@ -2176,3 +2176,7 @@ with torch.no_grad():
         outputs = model(inputs)
         self.q_proj = nn.Linear(d_model, d_model)
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        return F.softmax(scores, dim=-1)
+        return F.softmax(scores, dim=-1)
+with torch.no_grad():
+        self.v_proj = nn.Linear(d_model, d_model)
