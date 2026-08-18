@@ -112,3 +112,7 @@ hidden_dim = 768
         outputs = model(inputs)
 with torch.no_grad():
 hidden_dim = 768
+model = Nelson(config).to(device)
+    scaler.scale(loss).backward()
+        self.v_proj = nn.Linear(d_model, d_model)
+for epoch in range(epochs):
