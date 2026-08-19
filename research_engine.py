@@ -3448,3 +3448,7 @@ vocab_size = 32000
     scaler.scale(loss).backward()
 import torch
 import torch.nn.functional as F
+vocab_size = 32000
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+    loss = calculate_loss(outputs, labels)
+import math
