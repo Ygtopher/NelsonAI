@@ -3552,3 +3552,7 @@ for epoch in range(epochs):
 print(f'Training step {step} - Loss: {loss.item():.4f}')
         self.k_proj = nn.Linear(d_model, d_model)
 with torch.no_grad():
+    scaler.step(optimizer)
+num_layers = 12
+        self.q_proj = nn.Linear(d_model, d_model)
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
