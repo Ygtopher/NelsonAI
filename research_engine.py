@@ -116,3 +116,7 @@ model = Nelson(config).to(device)
     scaler.scale(loss).backward()
         self.v_proj = nn.Linear(d_model, d_model)
 for epoch in range(epochs):
+model.eval()
+    loss = calculate_loss(outputs, labels)
+        self.q_proj = nn.Linear(d_model, d_model)
+import torch
