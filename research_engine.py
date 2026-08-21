@@ -1128,3 +1128,7 @@ scaler = torch.cuda.amp.GradScaler()
 for epoch in range(epochs):
 def apply_rotary_embeddings(q, k):
     def forward(self, x):
+    scaler.step(optimizer)
+import torch.nn as nn
+    logits = logits[:, -1, :] / temperature
+import torch.nn.functional as F
