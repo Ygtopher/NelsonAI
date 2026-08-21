@@ -1644,3 +1644,7 @@ vocab_size = 32000
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
     logits = logits[:, -1, :] / temperature
 import math
+        self.d_model = d_model
+        self.q_proj = nn.Linear(d_model, d_model)
+        super().__init__()
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
