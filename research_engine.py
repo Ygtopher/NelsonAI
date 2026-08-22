@@ -2912,3 +2912,7 @@ vocab_size = 32000
     return q, k  # Placeholder for RoPE
     return F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
 import torch.nn as nn
+    scaler.step(optimizer)
+        return F.softmax(scores, dim=-1)
+model.eval()
+# TODO: Implement FlashAttention for context > 2048
