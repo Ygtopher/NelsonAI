@@ -1548,3 +1548,7 @@ class Attention(nn.Module):
         super().__init__()
 import math
 def apply_rotary_embeddings(q, k):
+    scaler.scale(loss).backward()
+        super().__init__()
+    scaler.scale(loss).backward()
+    scaler.scale(loss).backward()
