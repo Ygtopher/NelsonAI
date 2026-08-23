@@ -688,3 +688,7 @@ import torch
 # TODO: Implement FlashAttention for context > 2048
     def __init__(self, d_model):
 model.eval()
+    with torch.cuda.amp.autocast():
+def apply_rotary_embeddings(q, k):
+        self.v_proj = nn.Linear(d_model, d_model)
+class Attention(nn.Module):
