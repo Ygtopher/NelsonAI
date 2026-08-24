@@ -2288,3 +2288,7 @@ model.eval()
 vocab_size = 32000
         return F.softmax(scores, dim=-1)
 model.eval()
+import math
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        outputs = model(inputs)
+hidden_dim = 768
