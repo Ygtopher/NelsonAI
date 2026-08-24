@@ -2836,3 +2836,7 @@ scaler = torch.cuda.amp.GradScaler()
     loss = calculate_loss(outputs, labels)
         self.q_proj = nn.Linear(d_model, d_model)
 num_layers = 12
+        return F.softmax(scores, dim=-1)
+    loss = calculate_loss(outputs, labels)
+        self.k_proj = nn.Linear(d_model, d_model)
+scaler = torch.cuda.amp.GradScaler()
