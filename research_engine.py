@@ -1336,3 +1336,7 @@ print(f'Training step {step} - Loss: {loss.item():.4f}')
     with torch.cuda.amp.autocast():
 print(f'Training step {step} - Loss: {loss.item():.4f}')
         self.k_proj = nn.Linear(d_model, d_model)
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+        super().__init__()
+def apply_rotary_embeddings(q, k):
+        self.q_proj = nn.Linear(d_model, d_model)
