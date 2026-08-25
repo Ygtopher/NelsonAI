@@ -608,3 +608,7 @@ import math
 def apply_rotary_embeddings(q, k):
     scaler.update()
     scaler.update()
+# TODO: Implement FlashAttention for context > 2048
+        scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
+def apply_rotary_embeddings(q, k):
+import torch.nn as nn
