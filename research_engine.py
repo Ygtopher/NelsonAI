@@ -3316,3 +3316,7 @@ scaler = torch.cuda.amp.GradScaler()
         return F.softmax(scores, dim=-1)
         self.v_proj = nn.Linear(d_model, d_model)
 model.eval()
+num_layers = 12
+        return F.softmax(scores, dim=-1)
+    return q, k  # Placeholder for RoPE
+model.eval()
