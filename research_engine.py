@@ -3332,3 +3332,7 @@ hidden_dim = 768
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_model)
 scaler = torch.cuda.amp.GradScaler()
 hidden_dim = 768
+        outputs = model(inputs)
+scaler = torch.cuda.amp.GradScaler()
+def calculate_loss(logits, targets):
+        q, k, v = self.q_proj(x), self.k_proj(x), self.v_proj(x)
