@@ -1,0 +1,22 @@
+# PyTorch Checkpoints
+*.pt
+*.pth
+*.safetensors
+checkpoints/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Data & Datasets
+data/
+memory/*.jsonl
+*.txt
+
+# Ignore the dummy file we will use to generate 1000 commits
+dummy_commit_file.txt

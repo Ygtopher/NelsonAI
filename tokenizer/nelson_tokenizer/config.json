@@ -1,0 +1,25 @@
+{
+  "vocab_size": 32000,
+  "special_tokens": {
+    "<|pad|>": 0,
+    "<|bos|>": 1,
+    "<|eos|>": 2,
+    "<|unk|>": 3,
+    "<|user|>": 4,
+    "<|nelson|>": 5,
+    "<|system|>": 6,
+    "<|lang_rw|>": 7,
+    "<|lang_en|>": 8,
+    "<|lang_fr|>": 9,
+    "<|search|>": 10,
+    "<|/search|>": 11,
+    "<|wiki|>": 12,
+    "<|/wiki|>": 13,
+    "<|fetch|>": 14,
+    "<|/fetch|>": 15,
+    "<|result|>": 16,
+    "<|/result|>": 17
+  },
+  "model_type": "bpe",
+  "tokenizer_class": "NelsonTokenizer"
+}
